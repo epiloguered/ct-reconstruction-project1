@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "total_angles": 90,
+  "lsqr_tolerance": 1e-05,
+  "lsqr_limit": 10000,
+  "l2_tolerance": 1e-06,
+  "l2_limit": 5000,
+  "lsqr_conlim": 100000000.0,
+  "tv_iterations": 600,
+  "tv_prox_eps": 0.0001,
+  "tv_prox_max_iter": 80,
+  "art_epochs": 5,
+  "art_relaxation": 1.0,
+  "art_nonnegative_after_each_row": true,
+  "L2_NORMALIZED_LAMBDAS": [
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "TV_FRACTIONS": [
+    1e-05,
+    3e-05,
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01
+  ],
+  "ART_PIXEL_FRACTIONS": [
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "selection": "oracle minimum GT NRMSE within each method/case grid",
+  "vectorization": "column-major F",
+  "truth_amplitude_used_for_prior_grid": true,
+  "data_term": "squared Euclidean residual divided by 2*m; m includes zero rows",
+  "angle_selection": "floor(arange(angle_count)*90/angle_count), complete detector blocks",
+  "reuse_existing_full_view": false
+}

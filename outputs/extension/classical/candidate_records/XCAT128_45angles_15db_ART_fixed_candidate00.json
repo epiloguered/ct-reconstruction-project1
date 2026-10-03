@@ -1,0 +1,69 @@
+{
+  "metrics": {
+    "dataset": "XCAT128",
+    "angle_count": 45,
+    "snr_label_db": 15,
+    "actual_subset_snr_db": 15.018912083368885,
+    "n_rows": 8145,
+    "n_nonzero_rows": 7340,
+    "method": "ART_fixed",
+    "candidate_index": 0,
+    "parameter_name": "none",
+    "parameter_value": 0.0,
+    "lambda_normalized": "",
+    "lambda_raw": "",
+    "prior_strength": "",
+    "iterations": 5,
+    "stop_code": "fixed_epochs",
+    "hit_iteration_budget": false,
+    "seconds": 0.2722269000005326,
+    "objective_normalized_end": "",
+    "candidate_array": "candidate_reconstructions/XCAT128_45angles_15db_ART_fixed_candidate00.npy",
+    "nrmse": 0.6399955150751441,
+    "psnr_db": 14.154274698466168,
+    "ssim": 0.19734712987867378,
+    "relative_residual": 0.16404487411622673
+  },
+  "trace": [
+    {
+      "epoch": 1,
+      "nrmse": 0.5126340529525818,
+      "psnr_db": 16.08166427258043,
+      "ssim": 0.19899064593459756,
+      "relative_residual": 0.21419202758493516,
+      "epoch_seconds": 0.05405860000246321
+    },
+    {
+      "epoch": 2,
+      "nrmse": 0.5265123726113904,
+      "psnr_db": 15.849641685712886,
+      "ssim": 0.20526343989991366,
+      "relative_residual": 0.18426864794593517,
+      "epoch_seconds": 0.05184489999737707
+    },
+    {
+      "epoch": 3,
+      "nrmse": 0.5745195095816801,
+      "psnr_db": 15.09171768820158,
+      "ssim": 0.2034643429411975,
+      "relative_residual": 0.16962155913393537,
+      "epoch_seconds": 0.048436900000524474
+    },
+    {
+      "epoch": 4,
+      "nrmse": 0.6109113224572529,
+      "psnr_db": 14.558249823916437,
+      "ssim": 0.19880838451008298,
+      "relative_residual": 0.16615247223381804,
+      "epoch_seconds": 0.05628689999866765
+    },
+    {
+      "epoch": 5,
+      "nrmse": 0.6399955150751441,
+      "psnr_db": 14.154274698466168,
+      "ssim": 0.19734712987867378,
+      "relative_residual": 0.16404487411622673,
+      "epoch_seconds": 0.05572340000071563
+    }
+  ]
+}

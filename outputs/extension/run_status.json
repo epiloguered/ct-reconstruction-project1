@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "datasets": [
+    "SheppLogan64",
+    "XCAT128"
+  ],
+  "classical_angles": [
+    90,
+    45,
+    30,
+    15
+  ],
+  "classical_snrs_db": [
+    15,
+    20,
+    25,
+    30
+  ],
+  "dip_angles": [
+    30,
+    15
+  ],
+  "dip_snrs_db": [
+    20,
+    30
+  ],
+  "dip_seeds": [
+    0,
+    1,
+    2
+  ],
+  "dip_iterations": 2000,
+  "counts": {
+    "classical": {
+      "candidate_records": 864,
+      "expected_candidates": 864,
+      "selected_records": 160,
+      "expected_selected": 160
+    },
+    "dip": {
+      "fits": 48,
+      "expected_fits": 48,
+      "endpoints": 96,
+      "expected_endpoints": 96,
+      "aggregate_rows": 32,
+      "expected_aggregates": 32
+    }
+  },
+  "test_count": 13,
+  "artifact_audit_status": "passed",
+  "artifact_audit_assertions": 7953,
+  "dip_fit_seconds": 818.0859433999758,
+  "primary_documents": [
+    "docs/实验实施记录.md",
+    "docs/基线实验结果.md"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "timestamp_utc": "2026-10-03T06:07:03.715173+00:00",
+  "structure_only": false,
+  "allow_partial": false,
+  "checked_assertions": 7953,
+  "counts": {
+    "classical": {
+      "candidate_records": 864,
+      "expected_candidates": 864,
+      "selected_records": 160,
+      "expected_selected": 160
+    },
+    "dip": {
+      "fits": 48,
+      "expected_fits": 48,
+      "endpoints": 96,
+      "expected_endpoints": 96,
+      "aggregate_rows": 32,
+      "expected_aggregates": 32
+    }
+  },
+  "errors": [],
+  "incomplete": [],
+  "model_restorations": [
+    {
+      "dataset": "SheppLogan64",
+      "device": "cuda",
+      "relative_error": 0.0,
+      "max_absolute_error": 0.0,
+      "model": "outputs\\extension\\dip\\models\\SheppLogan64_30angles_30db_DIP_seed0_fixed.pt"
+    },
+    {
+      "dataset": "XCAT128",
+      "device": "cuda",
+      "relative_error": 0.0,
+      "max_absolute_error": 0.0,
+      "model": "outputs\\extension\\dip\\models\\XCAT128_30angles_30db_DIP_seed0_fixed.pt"
+    }
+  ],
+  "elapsed_seconds": 3.899294099999679,
+  "scope": "artifact coverage, metrics recomputation, oracle sampled minima, paired seeds, ddof=1 aggregation, fixed model restoration"
+}

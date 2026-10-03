@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "dataset": "SheppLogan64",
+    "angle_count": 30,
+    "snr_label_db": 30,
+    "actual_subset_snr_db": 29.93584885413909,
+    "n_rows": 2730,
+    "n_nonzero_rows": 2444,
+    "method": "LS_L2",
+    "candidate_index": 3,
+    "parameter_name": "lambda_normalized",
+    "parameter_value": 0.003,
+    "lambda_normalized": 0.003,
+    "lambda_raw": 8.19,
+    "prior_strength": "",
+    "iterations": 38,
+    "stop_code": "2",
+    "hit_iteration_budget": false,
+    "seconds": 0.005905199999688193,
+    "objective_normalized_end": 0.310861817298694,
+    "candidate_array": "candidate_reconstructions/SheppLogan64_30angles_30db_LS_L2_candidate03.npy",
+    "nrmse": 0.3980661597576556,
+    "psnr_db": 20.1253353988499,
+    "ssim": 0.5863256886907144,
+    "relative_residual": 0.031813561295189884
+  },
+  "trace": []
+}

@@ -1,0 +1,12 @@
+.conda/
+outputs/cache/
+__pycache__/
+*.pyc
+Data/*/A.csv
+outputs/**/matplotlib_config/
+outputs/**/pip/
+outputs/extension/pilot*/
+outputs/extension/dip_initial_unstable/
+outputs/release_check/
+outputs/github_release/
+outputs/rerun/

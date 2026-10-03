@@ -1,0 +1,57 @@
+{
+  "DIP_TV_percent_nrmse_reduction_vs_LS_TV": [
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 20,
+      "percent": 3.2552750138562048
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 30,
+      "percent": 25.471822783356487
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 20,
+      "percent": 12.046634820057726
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "percent": 34.85290890762036
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 20,
+      "percent": -11.471445211613911
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 30,
+      "percent": -7.840101650706976
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 20,
+      "percent": -6.087567328568528
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "percent": -5.016754433137976
+    }
+  ],
+  "fit_seconds_total": 818.0859433999758,
+  "oracle_at_budget_counts": {
+    "DIP": 0,
+    "DIP_TV": 6
+  }
+}

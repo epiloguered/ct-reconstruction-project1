@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "dataset": "XCAT128",
+    "angle_count": 15,
+    "snr_label_db": 30,
+    "actual_subset_snr_db": 29.941766548743225,
+    "n_rows": 2715,
+    "n_nonzero_rows": 2442,
+    "method": "ART_TV",
+    "candidate_index": 5,
+    "parameter_name": "epoch_prox_weight_over_truth_range",
+    "parameter_value": 0.1,
+    "lambda_normalized": "",
+    "lambda_raw": "",
+    "prior_strength": 0.0030887903645634702,
+    "iterations": 5,
+    "stop_code": "fixed_epochs",
+    "hit_iteration_budget": false,
+    "seconds": 0.08965829999942798,
+    "objective_normalized_end": "",
+    "candidate_array": "candidate_reconstructions/XCAT128_15angles_30db_ART_TV_candidate05.npy",
+    "nrmse": 0.23374489056469935,
+    "psnr_db": 22.90297078197309,
+    "ssim": 0.5720708397255986,
+    "relative_residual": 0.050691670941499824
+  },
+  "trace": []
+}

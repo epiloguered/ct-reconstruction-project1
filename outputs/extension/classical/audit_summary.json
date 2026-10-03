@@ -1,0 +1,900 @@
+{
+  "selected_count": 160,
+  "candidate_count": 864,
+  "boundary_counts_regularized": {
+    "interior": 96
+  },
+  "lsqr_stop_codes": {
+    "2": 32
+  },
+  "l2_stop_codes": {
+    "2": 32
+  },
+  "lsqr_iterations_range": [
+    631,
+    6372
+  ],
+  "l2_iterations_range": [
+    17,
+    100
+  ],
+  "actual_snr_ranges": {
+    "15": [
+      14.892002145128554,
+      15.08623644856537
+    ],
+    "20": [
+      19.96284543308078,
+      20.09304943170398
+    ],
+    "25": [
+      24.958259032549673,
+      25.14722653691098
+    ],
+    "30": [
+      29.820887204675156,
+      29.998071654131685
+    ]
+  },
+  "tv_last_50_objective_change_range": [
+    5.765548156757918e-10,
+    0.0004294448253169786
+  ],
+  "tv_last_50_objective_changes": [
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 0.00019532228235291142
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 5.765548156757918e-10
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 6.283467448808259e-07
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 6.636193760686078e-06
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 6.738595572259596e-06
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 2.1307852915658555e-08
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 2.0439521218090856e-07
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 2.795878832016352e-06
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 2.254200626584501e-08
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 0.0001061868702143499
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 7.751937548191012e-07
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 6.419076070234543e-06
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 1.3478130245575548e-08
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 1.0500850106876208e-08
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 1.8975005098412466e-07
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 6.382996848004111e-07
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 7.779116795456601e-10
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 6.179778033315164e-08
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 1.2396365848854326e-07
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 1.3977264679932056e-06
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 2.6260723791931722e-09
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 0.0004294448253169786
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 1.9962512211769288e-09
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 0.0001818681280120236
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 3.10464993769163e-09
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 4.758424725194098e-09
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 3.55180745777596e-08
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 0.00018115579135758657
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 15,
+      "last_50_relative_objective_change": 9.282667861105538e-05
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 20,
+      "last_50_relative_objective_change": 3.965162516819361e-09
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 25,
+      "last_50_relative_objective_change": 5.9785205202977356e-05
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 30,
+      "last_50_relative_objective_change": 8.28500395396077e-08
+    }
+  ],
+  "tv_initial_vs_extended_grid": [
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 15,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.5247263164276788,
+      "new_nrmse": 0.5247263164276788
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 20,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.44399798940636326,
+      "new_nrmse": 0.44399798940636326
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 25,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.3655789648367989,
+      "new_nrmse": 0.3655789648367989
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.29123540558414895,
+      "new_nrmse": 0.29123540558414895
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 15,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.4275387218069342,
+      "new_nrmse": 0.4275387218069342
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 20,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.3180806621662761,
+      "new_nrmse": 0.3180806621662761
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 25,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.20016345517040693,
+      "new_nrmse": 0.20016345517040693
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "snr_label_db": 30,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.13808812340086493,
+      "new_nrmse": 0.13808812340086493
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 15,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.3866929986591511,
+      "new_nrmse": 0.3866929986591511
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 20,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.25933378054396095,
+      "new_nrmse": 0.25933378054396095
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 25,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.15790943300086402,
+      "new_nrmse": 0.15790943300086402
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "snr_label_db": 30,
+      "old_parameter": 0.0001,
+      "new_parameter": 0.0001,
+      "old_nrmse": 0.10533027068312442,
+      "new_nrmse": 0.10533027068312442
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 15,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.2785526239328959,
+      "new_nrmse": 0.2785526239328959
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 20,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.20559390194971072,
+      "new_nrmse": 0.20559390194971072
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 25,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.1045435927942638,
+      "new_nrmse": 0.1045435927942638
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "snr_label_db": 30,
+      "old_parameter": 0.0001,
+      "new_parameter": 0.0001,
+      "old_nrmse": 0.06879742949854988,
+      "new_nrmse": 0.06879742949854988
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 15,
+      "old_parameter": 0.01,
+      "new_parameter": 0.01,
+      "old_nrmse": 0.30893788140095174,
+      "new_nrmse": 0.30893788140095174
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 20,
+      "old_parameter": 0.01,
+      "new_parameter": 0.01,
+      "old_nrmse": 0.24546870213121977,
+      "new_nrmse": 0.24546870213121977
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 25,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.20821396686151775,
+      "new_nrmse": 0.20821396686151775
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.18850970976110226,
+      "new_nrmse": 0.18850970976110226
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 15,
+      "old_parameter": 0.01,
+      "new_parameter": 0.01,
+      "old_nrmse": 0.261271171762379,
+      "new_nrmse": 0.261271171762379
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 20,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.2125467070230891,
+      "new_nrmse": 0.2125467070230891
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 25,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.1795927899760424,
+      "new_nrmse": 0.1795927899760424
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "snr_label_db": 30,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.1478150789291507,
+      "new_nrmse": 0.1478150789291507
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 15,
+      "old_parameter": 0.01,
+      "new_parameter": 0.01,
+      "old_nrmse": 0.24756656837218666,
+      "new_nrmse": 0.24756656837218666
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 20,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.19892059115827754,
+      "new_nrmse": 0.19892059115827754
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 25,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.16651485603386842,
+      "new_nrmse": 0.16651485603386842
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "snr_label_db": 30,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.1389606300076501,
+      "new_nrmse": 0.1389606300076501
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 15,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.22690881723207565,
+      "new_nrmse": 0.22690881723207565
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 20,
+      "old_parameter": 0.003,
+      "new_parameter": 0.003,
+      "old_nrmse": 0.17649925518734397,
+      "new_nrmse": 0.17649925518734397
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 25,
+      "old_parameter": 0.001,
+      "new_parameter": 0.001,
+      "old_nrmse": 0.14108274027294587,
+      "new_nrmse": 0.14108274027294587
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "snr_label_db": 30,
+      "old_parameter": 0.0003,
+      "new_parameter": 0.0003,
+      "old_nrmse": 0.10661681504542334,
+      "new_nrmse": 0.10661681504542334
+    }
+  ],
+  "tv_selection_changed_count": 0,
+  "nrmse_best_method_counts": {
+    "LS_TV": 28,
+    "ART_TV": 4
+  },
+  "metrics_30db": [
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.3857268860654224,
+      "ssim": 0.6456751873354798,
+      "relative_residual": 0.03416500499573949
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "method": "ART_TV",
+      "parameter_value": 0.01,
+      "nrmse": 0.3698314337280726,
+      "ssim": 0.7106419186445903,
+      "relative_residual": 0.04768777231289831
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 1.438051300338107,
+      "ssim": 0.28497345540118546,
+      "relative_residual": 0.010499391335590491
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "method": "LS_L2",
+      "parameter_value": 0.001,
+      "nrmse": 0.5319773661929892,
+      "ssim": 0.47873308272221937,
+      "relative_residual": 0.015215277022873596
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "method": "LS_TV",
+      "parameter_value": 0.0003,
+      "nrmse": 0.29123540558414895,
+      "ssim": 0.7668677049415378,
+      "relative_residual": 0.01994667596258654
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.2525913490989497,
+      "ssim": 0.7592563732340427,
+      "relative_residual": 0.031996686741728356
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "method": "ART_TV",
+      "parameter_value": 0.01,
+      "nrmse": 0.2203672122313447,
+      "ssim": 0.8316659950799957,
+      "relative_residual": 0.03837282184276208
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 6.151334369833416,
+      "ssim": 0.03575594084060532,
+      "relative_residual": 0.011077359641919039
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "method": "LS_L2",
+      "parameter_value": 0.001,
+      "nrmse": 0.3895137794410064,
+      "ssim": 0.5766596564633119,
+      "relative_residual": 0.019395275585018735
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 30,
+      "method": "LS_TV",
+      "parameter_value": 0.0003,
+      "nrmse": 0.13808812340086493,
+      "ssim": 0.9178624264847318,
+      "relative_residual": 0.02523598122562933
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.194559122745723,
+      "ssim": 0.7904414793603775,
+      "relative_residual": 0.0333608762869738
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "method": "ART_TV",
+      "parameter_value": 0.01,
+      "nrmse": 0.15241839192771645,
+      "ssim": 0.8703396791857533,
+      "relative_residual": 0.038507106236035635
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 14.049548090815055,
+      "ssim": 0.004110707773266091,
+      "relative_residual": 0.012674052279950254
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "method": "LS_L2",
+      "parameter_value": 0.001,
+      "nrmse": 0.3219371099879501,
+      "ssim": 0.6187446504083787,
+      "relative_residual": 0.023081228782974344
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 45,
+      "method": "LS_TV",
+      "parameter_value": 0.0001,
+      "nrmse": 0.10533027068312442,
+      "ssim": 0.8809975574492458,
+      "relative_residual": 0.022591729555322643
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.13395375797789502,
+      "ssim": 0.832262326758163,
+      "relative_residual": 0.03775646256736152
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "method": "ART_TV",
+      "parameter_value": 0.01,
+      "nrmse": 0.09428076152278178,
+      "ssim": 0.9087506943499662,
+      "relative_residual": 0.04023314978945561
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 0.5932813641871555,
+      "ssim": 0.4742829454341295,
+      "relative_residual": 0.022497130156178165
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "method": "LS_L2",
+      "parameter_value": 0.0003,
+      "nrmse": 0.1913632138630943,
+      "ssim": 0.6955192241844034,
+      "relative_residual": 0.023766858947113317
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 90,
+      "method": "LS_TV",
+      "parameter_value": 0.0001,
+      "nrmse": 0.06879742949854988,
+      "ssim": 0.9338830893685208,
+      "relative_residual": 0.026885793000171288
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.23518640282317055,
+      "ssim": 0.6764722140714374,
+      "relative_residual": 0.027080969891036956
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "method": "ART_TV",
+      "parameter_value": 0.03,
+      "nrmse": 0.2153649001618373,
+      "ssim": 0.6702899118848064,
+      "relative_residual": 0.03873853056154852
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 1.562501628317819,
+      "ssim": 0.14875381949608676,
+      "relative_residual": 0.009949169079180215
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "method": "LS_L2",
+      "parameter_value": 0.003,
+      "nrmse": 0.3121571450465566,
+      "ssim": 0.27972322293892704,
+      "relative_residual": 0.018592612759132317
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "method": "LS_TV",
+      "parameter_value": 0.001,
+      "nrmse": 0.18850970976110226,
+      "ssim": 0.7146238973539157,
+      "relative_residual": 0.024998652474811544
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.19284308902124717,
+      "ssim": 0.7148403181090879,
+      "relative_residual": 0.0292209209582587
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "method": "ART_TV",
+      "parameter_value": 0.03,
+      "nrmse": 0.16648953138832295,
+      "ssim": 0.6948466810093967,
+      "relative_residual": 0.039065762659433324
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 2.4578790767054293,
+      "ssim": 0.07559269031363103,
+      "relative_residual": 0.010844959384214994
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "method": "LS_L2",
+      "parameter_value": 0.003,
+      "nrmse": 0.24808353072517628,
+      "ssim": 0.3939458116875938,
+      "relative_residual": 0.0219835249245243
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 30,
+      "method": "LS_TV",
+      "parameter_value": 0.001,
+      "nrmse": 0.1478150789291507,
+      "ssim": 0.8432252518211822,
+      "relative_residual": 0.02963462138920527
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.1848030377719793,
+      "ssim": 0.6844013671809905,
+      "relative_residual": 0.03310348982254384
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "method": "ART_TV",
+      "parameter_value": 0.03,
+      "nrmse": 0.15331163655304939,
+      "ssim": 0.6801935422933356,
+      "relative_residual": 0.04140324953364471
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 8.52362303998908,
+      "ssim": 0.00779493795166694,
+      "relative_residual": 0.010817557455714735
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "method": "LS_L2",
+      "parameter_value": 0.003,
+      "nrmse": 0.22387291778619825,
+      "ssim": 0.436486145134065,
+      "relative_residual": 0.02406788989793946
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 45,
+      "method": "LS_TV",
+      "parameter_value": 0.001,
+      "nrmse": 0.1389606300076501,
+      "ssim": 0.887406905499768,
+      "relative_residual": 0.03128943705148176
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "method": "ART_fixed",
+      "parameter_value": 0.0,
+      "nrmse": 0.17602218231710762,
+      "ssim": 0.6220869100471902,
+      "relative_residual": 0.04360870760306871
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "method": "ART_TV",
+      "parameter_value": 0.03,
+      "nrmse": 0.13554422995383117,
+      "ssim": 0.6595836983947073,
+      "relative_residual": 0.04945464203161702
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "method": "LSQR",
+      "parameter_value": 0.0,
+      "nrmse": 18.359002653472555,
+      "ssim": 0.0006352907276150483,
+      "relative_residual": 0.012366082066766818
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "method": "LS_L2",
+      "parameter_value": 0.003,
+      "nrmse": 0.18992239895403712,
+      "ssim": 0.4960163810460528,
+      "relative_residual": 0.02776712546375559
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 90,
+      "method": "LS_TV",
+      "parameter_value": 0.0003,
+      "nrmse": 0.10661681504542334,
+      "ssim": 0.8237384908720692,
+      "relative_residual": 0.02787500285592823
+    }
+  ],
+  "verification": {
+    "test_command": "& '.\\.conda\\python.exe' -m unittest test_sparse_views -v",
+    "passed_tests": 4,
+    "selected_vectors_recomputed": 160,
+    "saved_values_match_decimals": 11
+  }
+}

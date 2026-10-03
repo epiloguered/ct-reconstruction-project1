@@ -1,0 +1,69 @@
+{
+  "metrics": {
+    "dataset": "SheppLogan64",
+    "angle_count": 15,
+    "snr_label_db": 25,
+    "actual_subset_snr_db": 25.14722653691098,
+    "n_rows": 1365,
+    "n_nonzero_rows": 1222,
+    "method": "ART_fixed",
+    "candidate_index": 0,
+    "parameter_name": "none",
+    "parameter_value": 0.0,
+    "lambda_normalized": "",
+    "lambda_raw": "",
+    "prior_strength": "",
+    "iterations": 5,
+    "stop_code": "fixed_epochs",
+    "hit_iteration_budget": false,
+    "seconds": 0.029110200001014164,
+    "objective_normalized_end": "",
+    "candidate_array": "candidate_reconstructions/SheppLogan64_15angles_25db_ART_fixed_candidate00.npy",
+    "nrmse": 0.3986960460687915,
+    "psnr_db": 20.111602006169296,
+    "ssim": 0.6111799362666902,
+    "relative_residual": 0.04872512242257439
+  },
+  "trace": [
+    {
+      "epoch": 1,
+      "nrmse": 0.532217911291454,
+      "psnr_db": 17.602650855871104,
+      "ssim": 0.4818254381151708,
+      "relative_residual": 0.13979994823030886,
+      "epoch_seconds": 0.005773199998657219
+    },
+    {
+      "epoch": 2,
+      "nrmse": 0.45224293351352624,
+      "psnr_db": 19.017004789504398,
+      "ssim": 0.5414246927161186,
+      "relative_residual": 0.07754909460676208,
+      "epoch_seconds": 0.005671999999321997
+    },
+    {
+      "epoch": 3,
+      "nrmse": 0.42280120081476535,
+      "psnr_db": 19.601716338625984,
+      "ssim": 0.5736322218252011,
+      "relative_residual": 0.06063006777218153,
+      "epoch_seconds": 0.00573420000000624
+    },
+    {
+      "epoch": 4,
+      "nrmse": 0.4076839643723491,
+      "psnr_db": 19.91796799098907,
+      "ssim": 0.5968871687943028,
+      "relative_residual": 0.052087543902811825,
+      "epoch_seconds": 0.005612400000245543
+    },
+    {
+      "epoch": 5,
+      "nrmse": 0.3986960460687915,
+      "psnr_db": 20.111602006169296,
+      "ssim": 0.6111799362666902,
+      "relative_residual": 0.04872512242257439,
+      "epoch_seconds": 0.005778300001111347
+    }
+  ]
+}

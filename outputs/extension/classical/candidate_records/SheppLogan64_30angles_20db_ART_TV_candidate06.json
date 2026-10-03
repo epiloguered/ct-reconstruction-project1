@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "dataset": "SheppLogan64",
+    "angle_count": 30,
+    "snr_label_db": 20,
+    "actual_subset_snr_db": 20.00244001913185,
+    "n_rows": 2730,
+    "n_nonzero_rows": 2444,
+    "method": "ART_TV",
+    "candidate_index": 6,
+    "parameter_name": "epoch_prox_weight_over_truth_range",
+    "parameter_value": 0.2,
+    "lambda_normalized": "",
+    "lambda_raw": "",
+    "prior_strength": 0.2,
+    "iterations": 5,
+    "stop_code": "fixed_epochs",
+    "hit_iteration_budget": false,
+    "seconds": 0.06792709999717772,
+    "objective_normalized_end": "",
+    "candidate_array": "candidate_reconstructions/SheppLogan64_30angles_20db_ART_TV_candidate06.npy",
+    "nrmse": 0.5630239716606191,
+    "psnr_db": 17.113902859747196,
+    "ssim": 0.4375948273710895,
+    "relative_residual": 0.1789865055610459
+  },
+  "trace": []
+}

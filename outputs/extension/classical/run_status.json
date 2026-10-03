@@ -1,0 +1,27 @@
+{
+  "status": "requested run completed",
+  "dataset_argument": "all",
+  "angles_argument": [
+    90,
+    45,
+    30,
+    15
+  ],
+  "snrs_argument": [
+    15,
+    20,
+    25,
+    30
+  ],
+  "saved_candidate_count": 864,
+  "saved_selected_count": 160,
+  "this_invocation_seconds": 191.539861199999,
+  "total_saved_candidate_solver_seconds": 423.4325219999191,
+  "selected_boundary_counts": {
+    "lower": 0,
+    "upper": 0,
+    "interior": 160
+  },
+  "selected_solver_cap_count": 32,
+  "grid_version": 2
+}

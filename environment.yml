@@ -1,0 +1,13 @@
+name: ct-project1-baselines
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy=2.4.6
+  - scipy=1.17.1
+  - matplotlib=3.11.2
+  - scikit-image=0.26.0
+  - pip
+  - pip:
+      - --index-url https://download.pytorch.org/whl/cu130
+      - torch==2.14.0+cu130

@@ -1,0 +1,3 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[cache] XCAT128: shape=(16290, 16384), nnz=1876968
+{"status": "passed", "counts": {"classical": {"candidate_records": 864, "expected_candidates": 864, "selected_records": 160, "expected_selected": 160}, "dip": {"fits": 48, "expected_fits": 48, "endpoints": 96, "expected_endpoints": 96, "aggregate_rows": 32, "expected_aggregates": 32}}, "errors": [], "checked_assertions": 7953, "summary": "C:\\Users\\wsh\\Desktop\\Study\\���Ż��������㷨\\Porject1_Assignment_2026\\outputs\\extension\\audit_summary.json"}

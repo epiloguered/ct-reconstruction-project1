@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "dataset": "XCAT128",
+    "angle_count": 90,
+    "snr_label_db": 30,
+    "actual_subset_snr_db": 29.986072142840978,
+    "n_rows": 16290,
+    "n_nonzero_rows": 14680,
+    "method": "LS_L2",
+    "candidate_index": 2,
+    "parameter_name": "lambda_normalized",
+    "parameter_value": 0.001,
+    "lambda_normalized": 0.001,
+    "lambda_raw": 16.29,
+    "prior_strength": "",
+    "iterations": 62,
+    "stop_code": "2",
+    "hit_iteration_budget": false,
+    "seconds": 0.10971309999877121,
+    "objective_normalized_end": 0.0008237995406729186,
+    "candidate_array": "candidate_reconstructions/XCAT128_90angles_30db_LS_L2_candidate02.npy",
+    "nrmse": 0.2124035464491188,
+    "psnr_db": 23.734578034328933,
+    "ssim": 0.42918220765766785,
+    "relative_residual": 0.02084441893332091
+  },
+  "trace": []
+}

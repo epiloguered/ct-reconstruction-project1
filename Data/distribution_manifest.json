@@ -1,0 +1,28 @@
+[
+  {
+    "dataset": "SheppLogan64",
+    "path": "Data/SheppLogan64/A_csr.npz",
+    "shape": [
+      8190,
+      4096
+    ],
+    "nnz": 469640,
+    "dtype": "float64",
+    "bytes": 1909042,
+    "sha256": "67e1f346073d7908e6d60c8f8560fc7eaaee5a56f2411a41d21f7560d508a7b7",
+    "verification": "CSR indptr, indices, data are exactly equal to the CSV-derived matrix used by the experiments"
+  },
+  {
+    "dataset": "XCAT128",
+    "path": "Data/XCAT128/A_csr.npz",
+    "shape": [
+      16290,
+      16384
+    ],
+    "nnz": 1876968,
+    "dtype": "float64",
+    "bytes": 10768487,
+    "sha256": "99d2f213096fd59d96242374777dbd43dbe346231aa423822b5a31e406d87905",
+    "verification": "CSR indptr, indices, data are exactly equal to the CSV-derived matrix used by the experiments"
+  }
+]

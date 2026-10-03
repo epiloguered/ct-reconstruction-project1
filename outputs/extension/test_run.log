@@ -1,0 +1,22 @@
+test_column_major_projection_and_adjoint (test_dip_extension.DIPContracts.test_column_major_projection_and_adjoint) ... C:\Users\wsh\Desktop\Study\���Ż��������㷨\Porject1_Assignment_2026\run_dip_extension.py:37: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\SparseCsrTensorImpl.cpp:51.)
+  return torch.sparse_csr_tensor(
+ok
+test_cuda_projection_gradient (test_dip_extension.DIPContracts.test_cuda_projection_gradient) ... ok
+test_paired_initialization_and_observation_scale (test_dip_extension.DIPContracts.test_paired_initialization_and_observation_scale) ... ok
+test_tv_constant_has_finite_zero_gradient (test_dip_extension.DIPContracts.test_tv_constant_has_finite_zero_gradient) ... ok
+test_column_major_truth_roundtrip (test_sparse_views.AngleSelectionTests.test_column_major_truth_roundtrip) ... ok
+test_complete_uniform_angle_blocks_and_observation_alignment (test_sparse_views.AngleSelectionTests.test_complete_uniform_angle_blocks_and_observation_alignment) ... ok
+test_full_view_is_identical_and_invalid_inputs_rejected (test_sparse_views.AngleSelectionTests.test_full_view_is_identical_and_invalid_inputs_rejected) ... ok
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[cache] XCAT128: shape=(16290, 16384), nnz=1876968
+test_all_saved_selected_metrics_and_oracle_choices (test_sparse_views.SavedExperimentTests.test_all_saved_selected_metrics_and_oracle_choices) ... ok
+test_art_recovers_nonnegative_identity_and_skips_zero_row (test_baselines.BaselineTests.test_art_recovers_nonnegative_identity_and_skips_zero_row) ... ok
+test_sparse_csv_keeps_zero_rows_and_values (test_baselines.BaselineTests.test_sparse_csv_keeps_zero_rows_and_values) ... ok
+test_art_l2_shrink_and_zero_row (test_regularization.RegularizationTests.test_art_l2_shrink_and_zero_row) ... ok
+test_l1_fista_matches_identity_soft_threshold (test_regularization.RegularizationTests.test_l1_fista_matches_identity_soft_threshold) ... ok
+test_tv_prox_preserves_constant_image (test_regularization.RegularizationTests.test_tv_prox_preserves_constant_image) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.119s
+
+OK

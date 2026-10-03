@@ -1,0 +1,13 @@
+{
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\wsh\\Desktop\\Study\\\u6700\u4f18\u5316\u7406\u8bba\u4e0e\u7b97\u6cd5\\Porject1_Assignment_2026\\.conda\\python.exe",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "matplotlib": "3.11.2",
+  "skimage": "0.26.0",
+  "torch": "2.14.0+cu130",
+  "cuda_runtime": "13.0",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "MKL_THREADING_LAYER": "SEQUENTIAL"
+}

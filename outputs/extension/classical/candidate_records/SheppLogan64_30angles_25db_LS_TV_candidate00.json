@@ -1,0 +1,81 @@
+{
+  "metrics": {
+    "dataset": "SheppLogan64",
+    "angle_count": 30,
+    "snr_label_db": 25,
+    "actual_subset_snr_db": 24.95870480882506,
+    "n_rows": 2730,
+    "n_nonzero_rows": 2444,
+    "method": "LS_TV",
+    "candidate_index": 0,
+    "parameter_name": "prox_weight_over_truth_range",
+    "parameter_value": 1e-05,
+    "lambda_normalized": 7.134139160330849e-06,
+    "lambda_raw": 0.019476199907703218,
+    "prior_strength": 1e-05,
+    "iterations": 600,
+    "stop_code": "fixed_iteration_budget",
+    "hit_iteration_budget": true,
+    "seconds": 0.14055799999914598,
+    "objective_normalized_end": 0.02460523388384632,
+    "candidate_array": "candidate_reconstructions/SheppLogan64_30angles_25db_LS_TV_candidate00.npy",
+    "nrmse": 0.6544316379917142,
+    "psnr_db": 15.807154844477862,
+    "ssim": 0.4186661910096281,
+    "relative_residual": 0.024585932630320616
+  },
+  "trace": [
+    {
+      "iteration": 1,
+      "objective": 8288.540842183444
+    },
+    {
+      "iteration": 50,
+      "objective": 87.32099222240903
+    },
+    {
+      "iteration": 100,
+      "objective": 74.67691350875012
+    },
+    {
+      "iteration": 150,
+      "objective": 70.56204695503457
+    },
+    {
+      "iteration": 200,
+      "objective": 68.89302855396429
+    },
+    {
+      "iteration": 250,
+      "objective": 68.10338295808943
+    },
+    {
+      "iteration": 300,
+      "objective": 67.70567929209507
+    },
+    {
+      "iteration": 350,
+      "objective": 67.4971499124245
+    },
+    {
+      "iteration": 400,
+      "objective": 67.36397780602742
+    },
+    {
+      "iteration": 450,
+      "objective": 67.28392086456907
+    },
+    {
+      "iteration": 500,
+      "objective": 67.23236588412658
+    },
+    {
+      "iteration": 550,
+      "objective": 67.19472695958441
+    },
+    {
+      "iteration": 600,
+      "objective": 67.17228850290046
+    }
+  ]
+}
