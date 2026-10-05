@@ -1,3 +1,6 @@
+# 独立结果核验：检查覆盖、重算指标、核对 oracle 选择与种子统计，并恢复两个指定模型。
+# 结构检查不等于数值检查；核验保存的产物不等于重新训练全部模型。
+#
 """Audit saved extension artifacts without rerunning either reconstruction solver.
 
 Default: require the complete 864-candidate/160-selected classical experiment and
@@ -31,7 +34,9 @@ METRICS = ("nrmse", "psnr_db", "ssim", "relative_residual")
 CLASSICAL_METHODS = ("LSQR", "ART_fixed", "LS_L2", "LS_TV", "ART_TV")
 
 
+# 集中保存核验计数、失败证据与缺失条件；部分结果也必须明确报告未完成项。
 class Audit:
+    # 初始化核验计数和证据容器。
     def __init__(self, allow_partial: bool):
         self.allow_partial = allow_partial
         self.errors = []
@@ -40,11 +45,13 @@ class Audit:
         self.counts = {}
         self.model_restorations = []
 
+    # 增加一条核验计数，失败时保存标签与证据，继续收集其余问题。
     def check(self, condition, label: str, detail=None):
         self.checked += 1
         if not condition:
             self.errors.append({"check": label, "detail": detail})
 
+    # 比较实际／预期条件集合，分别记录意外条件和缺失条件。
     def coverage(self, actual: set, expected: set, label: str):
         missing = sorted(expected - actual)
         unexpected = sorted(actual - expected)
@@ -54,15 +61,18 @@ class Audit:
             if not self.allow_partial:
                 self.check(False, label + ": missing conditions", missing)
 
+    # 使用相对和绝对容差比较浮点数，避免把正常舍入误差当成产物损坏。
     def close(self, actual, expected, label, rtol=1e-10, atol=1e-11):
         self.check(bool(np.isclose(float(actual), float(expected), rtol=rtol, atol=atol)),
                    label, {"actual": float(actual), "expected": float(expected)})
 
 
+# 读取 UTF-8 JSON，将参数、指标和轨迹还原成字典／列表。
 def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+# 每行读成字典；CSV 字段仍为字符串，计算前需要转成数值。
 def read_csv(path):
     if not path.exists():
         return []
@@ -70,11 +80,13 @@ def read_csv(path):
         return list(csv.DictReader(handle))
 
 
+# 将条件字段转成统一类型的元组，用作 CSV、JSON 和数组之间的对应标识。
 def key_of(row, fields):
     integers = {"angle_count", "snr_label_db", "seed", "candidate_index"}
     return tuple(int(row[f]) if f in integers else row[f] for f in fields)
 
 
+# 独立实现四项指标，不调用训练时的指标函数，降低同一实现错误被重复验证的风险。
 def independent_metrics(vector, truth, matrix, observation):
     """Compute the documented definitions independently of the training helper."""
     estimate = vector.reshape(truth.shape, order="F")
@@ -90,12 +102,15 @@ def independent_metrics(vector, truth, matrix, observation):
     }
 
 
+# 缓存 A、真值和选角子问题，避免复算多个结果时反复加载大矩阵。
 class DataAccess:
+    # 建立数据集和测量条件的缓存容器。
     def __init__(self):
         self.matrices = {}
         self.truths = {}
         self.cases = {}
 
+    # 按数据集／角度／SNR 取得同一测量子问题，并缓存供指标复算。
     def case(self, name, angles, snr):
         key = (name, angles, snr)
         if key not in self.cases:
@@ -111,6 +126,7 @@ class DataAccess:
         return self.cases[key]
 
 
+# 检查候选与选中记录覆盖、数组指标，以及网格内真值最优候选的选择。
 def audit_classical(audit, output, data, structure_only):
     config = read_json(output / "configuration.json")
     grid = {"LSQR": [0.0], "ART_fixed": [0.0],
@@ -179,6 +195,7 @@ def audit_classical(audit, output, data, structure_only):
                     "classical independent row hash " + str(key))
 
 
+# 核对网络条件／种子覆盖、fixed/oracle 截点、配对初始化和样本标准差。
 def audit_dip(audit, output, data, structure_only):
     manifest = read_json(output / "manifest.json")
     config = manifest["config"]
@@ -273,6 +290,7 @@ def audit_dip(audit, output, data, structure_only):
     return rows
 
 
+# 每个数据集恢复一个指定 fixed 模型，用保存的输入重新前向并对比保存数组。
 def restore_models(audit, output, rows, device):
     if device == "auto":
         device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -289,6 +307,7 @@ def restore_models(audit, output, rows, device):
             continue
         row = rows[key]
         model_path = output / "models" / f"{name}_30angles_30db_DIP_seed0_fixed.pt"
+        # 恢复本项目保存的权重及输入信息，不执行新的训练。
         checkpoint = torch.load(model_path, map_location=device, weights_only=True)
         net = PriorNet().to(device)
         net.load_state_dict(checkpoint["state_dict"])
@@ -304,6 +323,7 @@ def restore_models(audit, output, rows, device):
             train_output = image_vector(net(noise) * checkpoint["scale"]).ravel().cpu().numpy()
             net.eval()
             eval_output = image_vector(net(noise) * checkpoint["scale"]).ravel().cpu().numpy()
+        # 直接比较重新前向与保存数组，不只检查模型文件是否能打开。
         saved = np.load(ROOT / row["reconstruction_path"])
         max_absolute_error = float(np.max(np.abs(eval_output - saved)))
         relative_error = float(np.linalg.norm(eval_output - saved) / np.linalg.norm(saved))
@@ -318,6 +338,7 @@ def restore_models(audit, output, rows, device):
         del net, checkpoint
 
 
+# 命令行入口：解析参数、检查配置，再调用本文件的实验／核验流程。
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--classical-dir", type=Path, default=ROOT / "outputs" / "extension" / "classical")

@@ -1,3 +1,5 @@
+# 基础数值测试：用可手算的小矩阵检查 CSV／NPZ 读取与 ART 更新。
+#
 """Small numerical checks for the data path and ART update."""
 
 import tempfile
@@ -12,7 +14,9 @@ from scipy.sparse.linalg import lsqr
 from run_baselines import cyclic_art, load_matrix, read_sparse_csv
 
 
+# 小矩阵测试让预期解明确，比仅观察重建图像更容易定位错误。
 class BaselineTests(unittest.TestCase):
+    # 模拟下载目录，确认只有压缩矩阵、没有 A.csv 时仍能无损读取。
     def test_published_checkout_loads_npz_without_original_csv(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -27,6 +31,7 @@ class BaselineTests(unittest.TestCase):
             np.testing.assert_array_equal(actual.indices, expected.indices)
             np.testing.assert_array_equal(actual.data, expected.data)
 
+    # 检查 CSV 转 CSR 后零行位置与非零数值不变。
     def test_sparse_csv_keeps_zero_rows_and_values(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "A.csv"
@@ -34,6 +39,7 @@ class BaselineTests(unittest.TestCase):
             matrix = read_sparse_csv(path, 4)
             np.testing.assert_array_equal(matrix.toarray(), [[0, 2, 0, 0], [0, 0, 0, 0], [1, 0, 3, 0]])
 
+    # 单位矩阵解已知；额外零行不能导致除零或破坏正常像素。
     def test_art_recovers_nonnegative_identity_and_skips_zero_row(self):
         matrix = sparse.vstack([sparse.eye(64, format="csr"), sparse.csr_matrix((1, 64))], format="csr")
         truth = np.arange(64, dtype=float).reshape(8, 8)

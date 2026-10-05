@@ -1,3 +1,7 @@
+# 正则化实验：在拟合 Ax≈b 的同时限制图像的大小、稀疏性或相邻像素变化。
+# LS+L2 用阻尼 LSQR；LS+L1/TV 用 FISTA；ART 在每轮结束后施加图像先验。
+# 本实验用已知真值选参数（oracle），不是未知真值时的自动选参方案。
+#
 """Run L2/L1/TV regularization experiments for LS and five-sweep ART."""
 
 from __future__ import annotations
@@ -22,6 +26,8 @@ ART_L2_STRENGTHS = (0.001, 0.01, 0.03, 0.1, 0.3, 1.0)
 METHODS = ("LS_L2", "LS_L1", "LS_TV", "ART_L2", "ART_L1", "ART_TV")
 
 
+# 幂迭代估计 A.T@A 的最大特征值，作为二次误差梯度的步长尺度 L。
+# 返回估计值的 1.05 倍作为余量；这不是对任意矩阵都严格成立的上界证明。
 def spectral_lipschitz(matrix, iterations: int = 80) -> float:
     """Estimate the quadratic gradient Lipschitz constant with a 5% step margin."""
     rng = np.random.default_rng(2026)
@@ -38,16 +44,20 @@ def spectral_lipschitz(matrix, iterations: int = 80) -> float:
     return 1.05 * last
 
 
+# 各向同性 TV（总变差）：把每个像素的水平／垂直差分合成为长度，再求和。
 def tv_isotropic(image: np.ndarray) -> float:
     down = np.zeros_like(image)
     right = np.zeros_like(image)
+    # 前向差分；最后一行／列保持零，相当于不跨越图像边界计算邻域差异。
     down[:-1] = image[1:] - image[:-1]
     right[:, :-1] = image[:, 1:] - image[:, :-1]
     return float(np.hypot(down, right).sum())
 
 
+# 近端算子：在靠近输入向量与减小正则项之间折中；L1 为软阈值，TV 为迭代去噪。
 def proximal(vector: np.ndarray, kind: str, strength: float, shape: tuple[int, int]) -> np.ndarray:
     if kind == "L1":
+        # 软阈值保留符号、缩小绝对值，小于阈值的分量归零，鼓励像素域稀疏。
         return np.sign(vector) * np.maximum(np.abs(vector) - strength, 0.0)
     if kind == "TV":
         image = vector.reshape(shape, order="F")
@@ -56,6 +66,7 @@ def proximal(vector: np.ndarray, kind: str, strength: float, shape: tuple[int, i
     raise ValueError(kind)
 
 
+# 计算 R(x) 的值，用于记录目标函数；真正更新图像的操作在 proximal()。
 def regularizer(vector: np.ndarray, kind: str, shape: tuple[int, int]) -> float:
     if kind == "L1":
         return float(np.abs(vector).sum())
@@ -64,6 +75,8 @@ def regularizer(vector: np.ndarray, kind: str, shape: tuple[int, int]) -> float:
     raise ValueError(kind)
 
 
+# FISTA（快速迭代收缩阈值算法）：梯度步拟合数据，近端步施加先验，动量加速迭代。
+# 输入包括权重 lam、步长尺度 lipschitz 和图像形状；返回重建向量与目标值轨迹。
 def fista(matrix, b: np.ndarray, kind: str, lam: float, lipschitz: float,
           shape: tuple[int, int], iterations: int) -> tuple[np.ndarray, list[dict]]:
     """FISTA for 0.5||Ax-b||^2 + lam*R(x), R=L1 or isotropic TV."""
@@ -76,8 +89,10 @@ def fista(matrix, b: np.ndarray, kind: str, lam: float, lipschitz: float,
     history: list[dict] = []
     for step in range(1, iterations + 1):
         gradient = matrix.T @ (matrix @ y) - at_b
+        # 步长为 1/L；近端权重必须同步取 lam/L，不能只调整梯度步长。
         new_x = proximal(y - gradient / lipschitz, kind, lam / lipschitz, shape)
         new_momentum = (1 + np.sqrt(1 + 4 * momentum * momentum)) / 2
+        # y 是带动量的外推点，x 才是本轮解；加速不保证每轮目标值都单调下降。
         y = new_x + ((momentum - 1) / new_momentum) * (new_x - x)
         x = new_x
         momentum = new_momentum
@@ -88,6 +103,8 @@ def fista(matrix, b: np.ndarray, kind: str, lam: float, lipschitz: float,
     return x, history
 
 
+# 每完整遍历 A 一轮，再施加一次 L2／L1／TV 先验，并保持非负。
+# 这是 ART 与先验组合的启发式流程，不能直接当作精确求解正则化 LS 的算法。
 def art_with_prior(matrix, b: np.ndarray, kind: str, strength: float,
                    shape: tuple[int, int], epochs: int = 5) -> np.ndarray:
     """Cyclic ART with a proximal image prior after each complete sweep."""
@@ -113,6 +130,7 @@ def art_with_prior(matrix, b: np.ndarray, kind: str, strength: float,
     return x
 
 
+# 读取基线与正则化数组，按相同数据集／SNR 和灰度范围绘制对照。
 def write_figures(name: str, truth: np.ndarray, output: Path, selected: list[dict]) -> None:
     os.environ.setdefault("MPLCONFIGDIR", str(output / "matplotlib_config"))
     (output / "matplotlib_config").mkdir(parents=True, exist_ok=True)
@@ -148,6 +166,7 @@ def write_figures(name: str, truth: np.ndarray, output: Path, selected: list[dic
         plt.close(fig)
 
 
+# 逐档噪声、逐种方法遍历候选参数，用真值 NRMSE 选中并保存最优候选。
 def run_dataset(name: str, args: argparse.Namespace) -> None:
     data_dir = ROOT / "Data" / name
     output = args.output_dir / name
@@ -181,6 +200,7 @@ def run_dataset(name: str, args: argparse.Namespace) -> None:
                 lam: float | str = ""
                 if method == "LS_L2":
                     lam = parameter_value
+                    # SciPy 的 damp 在目标中按平方出现，所以 L2 权重 lam 对应 damp=sqrt(lam)。
                     result = lsqr(matrix, b, damp=np.sqrt(lam), atol=1e-6, btol=1e-6,
                                   iter_lim=5000, show=False)
                     x = result[0]
@@ -205,6 +225,7 @@ def run_dataset(name: str, args: argparse.Namespace) -> None:
                        "objective_lambda": lam, "iterations": iterations, "stop_code": stop_code,
                        "seconds": seconds, "objective_end": objective_end, **score}
                 all_rows.append(row)
+                # 使用真值误差选网格最优参数（oracle）；真实未知图像不能直接照搬此选参规则。
                 if best is None or score["nrmse"] < best[0]["nrmse"]:
                     best = (row, x.copy(), trace)
             assert best is not None
@@ -222,6 +243,7 @@ def run_dataset(name: str, args: argparse.Namespace) -> None:
     write_figures(name, truth, output, selected)
 
 
+# 命令行入口：读取参数，检查配置，再调用本文件的实验或核验流程。
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", choices=["all", *DATASETS], default="all")

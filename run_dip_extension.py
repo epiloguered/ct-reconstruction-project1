@@ -1,3 +1,7 @@
+# DIP（深度图像先验）用固定随机输入 z 生成图像；每个观测单独优化网络参数。
+# 训练只使用投影误差及可选 TV，不使用真值损失；fixed 终点与 oracle 诊断分开报告。
+# 建议按 main() -> fit_case() -> PriorNet/SparseProjection 的顺序阅读。
+#
 """Adapted Deep Image Prior for sparse-view CT; no paired training data.
 
 Truth is used only for evaluation and a separately labelled oracle checkpoint.
@@ -27,11 +31,14 @@ DEFAULT_OUTPUT = ROOT / "outputs" / "extension" / "dip"
 VERSION = 2
 
 
+# 将 (1,1,H,W) 图像变成 (H*W,1) 列向量，匹配测量矩阵 A 的像素顺序。
 def image_vector(image: torch.Tensor) -> torch.Tensor:
     """Match the assignment's column-major vectorization without a reshape trap."""
+    # PyTorch 默认按行展开；先转置再连续化，才能匹配 NumPy 的 order="F"。
     return image[0, 0].T.contiguous().reshape(-1, 1)
 
 
+# 把 SciPy CSR 转为指定设备上的 PyTorch CSR，保留稀疏结构进行投影。
 def sparse_tensor(matrix, device: str, dtype=torch.float32):
     matrix = matrix.tocsr()
     return torch.sparse_csr_tensor(
@@ -42,17 +49,21 @@ def sparse_tensor(matrix, device: str, dtype=torch.float32):
     )
 
 
+# 自定义求导：前向做 A@x，反向做 A.T@gradient；只优化图像／网络，不优化 A。
 class SparseProjection(torch.autograd.Function):
+    # 输入 x，返回 A@x，并保存反向所需的 A.T。
     @staticmethod
     def forward(ctx, vector, matrix, transpose):
         ctx.transpose = transpose
         return torch.sparse.mm(matrix, vector)
 
+    # 将投影空间的梯度乘 A.T 传回图像；两个固定矩阵参数不求梯度。
     @staticmethod
     def backward(ctx, gradient):
         return torch.sparse.mm(ctx.transpose, gradient), None, None
 
 
+# 可微平滑 TV（总变差）：差分衡量相邻像素变化，epsilon 避免零差分处的数值问题。
 def mean_tv(image: torch.Tensor, epsilon: float = 1e-6):
     """Smoothed isotropic TV with forward differences and zero boundary flux."""
     down = F.pad(image[:, :, 1:, :] - image[:, :, :-1, :], (0, 0, 0, 1))
@@ -60,9 +71,11 @@ def mean_tv(image: torch.Tensor, epsilon: float = 1e-6):
     return (torch.sqrt(down.square() + right.square() + epsilon**2) - epsilon).mean()
 
 
+# 两组卷积、归一化、激活提取特征；反射填充使卷积前后空间尺寸相同。
 def conv_block(in_channels, out_channels):
     return nn.Sequential(
         nn.Conv2d(in_channels, out_channels, 3, padding=1, padding_mode="reflect"),
+        # 本块的 BN 不保存运行统计，train/eval 均用当前批次统计，便于恢复固定输入。
         nn.BatchNorm2d(out_channels, track_running_stats=False),
         nn.LeakyReLU(0.2),
         nn.Conv2d(out_channels, out_channels, 3, padding=1, padding_mode="reflect"),
@@ -71,8 +84,10 @@ def conv_block(in_channels, out_channels):
     )
 
 
+# 编码器缩小空间尺度，解码器恢复尺度；跳跃连接把细尺度特征送给解码器。
 class PriorNet(nn.Module):
     """Four-scale encoder/decoder, four-channel skips, bilinear upsampling."""
+    # 建立编码器、跳跃连接、解码器和输出层；各层权重将在训练中更新。
     def __init__(self, input_channels=8, channels=(32, 64, 64, 64), skip_channels=4):
         super().__init__()
         self.encoders = nn.ModuleList()
@@ -90,6 +105,7 @@ class PriorNet(nn.Module):
             prev = width
         self.output = nn.Conv2d(channels[0], 1, 1)
 
+    # 输入 (1,8,H,W) 固定噪声，经过多尺度编码／解码，输出 (1,1,H,W) 非负图像。
     def forward(self, noise):
         skips = []
         h = noise
@@ -101,9 +117,11 @@ class PriorNet(nn.Module):
         for decoder, skip in zip(self.decoders, reversed(skips)):
             h = F.interpolate(h, size=skip.shape[-2:], mode="bilinear", align_corners=False)
             h = decoder(torch.cat((h, skip), dim=1))
+        # softplus 平滑地约束输出为正值，不根据 GT 截断图像强度范围。
         return F.softplus(self.output(h))
 
 
+# 固定种子生成网络及随机输入；记录初始化哈希，核对 DIP 与 DIP+TV 公平配对。
 def initialization(seed: int, size: int, device: str):
     torch.manual_seed(seed)
     if device.startswith("cuda"):
@@ -116,6 +134,7 @@ def initialization(seed: int, size: int, device: str):
     return net, noise, digest.hexdigest()
 
 
+# 只根据 A、b 估计图像幅度尺度，不根据真值强度缩放网络输出。
 def observation_scale(matrix, b):
     projected_one = matrix @ np.ones(matrix.shape[1])
     scale = float(np.linalg.norm(b) / np.linalg.norm(projected_one))
@@ -124,6 +143,8 @@ def observation_scale(matrix, b):
     return scale
 
 
+# 一次拟合：固定随机输入 z，优化 θ，使 x=scale*netθ(z) 的投影接近 b。
+# 保存固定终点模型和图像，另保存采样轨迹中真值误差最小的 oracle 图像。
 def fit_case(A, b, truth, method, seed, args, base):
     device = args.device
     net, noise, init_hash = initialization(seed, truth.shape[0], device)
@@ -132,6 +153,7 @@ def fit_case(A, b, truth, method, seed, args, base):
     b_tensor = torch.as_tensor(b, dtype=torch.float32, device=device).reshape(-1, 1)
     energy = b_tensor.square().sum()
     scale = observation_scale(A, b)
+    # 普通 DIP 不加 TV；DIP+TV 按 SNR 预设 beta，噪声更大时约束更强。
     beta = 0.0 if method == "DIP" else 10.0 ** (-base["snr_label_db"] / 10)
     optimizer = torch.optim.Adam(net.parameters(), lr=args.learning_rate)
     best_score = float("inf")
@@ -148,9 +170,11 @@ def fit_case(A, b, truth, method, seed, args, base):
         residual = SparseProjection.apply(image_vector(image), matrix, transpose) - b_tensor
         data_loss = residual.square().sum() / (2 * energy)
         tv_loss = mean_tv(scaled_image)
+        # truth 的评价分数不进入 loss；训练只拟合投影观测并施加图像先验。
         loss = data_loss + beta * tv_loss
         if not torch.isfinite(loss):
             raise FloatingPointError(f"Nonfinite loss in {base}, {method}, {seed}, step {step}")
+        # 先求网络梯度，再由 Adam 更新权重；固定随机输入 noise 不更新。
         loss.backward()
         optimizer.step()
         if step == 1 or step % args.sample_every == 0 or step == args.iterations:
@@ -199,6 +223,7 @@ def fit_case(A, b, truth, method, seed, args, base):
     print(f"[DIP] {key} fixed={records[0]['nrmse']:.6f} oracle={records[1]['nrmse']:.6f}@{best_step} seconds={elapsed:.1f}", flush=True)
 
 
+# 记录网络结构、损失、优化器与预算；它们共同定义实验协议。
 def config(args):
     return {"version": VERSION, "iterations": args.iterations, "sample_every": args.sample_every,
             "learning_rate": args.learning_rate, "device": args.device,
@@ -213,6 +238,7 @@ def config(args):
             "MKL_THREADING_LAYER": os.environ.get("MKL_THREADING_LAYER")}
 
 
+# 记录源码与输入信息，防止不兼容续跑；纯注释修改也会改变源码哈希。
 def fingerprints(args):
     result = {}
     files = [Path(__file__), ROOT / "run_baselines.py", ROOT / "run_sparse_views.py"]
@@ -228,6 +254,7 @@ def fingerprints(args):
     return result
 
 
+# 汇总 fixed/oracle 记录，按相同条件统计全部种子的均值与样本标准差。
 def export_tables(output):
     records, histories = [], []
     for path in sorted((output / "records").glob("*.json")):
@@ -246,6 +273,7 @@ def export_tables(output):
     for key, rows in sorted(groups.items()):
         item = dict(zip(("dataset", "angle_count", "snr_label_db", "method", "checkpoint"), key))
         item["seeds"] = ",".join(str(r["seed"]) for r in rows)
+        # 所有种子纳入汇总；后面的 ddof=1 使用分母 N-1，得到样本标准差。
         item["n_seeds"] = len(rows)
         for metric in ("nrmse", "psnr_db", "ssim", "relative_residual", "runtime_seconds", "iteration"):
             values = [r[metric] for r in rows]
@@ -257,6 +285,7 @@ def export_tables(output):
     return records, aggregated, histories
 
 
+# 固定 seed 0 展示图像，不按最佳种子挑图；误差轨迹包含全部种子。
 def plot_results(args, records, aggregate, histories):
     os.environ.setdefault("MPLCONFIGDIR", str(args.output_dir / "matplotlib_config"))
     import matplotlib
@@ -300,6 +329,7 @@ def plot_results(args, records, aggregate, histories):
         plt.close(fig)
 
 
+# 命令行入口：解析参数、检查配置，再调用本文件的实验／核验流程。
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--datasets", nargs="+", choices=DATASETS, default=list(DATASETS))
@@ -335,6 +365,7 @@ def main():
     if manifest_path.exists() and read_json(manifest_path)["config"] != run_config:
         raise ValueError("Existing output has a different configuration; use a new --output-dir")
     inputs = fingerprints(args)
+    # 源码注释也改变哈希；修改后用新的输出目录，保留原 manifest 作为历史证据。
     if manifest_path.exists() and read_json(manifest_path).get("fingerprints") != inputs:
         raise ValueError("Source files changed; use a new --output-dir")
     write_json(manifest_path, {"config": run_config, "datasets": args.datasets, "angles": args.angles,

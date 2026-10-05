@@ -1,3 +1,7 @@
+# 传统方法的稀疏角度扩展：保留较少角度的完整投影行块，并比较五种重建方法。
+# 核心数据流：select_angles() 生成子问题 -> run_dataset() 跑参数候选 -> export_tables() 汇总。
+# 这里减少的是投影角度数，没有直接模拟真实 CT 的辐射剂量或光子计数。
+#
 """Reproducible sparse-angle classical CT extension, including oracle grids.
 
 Regularized LS uses (1/(2*m))*||Ax-b||^2 + lambda_normalized*R(x).
@@ -31,6 +35,8 @@ EXTENDED_TV_FRACTIONS = (*TV_FRACTIONS, 0.03, 0.1)
 EXPERIMENT_VERSION = 2
 
 
+# 输入完整 A、b 和保留角度数；返回子矩阵、子观测、角度编号、原矩阵行编号。
+# 一角对应连续多条探测器测量，必须整块保留；A 和 b 必须使用同一组 row_ids。
 def select_angles(matrix, b: np.ndarray, angle_count: int, total_angles: int = 90):
     """Keep complete detector blocks: PPT one-based row i+(j-1)*N_lines."""
     if not isinstance(angle_count, (int, np.integer)) or not 1 <= angle_count <= total_angles:
@@ -41,15 +47,20 @@ def select_angles(matrix, b: np.ndarray, angle_count: int, total_angles: int = 9
     if b.size != matrix.shape[0]:
         raise ValueError("b length must match A rows")
     n_lines = matrix.shape[0] // total_angles
+    # 从 0 到 89 均匀抽取角度编号；例如 15 角保留 0,6,...,84，并非只保留前 15 角。
     angle_ids = np.floor(np.arange(angle_count) * total_angles / angle_count).astype(np.int64)
+    # [:, None] 增加一维，通过广播把每个角度展开成它的全部探测器行号。
     row_ids = (angle_ids[:, None] * n_lines + np.arange(n_lines)).reshape(-1)
+    # 只减少测量行、不减少图像像素列；b 使用相同 row_ids 保持物理对应。
     return matrix[row_ids, :].tocsr(), b[row_ids], angle_ids, row_ids
 
 
+# 读取 UTF-8 JSON：保存的参数、指标和轨迹会还原成 Python 字典／列表。
 def read_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+# 先写临时文件，再替换目标文件，降低中断时留下半份 JSON 的风险。
 def write_json(path: Path, value) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_suffix(path.suffix + ".tmp")
@@ -57,10 +68,12 @@ def write_json(path: Path, value) -> None:
     temp_path.replace(path)
 
 
+# 用数据集、角度、SNR、方法和候选序号生成文件标识，防止不同条件互相覆盖。
 def artifact_key(name: str, angle_count: int, snr: int, method: str, index: int) -> str:
     return f"{name}_{angle_count}angles_{snr}db_{method}_candidate{index:02d}"
 
 
+# 记录算法预算、参数网格、图像展开和 oracle 规则，供复现与续跑检查。
 def configuration(args) -> dict:
     return {
         "version": EXPERIMENT_VERSION, "total_angles": 90,
@@ -84,6 +97,7 @@ def configuration(args) -> dict:
     }
 
 
+# 记录实际输入文件及源码指纹；续跑前比较，避免把不同版本结果混成一组。
 def resume_fingerprints() -> dict:
     """Protect resumed candidate files against changed solver code or input data."""
     fingerprints = {}
@@ -101,6 +115,7 @@ def resume_fingerprints() -> dict:
     return fingerprints
 
 
+# 从逐候选／选中 JSON 汇总 CSV；历史原始目标值除以测量数后另列归一化值。
 def export_tables(output: Path) -> tuple[list[dict], list[dict]]:
     all_rows = []
     selected_rows = []
@@ -126,6 +141,7 @@ def export_tables(output: Path) -> tuple[list[dict], list[dict]]:
     return all_rows, selected_rows
 
 
+# 遍历角度、SNR、方法和参数候选；保存每个候选，再按真值 NRMSE 选中。
 def run_dataset(name: str, args) -> None:
     output = args.output_dir
     source_dir = ROOT / "Data" / name
@@ -175,6 +191,7 @@ def run_dataset(name: str, args) -> None:
                     key = artifact_key(name, angle_count, snr, method, index)
                     record_path = output / "candidate_records" / f"{key}.json"
                     array_path = output / "candidate_reconstructions" / f"{key}.npy"
+                    # 候选 JSON 与数组都存在才可复用；配置和输入指纹在 main() 中先检查。
                     if args.resume and record_path.exists() and array_path.exists():
                         candidate_records.append(read_json(record_path)["metrics"])
                         continue
@@ -192,6 +209,7 @@ def run_dataset(name: str, args) -> None:
                         _, x, _, trace, _ = cyclic_art(A, b, truth, 5, 1.0, 5)
                         iterations, stop_code, hit_cap = 5, "fixed_epochs", False
                     elif method == "LS_L2":
+                        # 归一化目标的数据项除以 m；转为原始求解器目标时，正则权重要乘 m。
                         lam_normalized, lam_raw = value, value * m
                         result = lsqr(A, b, damp=np.sqrt(lam_raw), atol=1e-6, btol=1e-6,
                                       iter_lim=5000, show=False)
@@ -243,6 +261,7 @@ def run_dataset(name: str, args) -> None:
                       f"NRMSE={best['nrmse']:.6f} SSIM={best['ssim']:.6f} it={best['iterations']} stop={best['stop_code']}", flush=True)
 
 
+# 读取选中数组，画稀疏角度图像及指标对照；不重新求解 Ax≈b。
 def plot_figures(output: Path, selected: list[dict]) -> None:
     os.environ.setdefault("MPLCONFIGDIR", str(output / "matplotlib_config"))
     import matplotlib
@@ -290,6 +309,7 @@ def plot_figures(output: Path, selected: list[dict]) -> None:
         plt.close(fig)
 
 
+# 命令行入口：读取参数，检查配置，再调用本文件的实验或核验流程。
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", choices=["all", *DATASETS], default="all")

@@ -1,3 +1,6 @@
+# 汇总展示入口：只读取保存的 CSV 和数组，生成共同条件的主表与对比图，不重新重建。
+# 误差棒为三种子的样本标准差（分母 N-1），不是置信区间。
+#
 """Compare saved classical oracle results with three-seed fixed DIP endpoints."""
 import os
 import csv
@@ -6,16 +9,19 @@ import numpy as np
 from run_baselines import ROOT
 
 
+# 每行读成字典；CSV 字段仍为字符串，计算前需要转成数值。
 def read_csv(path):
     with path.open(encoding="utf-8-sig", newline="") as handle:
         return list(csv.DictReader(handle))
 
 
+# 只比较相同数据集／角度／SNR 条件，生成主结果及 oracle 截点诊断表。
 def write_tables(output, classical, neural, individual):
     cases = [(name, angles, snr) for name in ("SheppLogan64", "XCAT128")
              for angles in (30, 15) for snr in (20, 30)]
     c = {(r["dataset"], int(r["angle_count"]), int(r["snr_label_db"]), r["method"]): r for r in classical}
     n = {(r["dataset"], int(r["angle_count"]), int(r["snr_label_db"]), r["method"], r["checkpoint"]): r for r in neural}
+    # 将均值和样本标准差排成文本；± 不代表置信区间。
     def summary(row, metric):
         return f"{float(row[metric+'_mean']):.4f} ± {float(row[metric+'_std']):.4f}"
     lines = ["## 9. DIP 与 DIP+TV 扩展结果", "",
@@ -27,6 +33,7 @@ def write_tables(output, classical, neural, individual):
     for name,a,s in cases:
         tv = float(c[(name,a,s,"LS_TV")]["nrmse"])
         ai = float(n[(name,a,s,"DIP_TV","fixed")]["nrmse_mean"])
+        # NRMSE 越小越好；百分比为正表示 DIP+TV 误差更低，为负表示更高。
         pct = 100*(tv-ai)/tv
         improvements.append({"dataset":name,"angle_count":a,"snr_label_db":s,"percent":pct})
         lines.append(f"| {name} | {a} | {s} dB | {tv:.4f} | {float(c[(name,a,s,'ART_TV')]['nrmse']):.4f} | {summary(n[(name,a,s,'DIP','fixed')],'nrmse')} | {summary(n[(name,a,s,'DIP_TV','fixed')],'nrmse')} | {pct:+.1f}% |")
@@ -63,6 +70,7 @@ def write_tables(output, classical, neural, individual):
     (output / "comparison_summary.json").write_text(json.dumps({"DIP_TV_percent_nrmse_reduction_vs_LS_TV":improvements,"fit_seconds_total":sum(elapsed),"oracle_at_budget_counts":counts},indent=2),encoding="utf-8")
 
 
+# 命令行入口：解析参数、检查配置，再调用本文件的实验／核验流程。
 def main():
     output = ROOT / "outputs" / "extension" / "summary"
     output.mkdir(parents=True, exist_ok=True)
@@ -73,6 +81,7 @@ def main():
     classical = read_csv(ROOT / "outputs" / "extension" / "classical" / "selected_metrics.csv")
     neural = read_csv(ROOT / "outputs" / "extension" / "dip" / "aggregate_metrics.csv")
     individual = read_csv(ROOT / "outputs" / "extension" / "dip" / "individual_metrics.csv")
+    # 先确认完整三种子汇总，避免将尚未完成的部分实验画成最终结果。
     if len(neural) != 32 or any(int(r["n_seeds"]) != 3 for r in neural):
         raise ValueError("The full three-seed experiment must be complete before plotting")
     write_tables(output, classical, neural, individual)

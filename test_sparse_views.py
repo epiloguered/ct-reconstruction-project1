@@ -1,3 +1,5 @@
+# 选角与保存结果测试：小矩阵检查几何对应，正式数组检查指标与 oracle 选参。
+#
 """Angle geometry and saved classical experiment reproducibility checks."""
 from __future__ import annotations
 
@@ -11,7 +13,9 @@ from run_baselines import DATASETS, ROOT, image_metrics, load_matrix
 from run_sparse_views import ANGLES, DEFAULT_OUTPUT, METHODS, select_angles
 
 
+# 用明确的行编号检查选角，避免依赖肉眼看图来判断 A、b 是否对齐。
 class AngleSelectionTests(unittest.TestCase):
+    # 检查完整探测器行块和 b 对应关系，选中的全零行也必须保留。
     def test_complete_uniform_angle_blocks_and_observation_alignment(self):
         n_lines = 3
         matrix = sparse.csr_matrix(np.arange(90*n_lines*4).reshape(90*n_lines, 4))
@@ -28,6 +32,7 @@ class AngleSelectionTests(unittest.TestCase):
         self.assertEqual(sub.shape, (45, 4))
         self.assertEqual(sub[3].nnz, 0)
 
+    # 90 角原样返回；越界角度、不完整行块及错误 b 长度应报错。
     def test_full_view_is_identical_and_invalid_inputs_rejected(self):
         matrix = sparse.eye(180, format="csr")
         b = np.arange(180)
@@ -43,6 +48,7 @@ class AngleSelectionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             select_angles(matrix, b[:-1], 15)
 
+    # 按列展开并还原真值，图像误差应为零，SSIM 应为 1。
     def test_column_major_truth_roundtrip(self):
         truth = np.arange(64, dtype=float).reshape((8, 8))
         matrix = sparse.eye(64, format="csr")
@@ -53,7 +59,9 @@ class AngleSelectionTests(unittest.TestCase):
         self.assertEqual(scores["ssim"], 1)
 
 
+# 核验保存的正式传统扩展产物，不重新求解全部参数候选。
 class SavedExperimentTests(unittest.TestCase):
+    # 重算选中图像指标，并确认它是同条件网格中 NRMSE 最小的候选。
     def test_all_saved_selected_metrics_and_oracle_choices(self):
         records = sorted((DEFAULT_OUTPUT / "selected_records").glob("*.json"))
         self.assertEqual(len(records), len(DATASETS)*len(ANGLES)*4*len(METHODS))

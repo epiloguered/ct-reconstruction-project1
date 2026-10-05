@@ -1,3 +1,7 @@
+# 基础实验入口：加载 A 和带噪 b，分别用 LSQR 与 ART 求图像 x，再保存指标和图像。
+# 建议先读 main() -> run_dataset()，再读 load_matrix()、image_metrics() 和 cyclic_art()。
+# A 的形状是 (测量数 m, 像素数 n)，x 是长度 n 的向量，b 是长度 m 的观测。
+#
 """Run reproducible LSQR and cyclic ART baselines for Project 1."""
 
 from __future__ import annotations
@@ -19,6 +23,8 @@ DATASETS = {"SheppLogan64": 64, "XCAT128": 128}
 NOISE_LEVELS = (15, 20, 25, 30)
 
 
+# 逐行读取稠密 CSV，只收集非零项，避免一次分配巨大的稠密矩阵。
+# CSR（压缩稀疏行）用 indptr 划分行，用 indices 记录列号，用 data 记录对应数值。
 def read_sparse_csv(path: Path, ncols: int) -> sparse.csr_matrix:
     """Stream a dense CSV into CSR without allocating its full dense matrix."""
     indices_parts: list[np.ndarray] = []
@@ -32,6 +38,7 @@ def read_sparse_csv(path: Path, ncols: int) -> sparse.csr_matrix:
             nonzero = np.flatnonzero(row)
             indices_parts.append(nonzero.astype(np.int32, copy=False))
             values_parts.append(row[nonzero])
+            # indptr 记录每行非零项的累计个数；全零行也追加一个位置，因此不会丢行。
             indptr.append(indptr[-1] + nonzero.size)
     if len(indptr) == 1:
         raise ValueError(f"Empty matrix: {path}")
@@ -45,6 +52,7 @@ def read_sparse_csv(path: Path, ncols: int) -> sparse.csr_matrix:
     return matrix
 
 
+# 选择数据源：本地优先原 CSV；GitHub 下载版使用无损压缩的 CSR NPZ。
 def matrix_source(name: str) -> Path:
     """Prefer original CSV locally; published checkouts use lossless CSR NPZ."""
     directory = ROOT / "Data" / name
@@ -55,6 +63,7 @@ def matrix_source(name: str) -> Path:
     raise FileNotFoundError(f"No A.csv or A_csr.npz in {directory}")
 
 
+# 返回 CSR 格式的 A。CSV 转换结果可缓存；NPZ 可直接读，二者行列约定相同。
 def load_matrix(name: str, cache_dir: Path, force: bool = False) -> sparse.csr_matrix:
     source = matrix_source(name)
     ncols = DATASETS[name] ** 2
@@ -82,8 +91,11 @@ def load_matrix(name: str, cache_dir: Path, force: bool = False) -> sparse.csr_m
     return matrix
 
 
+# 输入 x、二维真值、A、b，返回四项指标；不修改重建结果。
+# NRMSE 是相对图像误差（越小越好），PSNR／SSIM 越大通常越好；投影残差小不保证图像好。
 def image_metrics(x: np.ndarray, truth: np.ndarray, matrix: sparse.csr_matrix, b: np.ndarray) -> dict:
     size = truth.shape[0]
+    # F 表示按列还原。A 的列按这个顺序排列，默认的按行 reshape 会把像素放错位置。
     estimate = x.reshape((size, size), order="F")
     difference = estimate - truth
     mse = float(np.mean(difference**2))
@@ -96,6 +108,8 @@ def image_metrics(x: np.ndarray, truth: np.ndarray, matrix: sparse.csr_matrix, b
     }
 
 
+# ART（代数重建技术）：按顺序用每条测量纠正 x，并把负像素截为零。
+# 返回最后一轮、预定轮、真值误差最佳轮的图像，以及逐轮记录和最佳轮号。
 def cyclic_art(
     matrix: sparse.csr_matrix,
     b: np.ndarray,
@@ -112,6 +126,7 @@ def cyclic_art(
     x = np.zeros(matrix.shape[1], dtype=np.float64)
     indptr, indices, values = matrix.indptr, matrix.indices, matrix.data
     squared_norms = np.asarray(matrix.multiply(matrix).sum(axis=1)).ravel()
+    # 零行的 ||a_i||²=0，不能用于 ART 更新；它对应的噪声观测仍保留在残差评价中。
     valid_rows = np.flatnonzero(squared_norms > 0)
     history: list[dict] = []
     best_x = x.copy()
@@ -124,13 +139,16 @@ def cyclic_art(
             start, stop = indptr[i], indptr[i + 1]
             cols = indices[start:stop]
             row = values[start:stop]
+            # Kaczmarz 更新：x <- x + relaxation*(b_i-a_i·x)/||a_i||² * a_i。
             correction = relaxation * (b[i] - np.dot(row, x[cols])) / squared_norms[i]
+            # 只访问本行非零列；maximum(0,...) 是非负投影，负的像素强度被截为零。
             x[cols] = np.maximum(0.0, x[cols] + correction * row)
         score = image_metrics(x, truth, matrix, b)
         record = {"epoch": epoch, **score, "epoch_seconds": time.perf_counter() - started}
         history.append(record)
         if epoch == fixed_epoch:
             fixed_x = x.copy()
+        # best 是借助 GT（ground truth，真值）挑选的诊断结果；fixed 才是预定轮次。
         if score["nrmse"] < best_nrmse:
             best_nrmse = score["nrmse"]
             best_epoch = epoch
@@ -138,6 +156,7 @@ def cyclic_art(
     return x, fixed_x, best_x, history, best_epoch
 
 
+# 将字典列表写成带表头的 CSV；空列表不写入，避免没有字段时生成无效表格。
 def save_csv(path: Path, rows: list[dict]) -> None:
     if not rows:
         return
@@ -148,6 +167,7 @@ def save_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
+# 从保存的数组绘图；同一数据集使用相同灰度范围，避免显示尺度制造优势。
 def save_figures(name: str, truth: np.ndarray, out_dir: Path, rows: list[dict], histories: dict[int, list[dict]]) -> None:
     # Matplotlib's cache must stay in the writable project workspace.
     os.environ.setdefault("MPLCONFIGDIR", str(out_dir / "matplotlib_config"))
@@ -190,6 +210,7 @@ def save_figures(name: str, truth: np.ndarray, out_dir: Path, rows: list[dict], 
     plt.close(fig)
 
 
+# 一个数据集的完整流程：检查形状 -> 遍历四档 SNR -> 求 LSQR/ART -> 保存结果。
 def run_dataset(name: str, args: argparse.Namespace) -> None:
     dataset_dir = ROOT / "Data" / name
     out_dir = args.output_dir / name
@@ -210,9 +231,11 @@ def run_dataset(name: str, args: argparse.Namespace) -> None:
         b = np.loadtxt(dataset_dir / f"b_hat_{snr}db.csv", delimiter=",", dtype=np.float64).reshape(-1)
         if b.size != matrix.shape[0]:
             raise ValueError(f"Unexpected b length for {name} {snr} dB")
+        # SNR=20*log10(||干净投影||/||噪声||)；同一信号下 dB 越大，噪声相对越小。
         actual_snr = float(20 * np.log10(np.linalg.norm(clean_projection) / np.linalg.norm(b - clean_projection)))
 
         started = time.perf_counter()
+        # LSQR 迭代求 min ||Ax-b||²，避免显式求逆或构造巨大 A.T@A；不强制像素非负。
         ls_result = lsqr(matrix, b, atol=args.lsqr_tolerance, btol=args.lsqr_tolerance,
                          iter_lim=args.lsqr_limit, show=False)
         ls_seconds = time.perf_counter() - started
@@ -248,6 +271,7 @@ def run_dataset(name: str, args: argparse.Namespace) -> None:
     save_figures(name, truth, out_dir, results, histories)
 
 
+# 命令行入口：读取参数，检查配置，再调用本文件的实验或核验流程。
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", choices=["all", *DATASETS], default="all")
