@@ -1,0 +1,62 @@
+[
+  {
+    "rho": 0.003,
+    "sigma": 0.01,
+    "seconds": 2.3224742999955197,
+    "nrmse": 0.24409243145109932,
+    "psnr_db": 24.3733543104817,
+    "ssim": 0.727984714528209,
+    "relative_residual": 0.02174679595709796,
+    "last": {
+      "iteration": 20,
+      "primal_relative": 0.011788346527261552,
+      "dual_relative": 2.080363679185243e-05,
+      "cg_not_converged_count": 0
+    }
+  },
+  {
+    "rho": 0.003,
+    "sigma": 0.03,
+    "seconds": 1.7598433999955887,
+    "nrmse": 0.1895905190836148,
+    "psnr_db": 26.56810826779663,
+    "ssim": 0.8169825336987421,
+    "relative_residual": 0.022755049487285222,
+    "last": {
+      "iteration": 20,
+      "primal_relative": 0.014051724884172013,
+      "dual_relative": 2.3280184987202555e-05,
+      "cg_not_converged_count": 0
+    }
+  },
+  {
+    "rho": 0.03,
+    "sigma": 0.03,
+    "seconds": 1.6193754999985686,
+    "nrmse": 0.14643291063934794,
+    "psnr_db": 28.811666682298636,
+    "ssim": 0.9328658525307116,
+    "relative_residual": 0.025315544998513375,
+    "last": {
+      "iteration": 20,
+      "primal_relative": 0.004615398186658469,
+      "dual_relative": 0.00015009692303857638,
+      "cg_not_converged_count": 0
+    }
+  },
+  {
+    "rho": 0.3,
+    "sigma": 0.03,
+    "seconds": 1.7421189000015147,
+    "nrmse": 0.21722013827795206,
+    "psnr_db": 25.38643886406041,
+    "ssim": 0.9000810654255956,
+    "relative_residual": 0.04071082360692231,
+    "last": {
+      "iteration": 20,
+      "primal_relative": 0.005579614764932937,
+      "dual_relative": 0.0017680595878198726,
+      "cg_not_converged_count": 0
+    }
+  }
+]

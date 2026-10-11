@@ -1,0 +1,91 @@
+{
+  "phase": "classical",
+  "angles": [
+    90,
+    30,
+    15
+  ],
+  "snrs": [
+    20,
+    30
+  ],
+  "iterations": 6000,
+  "refine_iterations": 6000,
+  "fractions": [
+    1e-05,
+    3e-05,
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "tgv_ratios": [
+    0.5,
+    1,
+    2
+  ],
+  "source_sha256": "7e60c8490559d081b032c2fd7416cc47041bcd646586d3d167aded38052c60e4",
+  "dependencies": {
+    "run_baselines.py": "cfb8c91132f61a6d1d1e4b875acffa3616e5c14e963466dde28efa672adacb0c",
+    "run_regularization.py": "6983bb2294ba5fe1c318aed9c5b99c7214d40230787ad813fd76c9e706889ec5",
+    "run_sparse_views.py": "f948a5d3b9a3eeb38c756240195c1695f6cfe616671e70e198ebc3dfddf49efa",
+    "run_dip_extension.py": "5e277c5d2b41f5c776f9525040f496f09ca9e8b8d58519588c4e3d0ecad950c5"
+  },
+  "inputs": {
+    "Data\\SheppLogan64\\A.csv": {
+      "size": 74225046,
+      "mtime_ns": 1790578818022915700
+    },
+    "Data\\SheppLogan64\\gt.csv": {
+      "size": 17304,
+      "mtime_ns": 1790578818053916300,
+      "sha256": "1283491ae674b609aa8d504ffca7f59a6d6d9055acaaa593fa3e3aca0955ca4e"
+    },
+    "Data\\SheppLogan64\\b_hat_20db.csv": {
+      "size": 151620,
+      "mtime_ns": 1790578818038916200,
+      "sha256": "ba8cd7f4d85fffb38e872faba35ae9360ce72898dc1c64e04d51bd2cb18a015f"
+    },
+    "Data\\SheppLogan64\\b_hat_30db.csv": {
+      "size": 153091,
+      "mtime_ns": 1790578818049918000,
+      "sha256": "d5be4fd5fe3e652a62a8c0935217f71957eb76ee61d5fcf9bd89192fe09ac476"
+    },
+    "Data\\XCAT128\\A.csv": {
+      "size": 562274258,
+      "mtime_ns": 1790578819559132800
+    },
+    "Data\\XCAT128\\gt.csv": {
+      "size": 121986,
+      "mtime_ns": 1790578819591132700,
+      "sha256": "8316c32ec194306c7a197b68de8b549ed487412a5b012325009c9fee790228ba"
+    },
+    "Data\\XCAT128\\b_hat_20db.csv": {
+      "size": 316837,
+      "mtime_ns": 1790578819573130700,
+      "sha256": "6ecca1fde94fa49e82376e6aaaacb15115ccc17c56b886d97da580412745af13"
+    },
+    "Data\\XCAT128\\b_hat_30db.csv": {
+      "size": 320251,
+      "mtime_ns": 1790578819586130600,
+      "sha256": "58b2bcaa6016b4a57166f45971f84987d6d633693fc74b48313b60be68c989d9"
+    }
+  },
+  "neural_protocol": {
+    "iterations": 2000,
+    "sample_every": 50,
+    "learning_rate": 0.001,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "validation_angle_indices": "arange(2,angle_count,5)",
+    "GT_for_training_or_checkpoint": false,
+    "checkpoint_selection": "minimum heldout relative projection MSE, earliest on tie",
+    "no_full_data_refit": true
+  }
+}

@@ -1,0 +1,1314 @@
+{
+  "selected": {
+    "dataset": "XCAT128",
+    "angle_count": 15,
+    "snr_label_db": 30,
+    "method": "TV_nonnegative",
+    "fraction": 0.001,
+    "tgv_ratio": 0.0,
+    "lambda_raw": 0.060189471980502326,
+    "iterations": 6000,
+    "seconds": 1.9034298999977182,
+    "selection": "oracle minimum GT NRMSE",
+    "nonnegative": true,
+    "nrmse": 0.1770504458211801,
+    "psnr_db": 25.315872816484042,
+    "ssim": 0.8638170104221692,
+    "relative_residual": 0.02761113939673963,
+    "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.001_r0.npy",
+    "history": [
+      {
+        "iteration": 1,
+        "objective_scaled": 83.51070361059723
+      },
+      {
+        "iteration": 250,
+        "objective_scaled": 0.6717877751838652
+      },
+      {
+        "iteration": 500,
+        "objective_scaled": 0.6683653337944185
+      },
+      {
+        "iteration": 750,
+        "objective_scaled": 0.667951576132311
+      },
+      {
+        "iteration": 1000,
+        "objective_scaled": 0.6678492220233161
+      },
+      {
+        "iteration": 1250,
+        "objective_scaled": 0.6678196397672037
+      },
+      {
+        "iteration": 1500,
+        "objective_scaled": 0.6678082029325163
+      },
+      {
+        "iteration": 1750,
+        "objective_scaled": 0.6678026964823269
+      },
+      {
+        "iteration": 2000,
+        "objective_scaled": 0.6678001535772335
+      },
+      {
+        "iteration": 2250,
+        "objective_scaled": 0.6677987208321503
+      },
+      {
+        "iteration": 2500,
+        "objective_scaled": 0.6677976916628299
+      },
+      {
+        "iteration": 2750,
+        "objective_scaled": 0.6677970591380515
+      },
+      {
+        "iteration": 3000,
+        "objective_scaled": 0.667796683234662
+      },
+      {
+        "iteration": 3250,
+        "objective_scaled": 0.6677963481129343
+      },
+      {
+        "iteration": 3500,
+        "objective_scaled": 0.6677960902120721
+      },
+      {
+        "iteration": 3750,
+        "objective_scaled": 0.6677958428765909
+      },
+      {
+        "iteration": 4000,
+        "objective_scaled": 0.66779563582549
+      },
+      {
+        "iteration": 4250,
+        "objective_scaled": 0.6677954487562086
+      },
+      {
+        "iteration": 4500,
+        "objective_scaled": 0.6677953714719044
+      },
+      {
+        "iteration": 4750,
+        "objective_scaled": 0.6677952670097571
+      },
+      {
+        "iteration": 5000,
+        "objective_scaled": 0.6677951647045179
+      },
+      {
+        "iteration": 5250,
+        "objective_scaled": 0.6677950802264939
+      },
+      {
+        "iteration": 5500,
+        "objective_scaled": 0.6677950167953217
+      },
+      {
+        "iteration": 5750,
+        "objective_scaled": 0.6677949757336509
+      },
+      {
+        "iteration": 6000,
+        "objective_scaled": 0.6677948980101563
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 1e-05,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.0006018947198050233,
+      "iterations": 6000,
+      "seconds": 1.8910601000025054,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.25116934532867324,
+      "psnr_db": 22.278480637780223,
+      "ssim": 0.681503615058163,
+      "relative_residual": 0.02087468992753813,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p1e-05_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 83.20392678608772
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.16875094572558447
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.16379340036836879
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.16214296266141087
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.16125855936768832
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.16071409233826126
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.1603455212691001
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.16007073278605943
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.15985674306883002
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.15968363050013692
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.1595392203945055
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.15941692410647207
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.15931252288958392
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.15922263808231174
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.15914500281558375
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.1590774451520907
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.1590185159078869
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.1589657029760336
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.1589179498703088
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.15887449039836976
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.15883470745020462
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.15879861348081314
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.1587653038379386
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.15873465323969474
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.1587063418661231
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 3e-05,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.0018056841594150696,
+      "iterations": 6000,
+      "seconds": 1.9400610000011511,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.2247109897982089,
+      "psnr_db": 23.2453270557848,
+      "ssim": 0.7110892730303846,
+      "relative_residual": 0.021072261912319132,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p3e-05_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 83.21012429769398
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.18426587226259064
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.17936478394207483
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.17782270068549666
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.17705361208165998
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.17658559640412466
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.17627934223109262
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.17606441659513392
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.17590336753219288
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.17577917601846593
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.17568080031827812
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.17559929875773786
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.1755309027053507
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.17547340314301987
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.17542491554490705
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.17538330308971076
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.17534701293319113
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.17531548798594707
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.1752877717947168
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.17526320847799248
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.17524131841143858
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.1752216585774138
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.175204130355804
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.17518845495470323
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.17517439129502585
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 0.0001,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.006018947198050232,
+      "iterations": 6000,
+      "seconds": 1.933812700000999,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.20373929648053557,
+      "psnr_db": 24.09631726607014,
+      "ssim": 0.7469309043585428,
+      "relative_residual": 0.021482286206303457,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.0001_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 83.23181558831585
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.2326603265253357
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.2275570607259494
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.22595007931352726
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.2252009296922926
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.22478257322085016
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.224521276699351
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.2243455148173279
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.22422400561942235
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.22413951124065565
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.22407890914602105
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.22403445074290362
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.22400082204469499
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.22397514517530398
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.22395527068876164
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.22393958638667577
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.22392702779547163
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.22391693932540346
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.2239087284426327
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.22390198451397242
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.22389646525902424
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.22389188097086637
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.22388806683678014
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.22388487624590406
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.22388220341483145
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 0.0003,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.018056841594150694,
+      "iterations": 6000,
+      "seconds": 1.8775558000052115,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.1876996061770272,
+      "psnr_db": 24.808546081766103,
+      "ssim": 0.7942154955104417,
+      "relative_residual": 0.02278288969956776,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.0003_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 83.29379070437838
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.35054280423186424
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.34552673510587306
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.34427530174391596
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.3438184211766805
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.3436225325174127
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.3435286713570974
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.3434813049394669
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.3434556464023381
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.3434411696706592
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.3434330941878796
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.3434283048255473
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.3434254012585035
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.3434235750329236
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.3434224387775573
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.3434217242733051
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.34342125914983157
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.34342094419421143
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.3434207415950189
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.3434206038425633
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.3434205136144509
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.34342044987086284
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.343420403645997
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.34342037231305506
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.3434203499671585
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 0.001,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.060189471980502326,
+      "iterations": 6000,
+      "seconds": 1.9034298999977182,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.1770504458211801,
+      "psnr_db": 25.315872816484042,
+      "ssim": 0.8638170104221692,
+      "relative_residual": 0.02761113939673963,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.001_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 83.51070361059723
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.6717877751838652
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.6683653337944185
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.667951576132311
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.6678492220233161
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.6678196397672037
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.6678082029325163
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.6678026964823269
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.6678001535772335
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.6677987208321503
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.6677976916628299
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.6677970591380515
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.667796683234662
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.6677963481129343
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.6677960902120721
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.6677958428765909
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.66779563582549
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.6677954487562086
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.6677953714719044
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.6677952670097571
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.6677951647045179
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.6677950802264939
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.6677950167953217
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.6677949757336509
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.6677948980101563
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 0.003,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.18056841594150697,
+      "iterations": 6000,
+      "seconds": 2.0925814999936847,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.19136712956812293,
+      "psnr_db": 24.64046645642233,
+      "ssim": 0.8672221609711395,
+      "relative_residual": 0.03432826101342518,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.003_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 84.13045477122249
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 1.3870320095737216
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 1.3761653116367436
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 1.374851925651126
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 1.3743821762063795
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 1.3741243315816807
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 1.3739651963966986
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 1.3738496792041421
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 1.3737580691510418
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 1.373700158815396
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 1.3736621404732952
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 1.3736313004169243
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 1.3736029652535193
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 1.3735810706416212
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 1.373565401058316
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 1.3735510201312442
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 1.37354039329677
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 1.3735268253667887
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 1.373516700929567
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 1.3735073748238573
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 1.3734999617440984
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 1.3734964285989044
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 1.3734890163728237
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 1.3734844548388407
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 1.3734806798937322
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 0.01,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.6018947198050232,
+      "iterations": 6000,
+      "seconds": 2.130043500001193,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.23025584687209857,
+      "psnr_db": 23.033599969442342,
+      "ssim": 0.824250427934236,
+      "relative_residual": 0.0476635722116133,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.01_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 86.29958383341089
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 3.5020782565807322
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 3.3971610352390957
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 3.380706464952836
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 3.374678017126928
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 3.3716373344632142
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 3.3696798864242634
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 3.368327120125829
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 3.36731126521526
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 3.366544379016293
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 3.3660263594500197
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 3.3655986973060292
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 3.365291365998001
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 3.3650223347138075
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 3.364777451696594
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 3.3645825233257054
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 3.364412761522148
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 3.3642469219527653
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 3.364119864522004
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 3.3639773251399037
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 3.363868437296
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 3.3637511350641116
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 3.3636386064444084
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 3.363536628984372
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 3.3634042077884234
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 0.03,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 1.8056841594150694,
+      "iterations": 6000,
+      "seconds": 1.8862685999993118,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.30416424269678133,
+      "psnr_db": 20.615650161694514,
+      "ssim": 0.6539972632501692,
+      "relative_residual": 0.07624283303759727,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.03_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 92.4970954396635
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 8.744819097930813
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 8.146904474122502
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 7.999390221354696
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 7.932113302350173
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 7.894328439386732
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 7.87167353082034
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 7.85722917174208
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 7.848043144985483
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 7.841975013045118
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 7.836982454222359
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 7.833119742100184
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 7.829439079675796
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 7.825870809635916
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 7.82288162347829
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 7.819880741518082
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 7.817955686058084
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 7.816389358246433
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 7.815023885394668
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 7.813715218383452
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 7.812276983190038
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 7.811053686257648
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 7.810068719320876
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 7.80912579621751
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 7.808212628359685
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_nonnegative",
+      "fraction": 0.1,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 6.018947198050232,
+      "iterations": 6000,
+      "seconds": 1.8996937000047183,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": true,
+      "nrmse": 0.40339385282015244,
+      "psnr_db": 18.163227792598676,
+      "ssim": 0.36672082170184955,
+      "relative_residual": 0.12550739153257942,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\XCAT128_15angles_30db_TV_nonnegative_p0.1_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 114.18838606154759
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 23.003555491295103
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 22.568484220388907
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 21.05918438187848
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 20.33123970411637
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 19.824277348358464
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 19.538637773886418
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 19.369701349068386
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 19.243585983260296
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 19.145063581818633
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 19.067279473469103
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 18.995080176486546
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 18.94193207821429
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 18.898026455525034
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 18.85851178054336
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 18.831061499149037
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 18.805729472274535
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 18.782523426130126
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 18.75657267139172
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 18.732703180957305
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 18.708314767510007
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 18.686561591128626
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 18.67008081321124
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 18.65383605013156
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 18.638823581778166
+        }
+      ]
+    }
+  ],
+  "refinement": {
+    "array": "outputs\\improvements_refined\\classical\\XCAT128_15angles_30db_TV_nonnegative_refined.npy",
+    "total_iterations": 12000,
+    "history": [
+      {
+        "iteration": 1,
+        "objective_scaled": 0.6677948978371593
+      },
+      {
+        "iteration": 250,
+        "objective_scaled": 0.6677948499212354
+      },
+      {
+        "iteration": 500,
+        "objective_scaled": 0.6677948097145083
+      },
+      {
+        "iteration": 750,
+        "objective_scaled": 0.6677947826344139
+      },
+      {
+        "iteration": 1000,
+        "objective_scaled": 0.6677947425298001
+      },
+      {
+        "iteration": 1250,
+        "objective_scaled": 0.6677947153113655
+      },
+      {
+        "iteration": 1500,
+        "objective_scaled": 0.6677946742749024
+      },
+      {
+        "iteration": 1750,
+        "objective_scaled": 0.6677946545726259
+      },
+      {
+        "iteration": 2000,
+        "objective_scaled": 0.6677946299896881
+      },
+      {
+        "iteration": 2250,
+        "objective_scaled": 0.6677946162722613
+      },
+      {
+        "iteration": 2500,
+        "objective_scaled": 0.6677945888280985
+      },
+      {
+        "iteration": 2750,
+        "objective_scaled": 0.6677945710320584
+      },
+      {
+        "iteration": 3000,
+        "objective_scaled": 0.6677945550240473
+      },
+      {
+        "iteration": 3250,
+        "objective_scaled": 0.667794540421154
+      },
+      {
+        "iteration": 3500,
+        "objective_scaled": 0.6677945268682312
+      },
+      {
+        "iteration": 3750,
+        "objective_scaled": 0.6677945142070536
+      },
+      {
+        "iteration": 4000,
+        "objective_scaled": 0.6677944999579513
+      },
+      {
+        "iteration": 4250,
+        "objective_scaled": 0.6677944893639289
+      },
+      {
+        "iteration": 4500,
+        "objective_scaled": 0.667794482764679
+      },
+      {
+        "iteration": 4750,
+        "objective_scaled": 0.6677944651632468
+      },
+      {
+        "iteration": 5000,
+        "objective_scaled": 0.6677944553296099
+      },
+      {
+        "iteration": 5250,
+        "objective_scaled": 0.6677944455205084
+      },
+      {
+        "iteration": 5500,
+        "objective_scaled": 0.6677944370482921
+      },
+      {
+        "iteration": 5750,
+        "objective_scaled": 0.6677944290245355
+      },
+      {
+        "iteration": 6000,
+        "objective_scaled": 0.6677944214191642
+      }
+    ],
+    "nrmse": 0.1770508038040165,
+    "psnr_db": 25.315855254278816,
+    "ssim": 0.863814649878326,
+    "relative_residual": 0.027611109980259157
+  }
+}

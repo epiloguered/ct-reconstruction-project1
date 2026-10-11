@@ -1,0 +1,98 @@
+[
+  {
+    "number": 1,
+    "text": "Christopher C. Paige; Michael A. Saunders. LSQR: An Algorithm for Sparse Linear Equations and Sparse Least Squares. ACM Transactions on Mathematical Software, 8(1):43–71, 1982. https://doi.org/10.1145/355984.355989",
+    "url": "https://doi.org/10.1145/355984.355989",
+    "key": "lsqr1982"
+  },
+  {
+    "number": 2,
+    "text": "Richard Gordon; Robert Bender; Gábor T. Herman. Algebraic reconstruction techniques (ART) for three-dimensional electron microscopy and x-ray photography. Journal of Theoretical Biology, 29(3):471–481, 1970. https://doi.org/10.1016/0022-5193(70)90109-8",
+    "url": "https://doi.org/10.1016/0022-5193(70)90109-8",
+    "key": "art1970"
+  },
+  {
+    "number": 3,
+    "text": "Leonid I. Rudin; Stanley Osher; Emad Fatemi. Nonlinear total variation based noise removal algorithms. Physica D: Nonlinear Phenomena, 60(1–4):259–268, 1992. https://doi.org/10.1016/0167-2789(92)90242-F",
+    "url": "https://doi.org/10.1016/0167-2789(92)90242-F",
+    "key": "rof1992"
+  },
+  {
+    "number": 4,
+    "text": "Amir Beck; Marc Teboulle. A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems. SIAM Journal on Imaging Sciences, 2(1):183–202, 2009. https://doi.org/10.1137/080716542",
+    "url": "https://doi.org/10.1137/080716542",
+    "key": "fista2009"
+  },
+  {
+    "number": 5,
+    "text": "Zhou Wang; Alan C. Bovik. Mean Squared Error: Love It or Leave It? A New Look at Signal Fidelity Measures. IEEE Signal Processing Magazine, 26(1):98–117, 2009. https://doi.org/10.1109/MSP.2008.930649",
+    "url": "https://doi.org/10.1109/MSP.2008.930649",
+    "key": "wang_bovik2009"
+  },
+  {
+    "number": 6,
+    "text": "Zhou Wang; Alan C. Bovik; Hamid R. Sheikh; Eero P. Simoncelli. Image Quality Assessment: From Error Visibility to Structural Similarity. IEEE Transactions on Image Processing, 13(4):600–612, 2004. https://doi.org/10.1109/TIP.2003.819861",
+    "url": "https://doi.org/10.1109/TIP.2003.819861",
+    "key": "ssim2004"
+  },
+  {
+    "number": 7,
+    "text": "Emil Y. Sidky; Chien-Min Kao; Xiaochuan Pan. Accurate image reconstruction from few-views and limited-angle data in divergent-beam CT. Journal of X-Ray Science and Technology, 14(2):119–139, 2006. https://doi.org/10.3233/XST-2006-00155",
+    "url": "https://doi.org/10.3233/XST-2006-00155",
+    "key": "sidky2006"
+  },
+  {
+    "number": 8,
+    "text": "Singanallur V. Venkatakrishnan; Charles A. Bouman; Brendt Wohlberg. Plug-and-Play Priors for Model Based Reconstruction. 2013 IEEE Global Conference on Signal and Information Processing (GlobalSIP):945–948, 2013. https://doi.org/10.1109/GlobalSIP.2013.6737048",
+    "url": "https://doi.org/10.1109/GlobalSIP.2013.6737048",
+    "key": "pnp2013"
+  },
+  {
+    "number": 9,
+    "text": "Kostadin Dabov; Alessandro Foi; Vladimir Katkovnik; Karen Egiazarian. Image Denoising by Sparse 3-D Transform-Domain Collaborative Filtering. IEEE Transactions on Image Processing, 16(8):2080–2095, 2007. https://doi.org/10.1109/TIP.2007.901238",
+    "url": "https://doi.org/10.1109/TIP.2007.901238",
+    "key": "bm3d2007"
+  },
+  {
+    "number": 10,
+    "text": "Dmitry Ulyanov; Andrea Vedaldi; Victor Lempitsky. Deep Image Prior. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR):9446–9454, 2018. https://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html",
+    "url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html",
+    "key": "dip2018"
+  },
+  {
+    "number": 11,
+    "text": "Kristian Bredies; Karl Kunisch; Thomas Pock. Total Generalized Variation. SIAM Journal on Imaging Sciences, 3(3):492–526, 2010. https://doi.org/10.1137/090769521",
+    "url": "https://doi.org/10.1137/090769521",
+    "key": "tgv2010"
+  },
+  {
+    "number": 12,
+    "text": "David L. Donoho. De-Noising by Soft-Thresholding. IEEE Transactions on Information Theory, 41(3):613–627, 1995. https://doi.org/10.1109/18.382009",
+    "url": "https://doi.org/10.1109/18.382009",
+    "key": "donoho1995"
+  },
+  {
+    "number": 13,
+    "text": "Laurent Condat. A Primal–Dual Splitting Method for Convex Optimization Involving Lipschitzian, Proximable and Linear Composite Terms. Journal of Optimization Theory and Applications, 158(2):460–479, 2013. https://doi.org/10.1007/s10957-012-0245-9",
+    "url": "https://doi.org/10.1007/s10957-012-0245-9",
+    "key": "condat2013"
+  },
+  {
+    "number": 14,
+    "text": "scikit-image developers. skimage.metrics API documentation, version 0.26. Official software documentation. https://scikit-image.org/docs/0.26.x/api/skimage.metrics.html (accessed 2026-10-11)",
+    "url": "https://scikit-image.org/docs/0.26.x/api/skimage.metrics.html",
+    "key": "skimage_metrics026"
+  },
+  {
+    "number": 15,
+    "text": "Ymir Mäkinen; Lucio Azzari; Alessandro Foi. bm3d 4.0.3: Python wrapper for BM3D denoising. Official PyPI package description. https://pypi.org/project/bm3d/4.0.3/ (accessed 2026-10-11)",
+    "url": "https://pypi.org/project/bm3d/4.0.3/",
+    "key": "bm3d403"
+  },
+  {
+    "number": 16,
+    "text": "Antonin Chambolle. An Algorithm for Total Variation Minimization and Applications. Journal of Mathematical Imaging and Vision, 20:89–97, 2004. https://doi.org/10.1023/B:JMIV.0000011325.36760.1e",
+    "url": "https://doi.org/10.1023/B:JMIV.0000011325.36760.1e",
+    "key": "chambolle2004"
+  }
+]

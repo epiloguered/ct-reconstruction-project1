@@ -1,0 +1,11 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[pnp] SheppLogan64_30angles_20db selected=0.22462 refined=0.22441 p=0.03 ratio=0.08
+[pnp] SheppLogan64_30angles_30db selected=0.08340 refined=0.08359 p=0.03 ratio=0.03
+[pnp] SheppLogan64_15angles_20db selected=0.31708 refined=0.31516 p=0.03 ratio=0.08
+[pnp] SheppLogan64_15angles_30db selected=0.13510 refined=0.13356 p=0.03 ratio=0.03
+[pnp] SheppLogan64_10angles_20db selected=0.33617 refined=0.34263 p=0.03 ratio=0.08
+[pnp] SheppLogan64_10angles_30db selected=0.17415 refined=0.18288 p=0.03 ratio=0.03
+[pnp] SheppLogan64_6angles_20db selected=0.48761 refined=0.49202 p=0.03 ratio=0.08
+[pnp] SheppLogan64_6angles_30db selected=0.42668 refined=0.42524 p=0.03 ratio=0.08
+[pnp] SheppLogan64_3angles_20db selected=0.67713 refined=0.66987 p=0.03 ratio=0.08
+[pnp] SheppLogan64_3angles_30db selected=0.67192 refined=0.67307 p=0.03 ratio=0.08

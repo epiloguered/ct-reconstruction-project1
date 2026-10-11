@@ -1,0 +1,10 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[cache] XCAT128: shape=(16290, 16384), nnz=1876968
+Traceback (most recent call last):
+  File "C:\Users\wsh\Desktop\Study\���Ż��������㷨\Porject1_Assignment_2026\summarize_min_angles.py", line 242, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\wsh\Desktop\Study\���Ż��������㷨\Porject1_Assignment_2026\summarize_min_angles.py", line 114, in main
+    if errors:raise AssertionError(json.dumps(audit))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {"status": "failed", "assertions": 5228, "unique_arrays": 704, "selected_cases": 76, "candidates": 628, "pnp_replays": [{"dataset": "SheppLogan64", "angles": 10, "method": "pnp_np", "relative_error": 0.0071248716140354966}, {"dataset": "XCAT128", "angles": 15, "method": "pnp", "relative_error": 0.010544860064146736}], "errors": ["complete PnP replay SheppLogan64", "complete PnP replay XCAT128"]}

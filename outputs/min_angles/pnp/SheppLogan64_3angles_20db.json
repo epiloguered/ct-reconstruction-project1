@@ -1,0 +1,828 @@
+{
+  "selected": {
+    "dataset": "SheppLogan64",
+    "angle_count": 3,
+    "snr_label_db": 20,
+    "method": "pnp",
+    "p": 0.03,
+    "ratio": 0.08,
+    "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_05.npy",
+    "nrmse": 0.6771308289625784,
+    "psnr_db": 15.510988837322504,
+    "ssim": 0.3965421093335332,
+    "relative_residual": 0.04878547044025346,
+    "history": [
+      {
+        "iteration": 1,
+        "primal_relative": 0.2607865246238909,
+        "dual_relative": 0.007582978082448443,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 10,
+        "primal_relative": 0.0336351972447642,
+        "dual_relative": 0.0008306369233876461,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 20,
+        "primal_relative": 0.02081017078440637,
+        "dual_relative": 0.000490521741751369,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 30,
+        "primal_relative": 0.019936050434076206,
+        "dual_relative": 0.00046353181605912874,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 40,
+        "primal_relative": 0.016999303102498066,
+        "dual_relative": 0.0003880025345227213,
+        "cg_not_converged_count": 0
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.003,
+      "ratio": 0.01,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_00.npy",
+      "nrmse": 0.7107430108843271,
+      "psnr_db": 15.090188625837605,
+      "ssim": 0.3515949558622892,
+      "relative_residual": 0.04290582145067055,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.0812778007359102,
+          "dual_relative": 9.659632629287226e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.04260587649317194,
+          "dual_relative": 1.5820928096289648e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.033156380880546135,
+          "dual_relative": 1.1375734172041558e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.027471813784559544,
+          "dual_relative": 8.70805484882426e-06,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.023285870233953447,
+          "dual_relative": 8.120999905285415e-06,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.003,
+      "ratio": 0.03,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_01.npy",
+      "nrmse": 0.719713591150447,
+      "psnr_db": 14.981246499922879,
+      "ssim": 0.35311200095454215,
+      "relative_residual": 0.04298710085726463,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.11957669165705546,
+          "dual_relative": 0.0002550777260947104,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.044228143666425794,
+          "dual_relative": 4.414916863006423e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.033889970379920156,
+          "dual_relative": 3.671782321093691e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.027563924099629832,
+          "dual_relative": 2.2988581334145292e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.023661063689813466,
+          "dual_relative": 2.4465724152941584e-05,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.003,
+      "ratio": 0.08,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_02.npy",
+      "nrmse": 0.7141884575615679,
+      "psnr_db": 15.048184040243829,
+      "ssim": 0.3641367269645279,
+      "relative_residual": 0.04429650211134405,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.2707551060610218,
+          "dual_relative": 0.0007441875098194778,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.05635303609016287,
+          "dual_relative": 9.141800191964414e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.04015113134103812,
+          "dual_relative": 6.914395877533458e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.034857738801692045,
+          "dual_relative": 6.045298391038976e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.030553606774346403,
+          "dual_relative": 4.6261688820282514e-05,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.03,
+      "ratio": 0.01,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_03.npy",
+      "nrmse": 0.7078409697570904,
+      "psnr_db": 15.12572666160285,
+      "ssim": 0.35969328535348355,
+      "relative_residual": 0.04179301893124378,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.048013707758230134,
+          "dual_relative": 0.0005204698887389827,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.01181673284067009,
+          "dual_relative": 0.00015379555341096452,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.004603639889999219,
+          "dual_relative": 0.00010794741729238351,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.0021682250306550724,
+          "dual_relative": 8.459145565959774e-05,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.0014899447416433472,
+          "dual_relative": 7.64206553228909e-05,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.03,
+      "ratio": 0.03,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_04.npy",
+      "nrmse": 0.7033583467134655,
+      "psnr_db": 15.180907669054589,
+      "ssim": 0.37081767974670776,
+      "relative_residual": 0.04297970275286908,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.10254867882474482,
+          "dual_relative": 0.0026517223881542284,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.015981252483417436,
+          "dual_relative": 0.00043127033302272234,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.008855829423430871,
+          "dual_relative": 0.0002874268664596833,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.005640470315810157,
+          "dual_relative": 0.0002111351074569672,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.0050279050567726006,
+          "dual_relative": 0.0001712739008227362,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.03,
+      "ratio": 0.08,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_05.npy",
+      "nrmse": 0.6771308289625784,
+      "psnr_db": 15.510988837322504,
+      "ssim": 0.3965421093335332,
+      "relative_residual": 0.04878547044025346,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.2607865246238909,
+          "dual_relative": 0.007582978082448443,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.0336351972447642,
+          "dual_relative": 0.0008306369233876461,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.02081017078440637,
+          "dual_relative": 0.000490521741751369,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.019936050434076206,
+          "dual_relative": 0.00046353181605912874,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.016999303102498066,
+          "dual_relative": 0.0003880025345227213,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.3,
+      "ratio": 0.01,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_06.npy",
+      "nrmse": 0.7005161728594549,
+      "psnr_db": 15.21607725410205,
+      "ssim": 0.38260072267351397,
+      "relative_residual": 0.044155799639172065,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.021510989726888183,
+          "dual_relative": 0.0038480630209163287,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.0027109982754816037,
+          "dual_relative": 0.0018485064557042146,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.002884553926282308,
+          "dual_relative": 0.0019220199330310377,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.0020351622134697402,
+          "dual_relative": 0.0012457702669458955,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.0024258683964113715,
+          "dual_relative": 0.0011066770815672284,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.3,
+      "ratio": 0.03,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_07.npy",
+      "nrmse": 0.6788257985418655,
+      "psnr_db": 15.489273797069693,
+      "ssim": 0.4300349759616425,
+      "relative_residual": 0.06534419125095067,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.09713234881783134,
+          "dual_relative": 0.028478948198959398,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.006934895093258858,
+          "dual_relative": 0.00310619854172216,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.004860220909841517,
+          "dual_relative": 0.0022150111556811956,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.004311041624017351,
+          "dual_relative": 0.0020260524062562313,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.0038214818087331398,
+          "dual_relative": 0.0014373035725622758,
+          "cg_not_converged_count": 0
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 3,
+      "snr_label_db": 20,
+      "method": "pnp",
+      "p": 0.3,
+      "ratio": 0.08,
+      "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_3angles_20db_08.npy",
+      "nrmse": 0.6800088638056391,
+      "psnr_db": 15.474149106484454,
+      "ssim": 0.45003538218203465,
+      "relative_residual": 0.09660652717603024,
+      "history": [
+        {
+          "iteration": 1,
+          "primal_relative": 0.2573734053005834,
+          "dual_relative": 0.07681864157631883,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 10,
+          "primal_relative": 0.01262979193718725,
+          "dual_relative": 0.0030094070446310666,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 20,
+          "primal_relative": 0.011602382166678459,
+          "dual_relative": 0.002906961278472615,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 30,
+          "primal_relative": 0.012287468097540664,
+          "dual_relative": 0.002232442385315921,
+          "cg_not_converged_count": 0
+        },
+        {
+          "iteration": 40,
+          "primal_relative": 0.012508378407988617,
+          "dual_relative": 0.0021742861116851673,
+          "cg_not_converged_count": 0
+        }
+      ]
+    }
+  ],
+  "refined": {
+    "array": "outputs\\min_angles\\pnp\\SheppLogan64_3angles_20db_refined.npy",
+    "nrmse": 0.6698657432402553,
+    "psnr_db": 15.604685207470299,
+    "ssim": 0.42042026109972747,
+    "relative_residual": 0.04846883198422858,
+    "history": [
+      {
+        "iteration": 1,
+        "primal_relative": 0.018327138364538264,
+        "dual_relative": 0.0004544565345038225,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 10,
+        "primal_relative": 0.019448999185674075,
+        "dual_relative": 0.0004588983573621696,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 20,
+        "primal_relative": 0.01849364581261937,
+        "dual_relative": 0.00039818236169460446,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 30,
+        "primal_relative": 0.017576469508034747,
+        "dual_relative": 0.00037608238331438953,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 40,
+        "primal_relative": 0.02033778121829379,
+        "dual_relative": 0.0004406653135341858,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 50,
+        "primal_relative": 0.019563391368168967,
+        "dual_relative": 0.0004415069152999204,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 60,
+        "primal_relative": 0.016133322709773117,
+        "dual_relative": 0.0003335809596154262,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 70,
+        "primal_relative": 0.017337899947494444,
+        "dual_relative": 0.0003382000753138985,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 80,
+        "primal_relative": 0.016931753747474736,
+        "dual_relative": 0.0003417180615096368,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 90,
+        "primal_relative": 0.015370090603992425,
+        "dual_relative": 0.0003309381904205964,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 100,
+        "primal_relative": 0.017514336442037867,
+        "dual_relative": 0.00037679297920780185,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 110,
+        "primal_relative": 0.017900178359823448,
+        "dual_relative": 0.00039053826213843873,
+        "cg_not_converged_count": 0
+      },
+      {
+        "iteration": 120,
+        "primal_relative": 0.01751335337888429,
+        "dual_relative": 0.00040189544885465027,
+        "cg_not_converged_count": 0
+      }
+    ],
+    "total_iterations": 160
+  },
+  "amplitude": 1.0,
+  "L": 196.25239102256538,
+  "angle_ids": [
+    0,
+    30,
+    60
+  ],
+  "row_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    2730,
+    2731,
+    2732,
+    2733,
+    2734,
+    2735,
+    2736,
+    2737,
+    2738,
+    2739,
+    2740,
+    2741,
+    2742,
+    2743,
+    2744,
+    2745,
+    2746,
+    2747,
+    2748,
+    2749,
+    2750,
+    2751,
+    2752,
+    2753,
+    2754,
+    2755,
+    2756,
+    2757,
+    2758,
+    2759,
+    2760,
+    2761,
+    2762,
+    2763,
+    2764,
+    2765,
+    2766,
+    2767,
+    2768,
+    2769,
+    2770,
+    2771,
+    2772,
+    2773,
+    2774,
+    2775,
+    2776,
+    2777,
+    2778,
+    2779,
+    2780,
+    2781,
+    2782,
+    2783,
+    2784,
+    2785,
+    2786,
+    2787,
+    2788,
+    2789,
+    2790,
+    2791,
+    2792,
+    2793,
+    2794,
+    2795,
+    2796,
+    2797,
+    2798,
+    2799,
+    2800,
+    2801,
+    2802,
+    2803,
+    2804,
+    2805,
+    2806,
+    2807,
+    2808,
+    2809,
+    2810,
+    2811,
+    2812,
+    2813,
+    2814,
+    2815,
+    2816,
+    2817,
+    2818,
+    2819,
+    2820,
+    5460,
+    5461,
+    5462,
+    5463,
+    5464,
+    5465,
+    5466,
+    5467,
+    5468,
+    5469,
+    5470,
+    5471,
+    5472,
+    5473,
+    5474,
+    5475,
+    5476,
+    5477,
+    5478,
+    5479,
+    5480,
+    5481,
+    5482,
+    5483,
+    5484,
+    5485,
+    5486,
+    5487,
+    5488,
+    5489,
+    5490,
+    5491,
+    5492,
+    5493,
+    5494,
+    5495,
+    5496,
+    5497,
+    5498,
+    5499,
+    5500,
+    5501,
+    5502,
+    5503,
+    5504,
+    5505,
+    5506,
+    5507,
+    5508,
+    5509,
+    5510,
+    5511,
+    5512,
+    5513,
+    5514,
+    5515,
+    5516,
+    5517,
+    5518,
+    5519,
+    5520,
+    5521,
+    5522,
+    5523,
+    5524,
+    5525,
+    5526,
+    5527,
+    5528,
+    5529,
+    5530,
+    5531,
+    5532,
+    5533,
+    5534,
+    5535,
+    5536,
+    5537,
+    5538,
+    5539,
+    5540,
+    5541,
+    5542,
+    5543,
+    5544,
+    5545,
+    5546,
+    5547,
+    5548,
+    5549,
+    5550
+  ],
+  "actual_subset_snr_db": 20.55996025673046,
+  "seconds": 44.12920250000025,
+  "GT_used_for_scale_and_selection": true,
+  "warm_start": "outputs\\min_angles\\tv\\SheppLogan64_3angles_20db_refined.npy"
+}

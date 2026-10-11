@@ -1,0 +1,25 @@
+{
+  "status": "failed",
+  "assertions": 5228,
+  "unique_arrays": 704,
+  "selected_cases": 76,
+  "candidates": 628,
+  "pnp_replays": [
+    {
+      "dataset": "SheppLogan64",
+      "angles": 10,
+      "method": "pnp_np",
+      "relative_error": 0.0071248716140354966
+    },
+    {
+      "dataset": "XCAT128",
+      "angles": 15,
+      "method": "pnp",
+      "relative_error": 0.010544860064146736
+    }
+  ],
+  "errors": [
+    "complete PnP replay SheppLogan64",
+    "complete PnP replay XCAT128"
+  ]
+}

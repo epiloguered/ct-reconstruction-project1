@@ -1,0 +1,1820 @@
+{
+  "selected": {
+    "dataset": "XCAT128",
+    "angle_count": 3,
+    "snr_label_db": 30,
+    "method": "wave",
+    "p": 3e-06,
+    "ratio": 1.0,
+    "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_01.npy",
+    "nrmse": 0.44400235784041037,
+    "psnr_db": 17.3301077817,
+    "ssim": 0.5254938223810073,
+    "relative_residual": 0.017933167445762045,
+    "history": [
+      {
+        "iteration": 1,
+        "objective_scaled": 73.62832999145641
+      },
+      {
+        "iteration": 250,
+        "objective_scaled": 0.11296922345256384
+      },
+      {
+        "iteration": 500,
+        "objective_scaled": 0.11155469794538742
+      },
+      {
+        "iteration": 750,
+        "objective_scaled": 0.11118031281703643
+      },
+      {
+        "iteration": 1000,
+        "objective_scaled": 0.11101095813585936
+      },
+      {
+        "iteration": 1250,
+        "objective_scaled": 0.1109036830763185
+      },
+      {
+        "iteration": 1500,
+        "objective_scaled": 0.1108249842903148
+      },
+      {
+        "iteration": 1750,
+        "objective_scaled": 0.1107612578363089
+      },
+      {
+        "iteration": 2000,
+        "objective_scaled": 0.1107116094293826
+      },
+      {
+        "iteration": 2250,
+        "objective_scaled": 0.11067580505784769
+      },
+      {
+        "iteration": 2500,
+        "objective_scaled": 0.11064808666343293
+      },
+      {
+        "iteration": 2750,
+        "objective_scaled": 0.11062618271127421
+      },
+      {
+        "iteration": 3000,
+        "objective_scaled": 0.1106075993731304
+      },
+      {
+        "iteration": 3250,
+        "objective_scaled": 0.11059145289057129
+      },
+      {
+        "iteration": 3500,
+        "objective_scaled": 0.11057702361183318
+      },
+      {
+        "iteration": 3750,
+        "objective_scaled": 0.11056404254866069
+      },
+      {
+        "iteration": 4000,
+        "objective_scaled": 0.11055236647593505
+      },
+      {
+        "iteration": 4250,
+        "objective_scaled": 0.11054213826934718
+      },
+      {
+        "iteration": 4500,
+        "objective_scaled": 0.11053287344363971
+      },
+      {
+        "iteration": 4750,
+        "objective_scaled": 0.11052433037270783
+      },
+      {
+        "iteration": 5000,
+        "objective_scaled": 0.11051651876022503
+      },
+      {
+        "iteration": 5250,
+        "objective_scaled": 0.1105096096617511
+      },
+      {
+        "iteration": 5500,
+        "objective_scaled": 0.1105034051651157
+      },
+      {
+        "iteration": 5750,
+        "objective_scaled": 0.11049766782833263
+      },
+      {
+        "iteration": 6000,
+        "objective_scaled": 0.11049232812179652
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 3e-06,
+      "ratio": 0.1,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_00.npy",
+      "nrmse": 0.44414164049182575,
+      "psnr_db": 17.32738346278126,
+      "ssim": 0.5258036909605992,
+      "relative_residual": 0.017932808237982285,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.62778625480023
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.11215544703488982
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.11075966663613157
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.11040687139288131
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.11025666679593037
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.11016381457899926
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.1100963737862108
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.11004209772308343
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.11000035770438152
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.10997045786379041
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.10994712667448259
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.1099284435205827
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.1099127001341838
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.10989910173079279
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.10988667163152264
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.10987522474636309
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.10986474217818279
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.10985505781628081
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.1098464815375739
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.10983856033966714
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.10983142743120097
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.10982508929100443
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.10981920398650373
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.10981407564108076
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.10980942761474252
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 3e-06,
+      "ratio": 1.0,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_01.npy",
+      "nrmse": 0.44400235784041037,
+      "psnr_db": 17.3301077817,
+      "ssim": 0.5254938223810073,
+      "relative_residual": 0.017933167445762045,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.62832999145641
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.11296922345256384
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.11155469794538742
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.11118031281703643
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.11101095813585936
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.1109036830763185
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.1108249842903148
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.1107612578363089
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.1107116094293826
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.11067580505784769
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.11064808666343293
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.11062618271127421
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.1106075993731304
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.11059145289057129
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.11057702361183318
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.11056404254866069
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.11055236647593505
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.11054213826934718
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.11053287344363971
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.11052433037270783
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.11051651876022503
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.1105096096617511
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.1105034051651157
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.11049766782833263
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.11049232812179652
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 3e-06,
+      "ratio": 10.0,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_02.npy",
+      "nrmse": 0.4464960868311614,
+      "psnr_db": 17.281460169676905,
+      "ssim": 0.513844818507822,
+      "relative_residual": 0.017938810461443137,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.6337673580182
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.12026527971595355
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.11826203162454427
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.11755066997224252
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.11716604796819528
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.11691707287788769
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.11674839105029532
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.116621839372549
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.11652494971403145
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.11645086465450427
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.11639504135836835
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.11634959976466544
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.11631046711952064
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.11627651396152001
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.11624642860758758
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.11622029997049821
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.11619666128482475
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.11617564381042322
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.11615723453445644
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.11614036405125278
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.1161252607438724
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.11611146868040349
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.11609856681391398
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.11608658037087408
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.1160753861473503
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 1e-05,
+      "ratio": 0.1,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_03.npy",
+      "nrmse": 0.44430738079897514,
+      "psnr_db": 17.32414275453874,
+      "ssim": 0.5286770658934052,
+      "relative_residual": 0.017934967871613725,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.63125928065097
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.1156702297247305
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.11405486671780178
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.1135435251558709
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.113292148525707
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.11312922756464207
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.11301589786369608
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.11292945016093851
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.11286266325126648
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.11281452544202779
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.11277885961496205
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.11275154664365175
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.11272828783616892
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.11270880949181132
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.11269180231913112
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.1126768647403154
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.11266349335568002
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.1126514112863802
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.11264036374424664
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.11263022555503922
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.11262118349711521
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.11261278961147743
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.11260499349101534
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.11259808463518975
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.11259167620954909
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 1e-05,
+      "ratio": 1.0,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_04.npy",
+      "nrmse": 0.444378460323351,
+      "psnr_db": 17.322753312112628,
+      "ssim": 0.5260572248700807,
+      "relative_residual": 0.01793733479537045,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.63307173617157
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.11817822020774521
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.11642825432186586
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.11584953360713708
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.11556319337731608
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.11538318335538497
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.11526334563229335
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.11517429989386942
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.11510703388392615
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.11505814087438478
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.1150237572932221
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.11499719815884654
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.11497529482793603
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.1149571769475605
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.11494151376048428
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.11492750753524987
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.11491511910580322
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.11490413564284913
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.11489418084719594
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.11488513648784217
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.11487688940214653
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.11486955684003167
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.11486294435740015
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.11485683036776168
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.11485112823210807
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 1e-05,
+      "ratio": 10.0,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_05.npy",
+      "nrmse": 0.45178870348188693,
+      "psnr_db": 17.17910595731951,
+      "ssim": 0.5095235809869337,
+      "relative_residual": 0.0179753096898198,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.65119629137757
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.1385802425515683
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.13552240859827622
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.13457300119562937
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.1340887875814287
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.13378347640384997
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.13357222383951145
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.13341476473092323
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.1332896148652181
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.1331877789892405
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.13310363679111145
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.13303446806130356
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.13297580686739752
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.13292598947294756
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.13288179235520767
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.1328414000836539
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.13280474781878127
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.1327722197294037
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.13274226918156212
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.1327151957623999
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.13268959505179984
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.13266623808276012
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.13264391765114253
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.13262370619608946
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.13260513621506356
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 3.0000000000000004e-05,
+      "ratio": 0.1,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_06.npy",
+      "nrmse": 0.44563548412746967,
+      "psnr_db": 17.29821801721535,
+      "ssim": 0.5317888026463741,
+      "relative_residual": 0.01794560010684025,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.64118221165307
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.1243726765926902
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.1221911012089432
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.12151372031335159
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.12120005870374764
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.12100382254411897
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.1208717951159018
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.12077445931248083
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.12069978426868956
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.12063961957750055
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.12058977524712446
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.12055116152590536
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.12051916867574755
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.12049145129825278
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.12046660076255918
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.12044394797407469
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.12042311948341132
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.12040429813112857
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.1203872124799797
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.1203718425314251
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.12035796611348382
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.12034523223997787
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.12033351190201011
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.12032274304525228
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.1203127059528924
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 3.0000000000000004e-05,
+      "ratio": 1.0,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_07.npy",
+      "nrmse": 0.4463597891376656,
+      "psnr_db": 17.2841120349212,
+      "ssim": 0.530455449770474,
+      "relative_residual": 0.0179595856829196,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.64661957821487
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.1311020542878594
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.12876022235679685
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.12809136361913975
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.12779272201217087
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.1276124006926036
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.12749713147097416
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.1274122828871472
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.12734463138265148
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.12728971769965575
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.12724569234075128
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.12720987425172756
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.12717961680709816
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.12715395718542866
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.12713169084209347
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.12711197783980305
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.12709426691084408
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.12707808001697957
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.1270632889517795
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.12704970391199483
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.12703733497660313
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.12702589541119985
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.12701589336851862
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.12700658112544413
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.1269981353409391
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angle_count": 3,
+      "snr_label_db": 30,
+      "method": "wave",
+      "p": 3.0000000000000004e-05,
+      "ratio": 10.0,
+      "array": "outputs\\min_angles\\wave\\candidates\\XCAT128_3angles_30db_08.npy",
+      "nrmse": 0.4613315955523168,
+      "psnr_db": 16.99754932049011,
+      "ssim": 0.5117299048460507,
+      "relative_residual": 0.018226986701924866,
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 73.7009932438329
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.18483620921667057
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.1811607943636123
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.17986407765291945
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.17919346243997655
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.17878202596546552
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.17849110645595753
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.1782602484157973
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.17807629986505435
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.1779375964265176
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.17781930393116796
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.1777234190062953
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.17765169476263024
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.1775883669467206
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.17753545393524378
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.17748929788161788
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.17744641195228789
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.17740909517202497
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.17737506851271306
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.177344030687328
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.17731754814696535
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.17729133556128684
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.17726743933790964
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.17724531319713144
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.17722461967885172
+        }
+      ]
+    }
+  ],
+  "refined": {
+    "array": "outputs\\min_angles\\wave\\XCAT128_3angles_30db_refined.npy",
+    "nrmse": 0.4443143210613249,
+    "psnr_db": 17.324007078462625,
+    "ssim": 0.5256853532740439,
+    "relative_residual": 0.017932806697341874,
+    "history": [
+      {
+        "iteration": 1,
+        "objective_scaled": 0.11049230752346562
+      },
+      {
+        "iteration": 250,
+        "objective_scaled": 0.11048760935881431
+      },
+      {
+        "iteration": 500,
+        "objective_scaled": 0.11048330465052615
+      },
+      {
+        "iteration": 750,
+        "objective_scaled": 0.11047933891124403
+      },
+      {
+        "iteration": 1000,
+        "objective_scaled": 0.11047569579881504
+      },
+      {
+        "iteration": 1250,
+        "objective_scaled": 0.1104723161989678
+      },
+      {
+        "iteration": 1500,
+        "objective_scaled": 0.11046917637943057
+      },
+      {
+        "iteration": 1750,
+        "objective_scaled": 0.11046624957848004
+      },
+      {
+        "iteration": 2000,
+        "objective_scaled": 0.11046350548601234
+      },
+      {
+        "iteration": 2250,
+        "objective_scaled": 0.11046092038515898
+      },
+      {
+        "iteration": 2500,
+        "objective_scaled": 0.11045850643939759
+      },
+      {
+        "iteration": 2750,
+        "objective_scaled": 0.1104562351272021
+      },
+      {
+        "iteration": 3000,
+        "objective_scaled": 0.11045408004682773
+      },
+      {
+        "iteration": 3250,
+        "objective_scaled": 0.11045204125110882
+      },
+      {
+        "iteration": 3500,
+        "objective_scaled": 0.11045011440554117
+      },
+      {
+        "iteration": 3750,
+        "objective_scaled": 0.11044829062189399
+      },
+      {
+        "iteration": 4000,
+        "objective_scaled": 0.1104465422122704
+      },
+      {
+        "iteration": 4250,
+        "objective_scaled": 0.11044485815060676
+      },
+      {
+        "iteration": 4500,
+        "objective_scaled": 0.11044324604998887
+      },
+      {
+        "iteration": 4750,
+        "objective_scaled": 0.11044170024603397
+      },
+      {
+        "iteration": 5000,
+        "objective_scaled": 0.11044021279864337
+      },
+      {
+        "iteration": 5250,
+        "objective_scaled": 0.11043878759046394
+      },
+      {
+        "iteration": 5500,
+        "objective_scaled": 0.11043743133810305
+      },
+      {
+        "iteration": 5750,
+        "objective_scaled": 0.11043612854138818
+      },
+      {
+        "iteration": 6000,
+        "objective_scaled": 0.11043487537358548
+      }
+    ],
+    "total_iterations": 12000
+  },
+  "amplitude": 0.0308879036456347,
+  "L": 392.5083413171228,
+  "angle_ids": [
+    0,
+    30,
+    60
+  ],
+  "row_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    5430,
+    5431,
+    5432,
+    5433,
+    5434,
+    5435,
+    5436,
+    5437,
+    5438,
+    5439,
+    5440,
+    5441,
+    5442,
+    5443,
+    5444,
+    5445,
+    5446,
+    5447,
+    5448,
+    5449,
+    5450,
+    5451,
+    5452,
+    5453,
+    5454,
+    5455,
+    5456,
+    5457,
+    5458,
+    5459,
+    5460,
+    5461,
+    5462,
+    5463,
+    5464,
+    5465,
+    5466,
+    5467,
+    5468,
+    5469,
+    5470,
+    5471,
+    5472,
+    5473,
+    5474,
+    5475,
+    5476,
+    5477,
+    5478,
+    5479,
+    5480,
+    5481,
+    5482,
+    5483,
+    5484,
+    5485,
+    5486,
+    5487,
+    5488,
+    5489,
+    5490,
+    5491,
+    5492,
+    5493,
+    5494,
+    5495,
+    5496,
+    5497,
+    5498,
+    5499,
+    5500,
+    5501,
+    5502,
+    5503,
+    5504,
+    5505,
+    5506,
+    5507,
+    5508,
+    5509,
+    5510,
+    5511,
+    5512,
+    5513,
+    5514,
+    5515,
+    5516,
+    5517,
+    5518,
+    5519,
+    5520,
+    5521,
+    5522,
+    5523,
+    5524,
+    5525,
+    5526,
+    5527,
+    5528,
+    5529,
+    5530,
+    5531,
+    5532,
+    5533,
+    5534,
+    5535,
+    5536,
+    5537,
+    5538,
+    5539,
+    5540,
+    5541,
+    5542,
+    5543,
+    5544,
+    5545,
+    5546,
+    5547,
+    5548,
+    5549,
+    5550,
+    5551,
+    5552,
+    5553,
+    5554,
+    5555,
+    5556,
+    5557,
+    5558,
+    5559,
+    5560,
+    5561,
+    5562,
+    5563,
+    5564,
+    5565,
+    5566,
+    5567,
+    5568,
+    5569,
+    5570,
+    5571,
+    5572,
+    5573,
+    5574,
+    5575,
+    5576,
+    5577,
+    5578,
+    5579,
+    5580,
+    5581,
+    5582,
+    5583,
+    5584,
+    5585,
+    5586,
+    5587,
+    5588,
+    5589,
+    5590,
+    5591,
+    5592,
+    5593,
+    5594,
+    5595,
+    5596,
+    5597,
+    5598,
+    5599,
+    5600,
+    5601,
+    5602,
+    5603,
+    5604,
+    5605,
+    5606,
+    5607,
+    5608,
+    5609,
+    5610,
+    10860,
+    10861,
+    10862,
+    10863,
+    10864,
+    10865,
+    10866,
+    10867,
+    10868,
+    10869,
+    10870,
+    10871,
+    10872,
+    10873,
+    10874,
+    10875,
+    10876,
+    10877,
+    10878,
+    10879,
+    10880,
+    10881,
+    10882,
+    10883,
+    10884,
+    10885,
+    10886,
+    10887,
+    10888,
+    10889,
+    10890,
+    10891,
+    10892,
+    10893,
+    10894,
+    10895,
+    10896,
+    10897,
+    10898,
+    10899,
+    10900,
+    10901,
+    10902,
+    10903,
+    10904,
+    10905,
+    10906,
+    10907,
+    10908,
+    10909,
+    10910,
+    10911,
+    10912,
+    10913,
+    10914,
+    10915,
+    10916,
+    10917,
+    10918,
+    10919,
+    10920,
+    10921,
+    10922,
+    10923,
+    10924,
+    10925,
+    10926,
+    10927,
+    10928,
+    10929,
+    10930,
+    10931,
+    10932,
+    10933,
+    10934,
+    10935,
+    10936,
+    10937,
+    10938,
+    10939,
+    10940,
+    10941,
+    10942,
+    10943,
+    10944,
+    10945,
+    10946,
+    10947,
+    10948,
+    10949,
+    10950,
+    10951,
+    10952,
+    10953,
+    10954,
+    10955,
+    10956,
+    10957,
+    10958,
+    10959,
+    10960,
+    10961,
+    10962,
+    10963,
+    10964,
+    10965,
+    10966,
+    10967,
+    10968,
+    10969,
+    10970,
+    10971,
+    10972,
+    10973,
+    10974,
+    10975,
+    10976,
+    10977,
+    10978,
+    10979,
+    10980,
+    10981,
+    10982,
+    10983,
+    10984,
+    10985,
+    10986,
+    10987,
+    10988,
+    10989,
+    10990,
+    10991,
+    10992,
+    10993,
+    10994,
+    10995,
+    10996,
+    10997,
+    10998,
+    10999,
+    11000,
+    11001,
+    11002,
+    11003,
+    11004,
+    11005,
+    11006,
+    11007,
+    11008,
+    11009,
+    11010,
+    11011,
+    11012,
+    11013,
+    11014,
+    11015,
+    11016,
+    11017,
+    11018,
+    11019,
+    11020,
+    11021,
+    11022,
+    11023,
+    11024,
+    11025,
+    11026,
+    11027,
+    11028,
+    11029,
+    11030,
+    11031,
+    11032,
+    11033,
+    11034,
+    11035,
+    11036,
+    11037,
+    11038,
+    11039,
+    11040
+  ],
+  "actual_subset_snr_db": 29.884738105043404,
+  "seconds": 38.12772920000134,
+  "GT_used_for_scale_and_selection": true,
+  "warm_start": "zero"
+}

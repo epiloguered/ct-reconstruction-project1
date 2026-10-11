@@ -1,0 +1,1314 @@
+{
+  "selected": {
+    "dataset": "SheppLogan64",
+    "angle_count": 15,
+    "snr_label_db": 30,
+    "method": "TV_control",
+    "fraction": 0.0003,
+    "tgv_ratio": 0.0,
+    "lambda_raw": 0.29227278130168755,
+    "iterations": 6000,
+    "seconds": 0.5442290999999386,
+    "selection": "oracle minimum GT NRMSE",
+    "nonnegative": false,
+    "nrmse": 0.2895801591372954,
+    "psnr_db": 22.889064531695936,
+    "ssim": 0.7675702189335457,
+    "relative_residual": 0.019997066348186824,
+    "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.0003_r0.npy",
+    "history": [
+      {
+        "iteration": 1,
+        "objective_scaled": 9.514264595780942
+      },
+      {
+        "iteration": 250,
+        "objective_scaled": 0.11933056961913176
+      },
+      {
+        "iteration": 500,
+        "objective_scaled": 0.11434580776236822
+      },
+      {
+        "iteration": 750,
+        "objective_scaled": 0.11230878447026696
+      },
+      {
+        "iteration": 1000,
+        "objective_scaled": 0.11139085136237332
+      },
+      {
+        "iteration": 1250,
+        "objective_scaled": 0.11096384407200899
+      },
+      {
+        "iteration": 1500,
+        "objective_scaled": 0.11075554623374197
+      },
+      {
+        "iteration": 1750,
+        "objective_scaled": 0.1106488138440029
+      },
+      {
+        "iteration": 2000,
+        "objective_scaled": 0.11059111166639331
+      },
+      {
+        "iteration": 2250,
+        "objective_scaled": 0.11055926470096274
+      },
+      {
+        "iteration": 2500,
+        "objective_scaled": 0.11054075582613782
+      },
+      {
+        "iteration": 2750,
+        "objective_scaled": 0.1105300426100676
+      },
+      {
+        "iteration": 3000,
+        "objective_scaled": 0.110523534397677
+      },
+      {
+        "iteration": 3250,
+        "objective_scaled": 0.11051963294472228
+      },
+      {
+        "iteration": 3500,
+        "objective_scaled": 0.11051721181342096
+      },
+      {
+        "iteration": 3750,
+        "objective_scaled": 0.11051570778768835
+      },
+      {
+        "iteration": 4000,
+        "objective_scaled": 0.11051476922999895
+      },
+      {
+        "iteration": 4250,
+        "objective_scaled": 0.11051418777546623
+      },
+      {
+        "iteration": 4500,
+        "objective_scaled": 0.11051379149139803
+      },
+      {
+        "iteration": 4750,
+        "objective_scaled": 0.11051354391200663
+      },
+      {
+        "iteration": 5000,
+        "objective_scaled": 0.11051338067684564
+      },
+      {
+        "iteration": 5250,
+        "objective_scaled": 0.1105132732578595
+      },
+      {
+        "iteration": 5500,
+        "objective_scaled": 0.11051320272248297
+      },
+      {
+        "iteration": 5750,
+        "objective_scaled": 0.11051315349565513
+      },
+      {
+        "iteration": 6000,
+        "objective_scaled": 0.11051311986830732
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 1e-05,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.009742426043389587,
+      "iterations": 6000,
+      "seconds": 0.5736964999960037,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.49034260765789456,
+      "psnr_db": 18.31444793416203,
+      "ssim": 0.5233814015585969,
+      "relative_residual": 0.012054711479340008,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p1e-05_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 9.496064047430865
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.012525558059127504
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.011816023355535598
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.011481056065272903
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.011271241633347896
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.011123568774821475
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.011012279268908989
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.010923760193051415
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.010850635382484063
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.010789602983213865
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.010737774557676036
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.010692889969711301
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.010653344281032397
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.010618194267824576
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.010586719246201139
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.010558449165883785
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.010532887449080337
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.010509729030501907
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.010488685563538921
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.01046944861500523
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.010451948196370141
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.010435839469981948
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.010420885968349773
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.010406981668809335
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.010394018034852036
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 3e-05,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.029227278130168757,
+      "iterations": 6000,
+      "seconds": 0.5501259000011487,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.40559822478048674,
+      "psnr_db": 19.96251967026782,
+      "ssim": 0.6101451962169945,
+      "relative_residual": 0.01304547923305109,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p3e-05_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 9.497319257661905
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.02168512780746596
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.02073749297476455
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.02024982323037737
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.01993335118764981
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.01970851916967021
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.01953693986255172
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.01939885425327133
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.01928557672636388
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.019190875468985468
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.019109664370538123
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.019039405449942218
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.018977845550564844
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.01892321169835498
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.018874293153296272
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.018830245846185402
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.01879052815502854
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.01875442514548195
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.018721513743051116
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.018691582223045632
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.018664257251917934
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.018639202471738087
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.018616259100813895
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.01859522797198629
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.018575857809801675
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 0.0001,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.09742426043389586,
+      "iterations": 6000,
+      "seconds": 0.5286456999965594,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.3127671483001912,
+      "psnr_db": 22.220017972887046,
+      "ssim": 0.7064660692778012,
+      "relative_residual": 0.014883194660662208,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.0001_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 9.501712493470544
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.050043783827256855
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.04788979337467668
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.0467688564709722
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.04604722581211486
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.04554525895115277
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.045185141950310814
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.044917588728535005
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.04471554085730175
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.04456180465048244
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.04444206526930673
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.04434806732020242
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.04427325424230151
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.04421355234944943
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.04416625155732803
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.04412849373394703
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.044098559262194546
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.04407472244026669
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.044055822665141985
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.04404085270692106
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.04402876631815873
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.04401891589136467
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.044010836754476604
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.044004204832672866
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.043998722634893545
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 0.0003,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.29227278130168755,
+      "iterations": 6000,
+      "seconds": 0.5442290999999386,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.2895801591372954,
+      "psnr_db": 22.889064531695936,
+      "ssim": 0.7675702189335457,
+      "relative_residual": 0.019997066348186824,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.0003_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 9.514264595780942
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.11933056961913176
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.11434580776236822
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.11230878447026696
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.11139085136237332
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.11096384407200899
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.11075554623374197
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.1106488138440029
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.11059111166639331
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.11055926470096274
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.11054075582613782
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.1105300426100676
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.110523534397677
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.11051963294472228
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.11051721181342096
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.11051570778768835
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.11051476922999895
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.11051418777546623
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.11051379149139803
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.11051354391200663
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.11051338067684564
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.1105132732578595
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.11051320272248297
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.11051315349565513
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.11051311986830732
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 0.001,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 0.9742426043389586,
+      "iterations": 6000,
+      "seconds": 0.5468580000015208,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.3316808765836362,
+      "psnr_db": 21.71003192996348,
+      "ssim": 0.8203167215278117,
+      "relative_residual": 0.03766775435594794,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.001_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 9.558196953867332
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.31082891274373775
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.30701308193535504
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.3066525861848296
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.3065963878911963
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.3065823120624786
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.30657699741674127
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.3065743645684959
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.3065730967452671
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.3065723685628025
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.3065718563024613
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.30657140878285705
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.3065710682162995
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.306570843963509
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.30657066114551224
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.30657052621573133
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.3065703951672286
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.30657028124423163
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.3065701840658941
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.30657011153463865
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.3065700506189407
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.3065699876293739
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.30656993877183125
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.30656989747177726
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.30656987214807463
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 0.003,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 2.9227278130168757,
+      "iterations": 6000,
+      "seconds": 0.545118400004867,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.4515543547322108,
+      "psnr_db": 19.030239882232852,
+      "ssim": 0.7634391020995392,
+      "relative_residual": 0.07020105116350753,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.003_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 9.683717976971305
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 0.7253690894555859
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 0.7196478296617129
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 0.7192351724212905
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 0.7191217171928129
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 0.7190640040388421
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 0.7190216929824228
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 0.7189938816854733
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 0.7189768521449785
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 0.7189628413444589
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 0.7189537105588238
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 0.7189465047980454
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 0.7189397032117776
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 0.7189344635578048
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 0.7189294305587299
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 0.718926031092651
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 0.7189224659198401
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 0.7189185889305347
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 0.7189152839334059
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 0.7189137752508016
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 0.7189117628356916
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 0.7189105315684631
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 0.718909357705279
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 0.7189081512798583
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 0.7189070413280871
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 0.01,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 9.742426043389585,
+      "iterations": 6000,
+      "seconds": 0.5370006000011927,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.6060172217562333,
+      "psnr_db": 16.47474125866008,
+      "ssim": 0.5436324675562378,
+      "relative_residual": 0.1303864440972355,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.01_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 10.123041557835213
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 1.6452858912322577
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 1.613378614167363
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 1.6096016458225808
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 1.6081339108978283
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 1.6072497248428825
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 1.606712569544801
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 1.606356343050833
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 1.606099876465028
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 1.6059222716587978
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 1.605801368822204
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 1.6056924470939653
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 1.6056202784074074
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 1.605565039528058
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 1.6055146300077552
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 1.605478838263711
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 1.6054465261943354
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 1.6054130806743636
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 1.6053877236384
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 1.6053577360114137
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 1.6053348581381548
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 1.6053136939259034
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 1.60529240306823
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 1.6052738476638124
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 1.605259435887605
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 0.03,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 29.227278130168756,
+      "iterations": 6000,
+      "seconds": 0.5444054999970831,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.7072285642263297,
+      "psnr_db": 15.133244719278846,
+      "ssim": 0.31986661254056536,
+      "relative_residual": 0.19663820864606515,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.03_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 11.378251788874948
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 3.1024170261238178
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 2.9759977246529057
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 2.925048779173255
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 2.899653088425661
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 2.885983180939582
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 2.87723839188435
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 2.8717322869586046
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 2.868457693775605
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 2.8661905922362685
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 2.8646103725030967
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 2.863508617036792
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 2.8626444274203005
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 2.8619604571125308
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 2.861424963890359
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 2.8610100106690277
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 2.860592733601694
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 2.8602608818759383
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 2.8599547839755477
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 2.8596673814312634
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 2.8594043470713926
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 2.859163538124959
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 2.8589468214617835
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 2.8587217203782647
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 2.858534387379535
+        }
+      ]
+    },
+    {
+      "dataset": "SheppLogan64",
+      "angle_count": 15,
+      "snr_label_db": 30,
+      "method": "TV_control",
+      "fraction": 0.1,
+      "tgv_ratio": 0.0,
+      "lambda_raw": 97.42426043389587,
+      "iterations": 6000,
+      "seconds": 0.6093294000020251,
+      "selection": "oracle minimum GT NRMSE",
+      "nonnegative": false,
+      "nrmse": 0.7726547544535989,
+      "psnr_db": 14.364730953873668,
+      "ssim": 0.18771711552376713,
+      "relative_residual": 0.26938230210606834,
+      "array": "outputs\\improvements_refined\\classical\\candidates\\SheppLogan64_15angles_30db_TV_control_p0.1_r0.npy",
+      "history": [
+        {
+          "iteration": 1,
+          "objective_scaled": 15.771487597514025
+        },
+        {
+          "iteration": 250,
+          "objective_scaled": 6.510471324249565
+        },
+        {
+          "iteration": 500,
+          "objective_scaled": 5.983330216345112
+        },
+        {
+          "iteration": 750,
+          "objective_scaled": 5.738394435939842
+        },
+        {
+          "iteration": 1000,
+          "objective_scaled": 5.539590653723243
+        },
+        {
+          "iteration": 1250,
+          "objective_scaled": 5.400003012139798
+        },
+        {
+          "iteration": 1500,
+          "objective_scaled": 5.2746326920577875
+        },
+        {
+          "iteration": 1750,
+          "objective_scaled": 5.196767864316987
+        },
+        {
+          "iteration": 2000,
+          "objective_scaled": 5.112993106280086
+        },
+        {
+          "iteration": 2250,
+          "objective_scaled": 5.0495859600224335
+        },
+        {
+          "iteration": 2500,
+          "objective_scaled": 5.005454124540314
+        },
+        {
+          "iteration": 2750,
+          "objective_scaled": 4.971687112241398
+        },
+        {
+          "iteration": 3000,
+          "objective_scaled": 4.946820220783249
+        },
+        {
+          "iteration": 3250,
+          "objective_scaled": 4.925970912625834
+        },
+        {
+          "iteration": 3500,
+          "objective_scaled": 4.907425074601542
+        },
+        {
+          "iteration": 3750,
+          "objective_scaled": 4.891913695407808
+        },
+        {
+          "iteration": 4000,
+          "objective_scaled": 4.876668245869697
+        },
+        {
+          "iteration": 4250,
+          "objective_scaled": 4.865382719114372
+        },
+        {
+          "iteration": 4500,
+          "objective_scaled": 4.856455221629302
+        },
+        {
+          "iteration": 4750,
+          "objective_scaled": 4.848443094007257
+        },
+        {
+          "iteration": 5000,
+          "objective_scaled": 4.84272943707214
+        },
+        {
+          "iteration": 5250,
+          "objective_scaled": 4.838163318172073
+        },
+        {
+          "iteration": 5500,
+          "objective_scaled": 4.832976335279569
+        },
+        {
+          "iteration": 5750,
+          "objective_scaled": 4.828636982118917
+        },
+        {
+          "iteration": 6000,
+          "objective_scaled": 4.824340399098899
+        }
+      ]
+    }
+  ],
+  "refinement": {
+    "array": "outputs\\improvements_refined\\classical\\SheppLogan64_15angles_30db_TV_control_refined.npy",
+    "total_iterations": 12000,
+    "history": [
+      {
+        "iteration": 1,
+        "objective_scaled": 0.11051311976809529
+      },
+      {
+        "iteration": 250,
+        "objective_scaled": 0.11051309635310878
+      },
+      {
+        "iteration": 500,
+        "objective_scaled": 0.11051308049718797
+      },
+      {
+        "iteration": 750,
+        "objective_scaled": 0.11051306841115681
+      },
+      {
+        "iteration": 1000,
+        "objective_scaled": 0.11051305955210196
+      },
+      {
+        "iteration": 1250,
+        "objective_scaled": 0.11051305256259382
+      },
+      {
+        "iteration": 1500,
+        "objective_scaled": 0.11051304704999618
+      },
+      {
+        "iteration": 1750,
+        "objective_scaled": 0.11051304349320229
+      },
+      {
+        "iteration": 2000,
+        "objective_scaled": 0.11051304071820715
+      },
+      {
+        "iteration": 2250,
+        "objective_scaled": 0.11051303857047055
+      },
+      {
+        "iteration": 2500,
+        "objective_scaled": 0.11051303686259238
+      },
+      {
+        "iteration": 2750,
+        "objective_scaled": 0.11051303519133324
+      },
+      {
+        "iteration": 3000,
+        "objective_scaled": 0.11051303418233663
+      },
+      {
+        "iteration": 3250,
+        "objective_scaled": 0.11051303322734779
+      },
+      {
+        "iteration": 3500,
+        "objective_scaled": 0.11051303249189884
+      },
+      {
+        "iteration": 3750,
+        "objective_scaled": 0.11051303190907581
+      },
+      {
+        "iteration": 4000,
+        "objective_scaled": 0.11051303145702694
+      },
+      {
+        "iteration": 4250,
+        "objective_scaled": 0.11051303109251137
+      },
+      {
+        "iteration": 4500,
+        "objective_scaled": 0.11051303079692586
+      },
+      {
+        "iteration": 4750,
+        "objective_scaled": 0.11051303055631148
+      },
+      {
+        "iteration": 5000,
+        "objective_scaled": 0.11051303035920725
+      },
+      {
+        "iteration": 5250,
+        "objective_scaled": 0.1105130301968194
+      },
+      {
+        "iteration": 5500,
+        "objective_scaled": 0.11051303006203338
+      },
+      {
+        "iteration": 5750,
+        "objective_scaled": 0.11051302994928036
+      },
+      {
+        "iteration": 6000,
+        "objective_scaled": 0.1105130298544141
+      }
+    ],
+    "nrmse": 0.28925980799409845,
+    "psnr_db": 22.898678708730444,
+    "ssim": 0.7678682605016467,
+    "relative_residual": 0.01999691121020655
+  }
+}

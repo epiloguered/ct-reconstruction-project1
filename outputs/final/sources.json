@@ -1,0 +1,66 @@
+{
+  "generated_for": "2026-10-11 course report",
+  "policy": "Copy existing numerical records; do not reoptimize or replace saved arrays. Fixed endpoints are primary; GT-selected endpoints are separate.",
+  "sources": [
+    {
+      "path": "outputs/SheppLogan64/metrics.csv",
+      "sha256": "71050fd211211de36013d9e765bf6cd73bca92004c42859b08241d2d46c9427f"
+    },
+    {
+      "path": "outputs/regularized/SheppLogan64/selected_metrics.csv",
+      "sha256": "345e5a0b2b8712b28531a0bde74f5e501b810c6e108ee6ed47c5e08586e8327b"
+    },
+    {
+      "path": "outputs/XCAT128/metrics.csv",
+      "sha256": "f134224b07afda186e07976d0b0e0e32ccc7b6078a00e648b7898957dd94b6e4"
+    },
+    {
+      "path": "outputs/regularized/XCAT128/selected_metrics.csv",
+      "sha256": "1c48a981714dbb3c2f2a9c261ea7953180a74c5fdce3a847c913aa877c4f24af"
+    },
+    {
+      "path": "outputs/extension/classical/selected_metrics.csv",
+      "sha256": "5e377ca55bf79230d025a23f5e4ff8c0bb85b0715d074eb6c29d3f121b75455f"
+    },
+    {
+      "path": "outputs/extension/dip/aggregate_metrics.csv",
+      "sha256": "f76cdc28c237ad74191cbdb17d5d80ef06bf1276f364369ecfcebed5fa660f42"
+    },
+    {
+      "path": "outputs/improvements/summary/classical_final_metrics.csv",
+      "sha256": "0d4a10b343932dd96d0eaee9890263fa30e8d86cc484313f87c05c5d8cbd37fd"
+    },
+    {
+      "path": "outputs/min_angles/summary/final_metrics.csv",
+      "sha256": "8fce500d580a5a79006e226aa011f08050ad9630795834901d0cccb41713d0c2"
+    },
+    {
+      "path": "outputs/min_angles/fullview_audit/comparison.csv",
+      "sha256": "932bf2b247776a24a9ac549b1bea08d0c1fafe3832b84961367727a7e7a0016f"
+    },
+    {
+      "path": "outputs/min_angles/fullview_audit/region_diagnostics.csv",
+      "sha256": "b3ed5042b07b887f9f1e6ff6081ad348c8f20f38da9e07300ddc3472bd47a0ff"
+    },
+    {
+      "path": "outputs/min_angles/fullview_audit/audit.json",
+      "sha256": "90443eae065a9c491e218a1cb22edbe41c485cabe4fec505f2826b4f8e0d2ba8"
+    },
+    {
+      "path": "outputs/min_angles/audit_summary.json",
+      "sha256": "9c1de26b43e8db42df67018a448105b5bb486e45cbe69cd2168c72e9201e3a43"
+    },
+    {
+      "path": "outputs/min_angles/environment_runtime.json",
+      "sha256": "3ce1bf1b65498383229b7ff8474f3d0c38d2a54a05d959a0f22dcf95a2113d7d"
+    },
+    {
+      "path": "docs/实验实施记录.md",
+      "sha256": "4e1cab7e5f249e72e715259e62e6bffbc5956295f8c09ff0389df2fec631011c"
+    },
+    {
+      "path": "docs/基线实验结果.md",
+      "sha256": "f867d6424c6a80ea04186d7bafcd28b43adc5960d7dac82a2a8a6fcc99d193fd"
+    }
+  ]
+}

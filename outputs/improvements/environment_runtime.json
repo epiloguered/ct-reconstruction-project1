@@ -1,0 +1,12 @@
+{
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\.conda\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "scikit_image": "0.26.0",
+  "torch": "2.14.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "mkl_threading_layer": "SEQUENTIAL"
+}

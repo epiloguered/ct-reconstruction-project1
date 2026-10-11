@@ -1,0 +1,4 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[wave] SheppLogan64_9angles_30db selected=0.36205 refined=0.36092 p=0.0001 ratio=0.1
+[wave] SheppLogan64_8angles_30db selected=0.38332 refined=0.38428 p=0.0001 ratio=0.1
+[wave] SheppLogan64_7angles_30db selected=0.42047 refined=0.42670 p=9e-06 ratio=1

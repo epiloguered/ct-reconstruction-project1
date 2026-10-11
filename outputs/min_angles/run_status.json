@@ -1,0 +1,13 @@
+{
+  "status": "complete_with_replay_variation",
+  "selected_cases": 76,
+  "candidates": 628,
+  "formal_arrays": 704,
+  "unit_tests_passed": 24,
+  "artifact_verification": "passed",
+  "strict_replay_passed": false,
+  "audit": "outputs/min_angles/audit_summary.json",
+  "results": "docs/基线实验结果.md#13",
+  "implementation": "docs/实验实施记录.md#14",
+  "figures_visually_checked": true
+}

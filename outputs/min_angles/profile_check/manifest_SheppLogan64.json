@@ -1,0 +1,22 @@
+{
+  "dataset": "SheppLogan64",
+  "angles": [
+    15,
+    10
+  ],
+  "snr": 30,
+  "profile": "BM3DProfile (np), 4 threads, all stages",
+  "grid_steps": 40,
+  "refine_steps": 120,
+  "parameters": "transferred from LC grid selection; not reoptimized for np",
+  "source_hashes": {
+    "run_bm3d_profiles.py": "87f3362eedf916b591bb7b4971857d8c41048a06788f35bb40068865122401c8",
+    "run_min_angles.py": "7c777ea544485d82f6a740dee283afb6f814c8260983a8038bac790353818db7",
+    "run_baselines.py": "cfb8c91132f61a6d1d1e4b875acffa3616e5c14e963466dde28efa672adacb0c",
+    "run_sparse_views.py": "f948a5d3b9a3eeb38c756240195c1695f6cfe616671e70e198ebc3dfddf49efa"
+  },
+  "lc_record_hashes": {
+    "15": "588e145e0bc75e3dd4ad2c0cf6d197bc829a6b455d34bfc365d05921684400f2",
+    "10": "3a94619deba403925921ba16ca9d762f917f16b16d574189524bd4e7a04f2953"
+  }
+}

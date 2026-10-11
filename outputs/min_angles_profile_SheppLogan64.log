@@ -1,0 +1,3 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[np] SheppLogan64_15angles_30db grid=0.09891 final=0.09715
+[np] SheppLogan64_10angles_30db grid=0.12226 final=0.11467

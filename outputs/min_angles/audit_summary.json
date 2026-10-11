@@ -1,0 +1,111 @@
+{
+  "status": "passed_with_replay_variation",
+  "artifact_verification": "passed",
+  "strict_replay_passed": false,
+  "assertions": 5238,
+  "unique_arrays": 704,
+  "selected_cases": 76,
+  "candidates": 628,
+  "pnp_replays": [
+    {
+      "dataset": "SheppLogan64",
+      "angles": 10,
+      "snr": 30,
+      "method": "pnp_np",
+      "iterations": 160,
+      "original": {
+        "nrmse": 0.11467219868321483,
+        "psnr_db": 30.93527778865614,
+        "ssim": 0.9440471710612461
+      },
+      "repeats": [
+        {
+          "relative_error": 0.01356416331010304,
+          "strict_match_1e_minus6": false,
+          "array": "outputs\\min_angles\\replay_checks\\SheppLogan64_10angles_30db_pnp_np_160_repeat1.npy",
+          "nrmse": 0.11310067242198617,
+          "psnr_db": 31.055136841282355,
+          "ssim": 0.9444437629072722,
+          "relative_residual": 0.022955977910858346
+        },
+        {
+          "relative_error": 0.010043985547775941,
+          "strict_match_1e_minus6": false,
+          "array": "outputs\\min_angles\\replay_checks\\SheppLogan64_10angles_30db_pnp_np_160_repeat2.npy",
+          "nrmse": 0.11464060466610981,
+          "psnr_db": 30.937671219319615,
+          "ssim": 0.9436658548643282,
+          "relative_residual": 0.022915526548602468
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angles": 15,
+      "snr": 30,
+      "method": "pnp",
+      "iterations": 160,
+      "original": {
+        "nrmse": 0.19475863534381913,
+        "psnr_db": 24.487878853418927,
+        "ssim": 0.870657146845319
+      },
+      "repeats": [
+        {
+          "relative_error": 0.01039102064113074,
+          "strict_match_1e_minus6": false,
+          "array": "outputs\\min_angles\\replay_checks\\XCAT128_15angles_30db_pnp_160_repeat1.npy",
+          "nrmse": 0.19478906012343244,
+          "psnr_db": 24.486522068195423,
+          "ssim": 0.8705340190929711,
+          "relative_residual": 0.02456793232313572
+        },
+        {
+          "relative_error": 0.011871751928419919,
+          "strict_match_1e_minus6": false,
+          "array": "outputs\\min_angles\\replay_checks\\XCAT128_15angles_30db_pnp_160_repeat2.npy",
+          "nrmse": 0.1949509675440237,
+          "psnr_db": 24.479305411101436,
+          "ssim": 0.8707034214769565,
+          "relative_residual": 0.024567501996110665
+        }
+      ]
+    },
+    {
+      "dataset": "XCAT128",
+      "angles": 10,
+      "snr": 20,
+      "method": "pnp",
+      "iterations": 40,
+      "original": {
+        "nrmse": 0.24401051551234126,
+        "psnr_db": 22.529642460911198,
+        "ssim": 0.8125629201929618
+      },
+      "repeats": [
+        {
+          "relative_error": 0.005162918549510849,
+          "strict_match_1e_minus6": false,
+          "array": "outputs\\min_angles\\replay_checks\\XCAT128_10angles_20db_pnp_40_repeat1.npy",
+          "nrmse": 0.24393865620036737,
+          "psnr_db": 22.532200768595516,
+          "ssim": 0.8126999279964681,
+          "relative_residual": 0.09786285984493891
+        },
+        {
+          "relative_error": 0.005162925358460129,
+          "strict_match_1e_minus6": false,
+          "array": "outputs\\min_angles\\replay_checks\\XCAT128_10angles_20db_pnp_40_repeat2.npy",
+          "nrmse": 0.2439386555561256,
+          "psnr_db": 22.53220079153494,
+          "ssim": 0.8126999227493609,
+          "relative_residual": 0.0978628609822304
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "4-thread BM3D: strict replay tolerance 1e-6 not met; reported metrics belong to saved arrays"
+  ]
+}

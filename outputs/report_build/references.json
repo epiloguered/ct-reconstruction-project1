@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "title": "LSQR: An Algorithm for Sparse Linear Equations and Sparse Least Squares",
+    "authors": [
+      "Christopher C. Paige",
+      "Michael A. Saunders"
+    ],
+    "year": 1982,
+    "venue": "ACM Transactions on Mathematical Software, 8(1):43–71",
+    "url": "https://web.stanford.edu/group/SOL/software/lsqr/lsqr-toms82a.pdf",
+    "doi": "10.1145/355984.355989",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "LSQR 的大规模稀疏线性方程与最小二乘算法出处。",
+      "阻尼最小二乘可通过增广系统表达。"
+    ],
+    "caveats": [
+      "本项目直接调用 SciPy lsqr；停止码与有限迭代结果不能证明图像误差小。",
+      "ACM 页面抓取受限；作者维护的 Stanford 页面及原论文 PDF 可核查作者、标题、卷期页码。"
+    ],
+    "key": "lsqr1982",
+    "report_number": 1
+  },
+  {
+    "id": 2,
+    "title": "Algebraic reconstruction techniques (ART) for three-dimensional electron microscopy and x-ray photography",
+    "authors": [
+      "Richard Gordon",
+      "Robert Bender",
+      "Gábor T. Herman"
+    ],
+    "year": 1970,
+    "venue": "Journal of Theoretical Biology, 29(3):471–481",
+    "url": "https://doi.org/10.1016/0022-5193(70)90109-8",
+    "doi": "10.1016/0022-5193(70)90109-8",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "ART 在投影图像重建中的经典出处。"
+    ],
+    "caveats": [
+      "本项目是按系统矩阵逐行循环的 Kaczmarz 型 ART，加入非负投影、零行跳过及固定预算。",
+      "ART 后每轮施加 L1/L2/TV 先验是本项目组合流程，不能由该引用声称精确求解正则化 LS。",
+      "出版社正文抓取返回403；书目信息另与官方 PubMed PMID5492997核对，未逐式核查原文实现。"
+    ],
+    "verification_url": "https://pubmed.ncbi.nlm.nih.gov/5492997/",
+    "key": "art1970",
+    "report_number": 2
+  },
+  {
+    "id": 3,
+    "title": "Angenäherte Auflösung von Systemen linearer Gleichungen",
+    "authors": [
+      "Stefan Kaczmarz"
+    ],
+    "year": 1937,
+    "venue": "Bulletin International de l’Académie Polonaise des Sciences et des Lettres, Classe des Sciences Mathématiques et Naturelles, Série A:355–357",
+    "url": "https://faculty.sites.iastate.edu/esweber/files/inline-files/kaczmarz_english_translation_1937.pdf",
+    "doi": null,
+    "type": "paper",
+    "priority": "optional_history",
+    "claims": [
+      "循环地向各行方程所定义超平面投影的历史出处。"
+    ],
+    "caveats": [
+      "链接为大学托管的英文译文与原文扫描合集；不要把译文的日期或页码当作1937原刊日期或页码。",
+      "1937 原刊 DOI 未查得；不填入1993英文重刊的 DOI。",
+      "若篇幅有限，只引用ART1970足以解释课程实现；只有介绍历史渊源时保留此项。"
+    ],
+    "verification_url": "https://leksykon.ptm.mimuw.edu.pl/biogramy/kaczmarz/pliki/Kaczmarz-Lista_publikacji.pdf",
+    "key": "kaczmarz1937",
+    "report_number": null
+  },
+  {
+    "id": 4,
+    "title": "Nonlinear total variation based noise removal algorithms",
+    "authors": [
+      "Leonid I. Rudin",
+      "Stanley Osher",
+      "Emad Fatemi"
+    ],
+    "year": 1992,
+    "venue": "Physica D: Nonlinear Phenomena, 60(1–4):259–268",
+    "url": "https://www.sciencedirect.com/science/article/pii/016727899290242F",
+    "doi": "10.1016/0167-2789(92)90242-F",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "总变差（TV）图像正则化与ROF去噪模型的经典出处。"
+    ],
+    "caveats": [
+      "原文研究去噪与约束形式；本项目把TV加入CT二次数据拟合项，并使用离散前向差分。",
+      "不能称本项目CT算法为ROF原论文数值实验复现。"
+    ],
+    "key": "rof1992",
+    "report_number": 3
+  },
+  {
+    "id": 5,
+    "title": "An Algorithm for Total Variation Minimization and Applications",
+    "authors": [
+      "Antonin Chambolle"
+    ],
+    "year": 2004,
+    "venue": "Journal of Mathematical Imaging and Vision, 20:89–97",
+    "url": "https://link.springer.com/article/10.1023/B:JMIV.0000011325.36760.1e",
+    "doi": "10.1023/B:JMIV.0000011325.36760.1e",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "基线TV近端步骤所调用 denoise_tv_chambolle 的算法出处。"
+    ],
+    "caveats": [
+      "具体实现以 scikit-image 0.26.0 API及源码为准。",
+      "本项目近端内部最多80步且 eps=1e-4，属于数值近似，不能直接据FISTA理论声称得到精确近端或达到理论收敛率。"
+    ],
+    "key": "chambolle2004",
+    "report_number": 16
+  },
+  {
+    "id": 6,
+    "title": "A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems",
+    "authors": [
+      "Amir Beck",
+      "Marc Teboulle"
+    ],
+    "year": 2009,
+    "venue": "SIAM Journal on Imaging Sciences, 2(1):183–202",
+    "url": "https://epubs.siam.org/doi/10.1137/080716542",
+    "doi": "10.1137/080716542",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "LS+L1及LS+TV的梯度—近端—动量外推更新依据。"
+    ],
+    "caveats": [
+      "本项目用幂迭代估计L并乘1.05，TV近端有有限内部迭代，实验采用固定预算。",
+      "原文的收敛率具有假设条件，不能把有限预算或目标变化小直接当作严格收敛证书。"
+    ],
+    "key": "fista2009",
+    "report_number": 4
+  },
+  {
+    "id": 7,
+    "title": "Accurate image reconstruction from few-views and limited-angle data in divergent-beam CT",
+    "authors": [
+      "Emil Y. Sidky",
+      "Chien-Min Kao",
+      "Xiaochuan Pan"
+    ],
+    "year": 2006,
+    "venue": "Journal of X-Ray Science and Technology, 14(2):119–139",
+    "url": "https://journals.sagepub.com/doi/10.3233/XST-2006-00155",
+    "doi": "10.3233/XST-2006-00155",
+    "type": "paper",
+    "priority": "core_context",
+    "claims": [
+      "TV用于少视角或不充分CT投影重建的研究动机与背景。"
+    ],
+    "caveats": [
+      "本项目使用课程给定矩阵、行块选角与不同优化器；没有按原文的发散束几何、POCS/TV具体算法和数据协议复现。",
+      "本文不能作为本项目减少角度等于减少实际辐射剂量的证据。",
+      "arXiv预印本上传于2009，正式期刊年份为2006。"
+    ],
+    "key": "sidky2006",
+    "report_number": 7
+  },
+  {
+    "id": 8,
+    "title": "Deep Image Prior",
+    "authors": [
+      "Dmitry Ulyanov",
+      "Andrea Vedaldi",
+      "Victor Lempitsky"
+    ],
+    "year": 2018,
+    "venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR):9446–9454",
+    "url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html",
+    "doi": null,
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "固定随机输入、优化随机初始化生成网络，以网络结构形成图像先验的基本思想。"
+    ],
+    "caveats": [
+      "原论文主要展示去噪、超分辨率、补全等任务；本项目改用CT投影损失，自建四尺度网络并加入TV项。",
+      "网络结构、输出非负约束、归一化、2000步预算和截点协议均需作为本项目设置说明；不能声称复现原论文性能。"
+    ],
+    "key": "dip2018",
+    "report_number": 10
+  },
+  {
+    "id": 9,
+    "title": "Total Generalized Variation",
+    "authors": [
+      "Kristian Bredies",
+      "Karl Kunisch",
+      "Thomas Pock"
+    ],
+    "year": 2010,
+    "venue": "SIAM Journal on Imaging Sciences, 3(3):492–526",
+    "url": "https://epubs.siam.org/doi/10.1137/090769521",
+    "doi": "10.1137/090769521",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "二阶TGV以辅助向量场连接一阶差分和对称梯度的理论出处。",
+      "高阶先验用于缓解TV阶梯状效应的动机。"
+    ],
+    "caveats": [
+      "本项目采用离散二阶形式、非负约束和有限权重网格；实际收益必须由保存结果支持。",
+      "不能由TGV理论动机宣称本项目TGV一定优于TV。"
+    ],
+    "key": "tgv2010",
+    "report_number": 11
+  },
+  {
+    "id": 10,
+    "title": "A First-Order Primal-Dual Algorithm for Convex Problems with Applications to Imaging",
+    "authors": [
+      "Antonin Chambolle",
+      "Thomas Pock"
+    ],
+    "year": 2011,
+    "venue": "Journal of Mathematical Imaging and Vision, 40:120–145",
+    "url": "https://link.springer.com/article/10.1007/s10851-010-0251-1",
+    "doi": "10.1007/s10851-010-0251-1",
+    "type": "paper",
+    "priority": "core_background",
+    "claims": [
+      "图像优化中原始—对偶分裂、对偶近端更新及外推的背景。"
+    ],
+    "caveats": [
+      "正式卷期年为2011；online published为2010-12-21。",
+      "本项目新的TV/TGV/小波求解器显式计算光滑二次项梯度，具体更新应以Condat2013 Algorithm3.1为更直接出处，不能写成逐式复现CP原算法。"
+    ],
+    "key": "chambolle_pock2011",
+    "report_number": null
+  },
+  {
+    "id": 11,
+    "title": "A Primal–Dual Splitting Method for Convex Optimization Involving Lipschitzian, Proximable and Linear Composite Terms",
+    "authors": [
+      "Laurent Condat"
+    ],
+    "year": 2013,
+    "venue": "Journal of Optimization Theory and Applications, 158(2):460–479",
+    "url": "https://lcondat.github.io/publis/Condat-optim-JOTA-2013.pdf",
+    "doi": "10.1007/s10957-012-0245-9",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "新TV/TGV/小波实现的直接算法依据：光滑项显式梯度、非光滑项近端、线性复合项对偶投影。",
+      "Algorithm3.1的先原始更新、再对外推原始变量作对偶更新与源码结构相符。"
+    ],
+    "caveats": [
+      "这是对源码与论文更新结构的核对，不是原文数值结果复现。",
+      "论文定理要求步长、算子范数、梯度Lipschitz常数及误差条件；本项目L为数值估计，固定预算结果不能当作严格收敛证明。",
+      "正式卷期年为2013；online published为2012-12-29。"
+    ],
+    "verification_url": "https://link.springer.com/article/10.1007/s10957-012-0245-9",
+    "key": "condat2013",
+    "report_number": 13
+  },
+  {
+    "id": 12,
+    "title": "De-Noising by Soft-Thresholding",
+    "authors": [
+      "David L. Donoho"
+    ],
+    "year": 1995,
+    "venue": "IEEE Transactions on Information Theory, 41(3):613–627",
+    "url": "https://doi.org/10.1109/18.382009",
+    "doi": "10.1109/18.382009",
+    "type": "paper",
+    "priority": "core_context",
+    "claims": [
+      "小波系数收缩/软阈值作为去噪和稀疏先验的相关理论来源。"
+    ],
+    "caveats": [
+      "本项目是CT数据项+TV+小波细节L1+非负的联合优化，采用db2、3层和周期边界；不是Donoho原文VisuShrink算法。",
+      "本项目参数按GT搜索，不能套用原文通用阈值或统计最优性结论。",
+      "Stanford1992技术报告与1995期刊版年份不同；本条引用期刊版。"
+    ],
+    "verification_url": "https://www.fceia.unr.edu.ar/~jcgomez/wavelets/Donoho_1995.pdf",
+    "key": "donoho1995",
+    "report_number": 12
+  },
+  {
+    "id": 13,
+    "title": "Plug-and-Play Priors for Model Based Reconstruction",
+    "authors": [
+      "Singanallur V. Venkatakrishnan",
+      "Charles A. Bouman",
+      "Brendt Wohlberg"
+    ],
+    "year": 2013,
+    "venue": "2013 IEEE Global Conference on Signal and Information Processing (GlobalSIP):945–948",
+    "url": "https://engineering.purdue.edu/~bouman/Plug-and-Play/webdocs/GlobalSIP2013a.pdf",
+    "doi": "10.1109/GlobalSIP.2013.6737048",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "用ADMM分离数据更新与先验更新，并以去噪器替代先验步骤的PnP框架出处。"
+    ],
+    "caveats": [
+      "本项目具体选择BM3D、非负输出、TV初始化、CG求解和独立rho/sigma网格。",
+      "任意去噪器一般不保证对应已知显式凸正则项；不能直接声称PnP最小化某个已证明的凸目标或必然收敛。"
+    ],
+    "verification_url": "https://impact.ornl.gov/en/publications/plug-and-play-priors-for-model-based-reconstruction/",
+    "key": "pnp2013",
+    "report_number": 8
+  },
+  {
+    "id": 14,
+    "title": "Image Denoising by Sparse 3-D Transform-Domain Collaborative Filtering",
+    "authors": [
+      "Kostadin Dabov",
+      "Alessandro Foi",
+      "Vladimir Katkovnik",
+      "Karen Egiazarian"
+    ],
+    "year": 2007,
+    "venue": "IEEE Transactions on Image Processing, 16(8):2080–2095",
+    "url": "https://webpages.tuni.fi/foi/GCF-BM3D/index.html",
+    "doi": "10.1109/TIP.2007.901238",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "相似二维块组成三维组，并进行变换域协同滤波的BM3D思想出处。"
+    ],
+    "caveats": [
+      "本项目实际调用bm3d4.0.3，官方说明还基于Mäkinen/Azzari/Foi2020的改进；不是2007原版二进制的直接复现。",
+      "PnP中的BM3D是先验更新组件，不等于对原始CT重建图作一次事后去噪。"
+    ],
+    "verification_url": "https://researchportal.tuni.fi/fi/publications/image-denoising-by-sparse-3-d-transform-domain-collaborative-filt/",
+    "key": "bm3d2007",
+    "report_number": 9
+  },
+  {
+    "id": 15,
+    "title": "Image Quality Assessment: From Error Visibility to Structural Similarity",
+    "authors": [
+      "Zhou Wang",
+      "Alan C. Bovik",
+      "Hamid R. Sheikh",
+      "Eero P. Simoncelli"
+    ],
+    "year": 2004,
+    "venue": "IEEE Transactions on Image Processing, 13(4):600–612",
+    "url": "https://www.cns.nyu.edu/pub/lcv/wang03-preprint.pdf",
+    "doi": "10.1109/TIP.2003.819861",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "SSIM以局部亮度、对比度与结构信息评价图像相似性的概念来源。",
+      "原文§III-C、式(14)–(17)使用11×11高斯加权，sigma=1.5，并平均局部SSIM。"
+    ],
+    "caveats": [
+      "本项目调用scikit-image0.26.0的默认SSIM，只传data_range；实际为7×7均匀窗口和样本协方差归一化，与原文示例设置不同。",
+      "只能称使用SSIM指标及其库实现，不能称直接照搬Wang2004全部计算设置。",
+      "SSIM是补充结构指标，不能据其较高值证明全部小结构或临床任务准确。"
+    ],
+    "key": "ssim2004",
+    "report_number": 6
+  },
+  {
+    "id": 16,
+    "title": "Mean Squared Error: Love It or Leave It? A New Look at Signal Fidelity Measures",
+    "authors": [
+      "Zhou Wang",
+      "Alan C. Bovik"
+    ],
+    "year": 2009,
+    "venue": "IEEE Signal Processing Magazine, 26(1):98–117",
+    "url": "https://ece.uwaterloo.ca/~z70wang/publications/SPM09.pdf",
+    "doi": "10.1109/MSP.2008.930649",
+    "type": "paper",
+    "priority": "core",
+    "claims": [
+      "均方误差及PSNR关系的解释依据；PSNR=10log10(L²/MSE)。",
+      "MSE/PSNR存在感知质量局限，可与结构指标互补。"
+    ],
+    "caveats": [
+      "把L取为GTmax−GTmin是本项目评价约定，不是这篇文章规定的唯一范围。",
+      "本项目的欧氏范数归一化NRMSE也属于项目协议，不是该文独创公式。",
+      "同一GT下NRMSE与PSNR由相同平方误差确定，排序不会提供两个独立证据。"
+    ],
+    "key": "wang_bovik2009",
+    "report_number": 5
+  },
+  {
+    "id": 17,
+    "title": "The Fourier Reconstruction of a Head Section",
+    "authors": [
+      "Lawrence A. Shepp",
+      "Benjamin F. Logan"
+    ],
+    "year": 1974,
+    "venue": "IEEE Transactions on Nuclear Science, 21(3):21–43",
+    "url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2012/04/Fourier-reconstruction-of-a-head-section.pdf",
+    "doi": "10.1109/TNS.1974.6499235",
+    "type": "paper",
+    "priority": "optional_phantom_background",
+    "claims": [
+      "Shepp–Logan数字体模的历史背景。"
+    ],
+    "caveats": [
+      "本项目只确认课程文件名SheppLogan64及其数组；生成脚本、参数和直接来源尚不清楚。",
+      "不要声称本项目CSV由Shepp/Logan原作者提供，或与原始/修改版体模逐像素相同。"
+    ],
+    "key": "shepp_logan1974",
+    "report_number": null
+  },
+  {
+    "id": 18,
+    "title": "4D XCAT Phantom for Multimodality Imaging Research",
+    "authors": [
+      "W. P. Segars",
+      "G. Sturgeon",
+      "S. Mendonca",
+      "Jason Grimes",
+      "B. M. W. Tsui"
+    ],
+    "year": 2010,
+    "venue": "Medical Physics, 37(9):4902–4915",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2941518/",
+    "doi": "10.1118/1.3480985",
+    "type": "paper",
+    "priority": "optional_phantom_background",
+    "claims": [
+      "XCAT数字体模及多模态成像研究的背景。"
+    ],
+    "caveats": [
+      "本项目XCAT128是课程给定二维数组；未确认其切片、解剖参数、软件版本、授权或原始生成流程。",
+      "不能把论文或原作者作为课程CSV的已确认直接数据提供者。"
+    ],
+    "key": "xcat2010",
+    "report_number": null
+  },
+  {
+    "id": 19,
+    "title": "skimage.metrics API documentation, version 0.26",
+    "authors": [
+      "scikit-image developers"
+    ],
+    "year": 2026,
+    "venue": "Official software documentation",
+    "url": "https://scikit-image.org/docs/0.26.x/api/skimage.metrics.html",
+    "doi": null,
+    "type": "documentation",
+    "priority": "implementation",
+    "claims": [
+      "normalized_root_mse的euclidean归一化与本项目公式一致，并说明文献中NRMSE归一化不唯一。",
+      "structural_similarity的参数说明及匹配Wang实现所需设置。"
+    ],
+    "caveats": [
+      "本项目NRMSE与PSNR由NumPy公式直接计算，没有调用这两个同名API；此文档用于解释定义。",
+      "SSIM实际默认值已同时核对本地0.26.0源码；文档检索日期2026-10-11。"
+    ],
+    "key": "skimage_metrics026",
+    "report_number": 14,
+    "accessed": "2026-10-11"
+  },
+  {
+    "id": 20,
+    "title": "skimage.restoration.denoise_tv_chambolle API documentation, version 0.26",
+    "authors": [
+      "scikit-image developers"
+    ],
+    "year": 2026,
+    "venue": "Official software documentation",
+    "url": "https://scikit-image.org/docs/0.26.x/api/skimage.restoration.html#skimage.restoration.denoise_tv_chambolle",
+    "doi": null,
+    "type": "documentation",
+    "priority": "implementation",
+    "claims": [
+      "TV近端调用的ROF形式、weight=1/lambda的API约定、停止阈值及迭代上限。"
+    ],
+    "caveats": [
+      "不要混用denoise_tv_bregman与denoise_tv_chambolle的weight约定；文档检索日期2026-10-11。"
+    ],
+    "key": "skimage_tv026",
+    "report_number": null,
+    "accessed": "2026-10-11"
+  },
+  {
+    "id": 21,
+    "title": "scipy.sparse.linalg.lsqr API documentation",
+    "authors": [
+      "SciPy developers"
+    ],
+    "year": 2026,
+    "venue": "Official software documentation",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.lsqr.html",
+    "doi": null,
+    "type": "documentation",
+    "priority": "implementation",
+    "claims": [
+      "阻尼系数damp的平方进入正则项，因此本项目damp=sqrt(lambda)。",
+      "istop、itn、条件数估计与停止容差的含义。"
+    ],
+    "caveats": [
+      "网页stable版本随时间更新；本项目实际环境版本应使用保存的environment_runtime.json，而非从此页面推断。",
+      "检索日期2026-10-11。"
+    ],
+    "key": "scipy_lsqr",
+    "report_number": null,
+    "accessed": "2026-10-11"
+  },
+  {
+    "id": 22,
+    "title": "Handling DWT Coefficients",
+    "authors": [
+      "PyWavelets developers"
+    ],
+    "year": 2026,
+    "venue": "Official software documentation",
+    "url": "https://pywavelets.readthedocs.io/en/latest/ref/dwt-coefficient-handling.html",
+    "doi": null,
+    "type": "documentation",
+    "priority": "implementation",
+    "claims": [
+      "coeffs_to_array/array_to_coeffs的打包与还原接口约定。"
+    ],
+    "caveats": [
+      "db2、level=3、periodization和不惩罚近似系数是本项目代码选择；此页本身不证明联合CT目标的算法或性能。",
+      "检索日期2026-10-11。"
+    ],
+    "key": "pywavelets_coeffs",
+    "report_number": null,
+    "accessed": "2026-10-11"
+  },
+  {
+    "id": 23,
+    "title": "bm3d 4.0.3: Python wrapper for BM3D denoising",
+    "authors": [
+      "Ymir Mäkinen",
+      "Lucio Azzari",
+      "Alessandro Foi"
+    ],
+    "year": 2024,
+    "venue": "Official PyPI package description",
+    "url": "https://pypi.org/project/bm3d/4.0.3/",
+    "doi": null,
+    "type": "documentation",
+    "priority": "implementation",
+    "claims": [
+      "本项目实际bm3d4.0.3实现出处、依赖bm4d接口及非商业许可。",
+      "官方说明实现基于2007 BM3D与2020相关噪声方差改进。"
+    ],
+    "caveats": [
+      "本项目profile=LC/常规、num_threads=4及非负裁剪属于具体运行配置，不能只引用2007论文省略。",
+      "线程引起的重跑变化应以本地profiles.py与实际审计日志说明；检索日期2026-10-11。"
+    ],
+    "key": "bm3d403",
+    "report_number": 15,
+    "accessed": "2026-10-11"
+  }
+]

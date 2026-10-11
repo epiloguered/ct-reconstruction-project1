@@ -1,0 +1,20 @@
+{
+  "status": "staged_file_checks_passed",
+  "files": 3892,
+  "bytes": 420618542,
+  "snapshot": "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\release_check\\update_20261011_125921",
+  "excluded": [
+    ".conda",
+    "A.csv",
+    "Word lock files",
+    "QA renders",
+    "old report"
+  ],
+  "checks": [
+    "no file >=100MiB",
+    "new report and main table present",
+    "four original solver files byte-identical to HEAD"
+  ],
+  "snapshot_tests": "24 passed",
+  "snapshot_audit": "passed"
+}

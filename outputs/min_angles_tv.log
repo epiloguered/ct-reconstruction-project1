@@ -1,0 +1,22 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[tv] SheppLogan64_30angles_20db selected=0.28126 refined=0.28126 p=0.0003 ratio=0
+[tv] SheppLogan64_30angles_30db selected=0.10652 refined=0.10651 p=0.0001 ratio=0
+[tv] SheppLogan64_15angles_20db selected=0.39036 refined=0.39036 p=0.001 ratio=0
+[tv] SheppLogan64_15angles_30db selected=0.20761 refined=0.20475 p=0.0001 ratio=0
+[tv] SheppLogan64_10angles_20db selected=0.39987 refined=0.39991 p=0.0003 ratio=0
+[tv] SheppLogan64_10angles_30db selected=0.23727 refined=0.23297 p=0.0001 ratio=0
+[tv] SheppLogan64_6angles_20db selected=0.53619 refined=0.53624 p=0.001 ratio=0
+[tv] SheppLogan64_6angles_30db selected=0.45431 refined=0.45921 p=3e-05 ratio=0
+[tv] SheppLogan64_3angles_20db selected=0.70555 refined=0.71065 p=1e-05 ratio=0
+[tv] SheppLogan64_3angles_30db selected=0.68307 refined=0.68792 p=1e-05 ratio=0
+[cache] XCAT128: shape=(16290, 16384), nnz=1876968
+[tv] XCAT128_30angles_20db selected=0.20412 refined=0.20412 p=0.003 ratio=0
+[tv] XCAT128_30angles_30db selected=0.14483 refined=0.14483 p=0.0003 ratio=0
+[tv] XCAT128_15angles_20db selected=0.24442 refined=0.24447 p=0.01 ratio=0
+[tv] XCAT128_15angles_30db selected=0.17705 refined=0.17705 p=0.001 ratio=0
+[tv] XCAT128_10angles_20db selected=0.25846 refined=0.25848 p=0.01 ratio=0
+[tv] XCAT128_10angles_30db selected=0.20936 refined=0.20936 p=0.001 ratio=0
+[tv] XCAT128_6angles_20db selected=0.31402 refined=0.31404 p=0.01 ratio=0
+[tv] XCAT128_6angles_30db selected=0.26271 refined=0.26275 p=0.001 ratio=0
+[tv] XCAT128_3angles_20db selected=0.45203 refined=0.45201 p=0.03 ratio=0
+[tv] XCAT128_3angles_30db selected=0.44432 refined=0.44534 p=1e-05 ratio=0

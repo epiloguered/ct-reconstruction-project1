@@ -1,0 +1,11 @@
+[cache] XCAT128: shape=(16290, 16384), nnz=1876968
+[pnp] XCAT128_30angles_20db selected=0.21445 refined=0.24033 p=0.3 ratio=0.03
+[pnp] XCAT128_30angles_30db selected=0.14281 refined=0.15695 p=0.3 ratio=0.01
+[pnp] XCAT128_15angles_20db selected=0.23781 refined=0.24348 p=0.3 ratio=0.08
+[pnp] XCAT128_15angles_30db selected=0.17887 refined=0.19476 p=0.3 ratio=0.01
+[pnp] XCAT128_10angles_20db selected=0.24401 refined=0.24693 p=0.3 ratio=0.08
+[pnp] XCAT128_10angles_30db selected=0.20943 refined=0.22323 p=0.3 ratio=0.01
+[pnp] XCAT128_6angles_20db selected=0.29723 refined=0.29968 p=0.3 ratio=0.08
+[pnp] XCAT128_6angles_30db selected=0.26036 refined=0.26339 p=0.3 ratio=0.03
+[pnp] XCAT128_3angles_20db selected=0.45742 refined=0.46597 p=0.3 ratio=0.08
+[pnp] XCAT128_3angles_30db selected=0.43910 refined=0.43787 p=0.3 ratio=0.03

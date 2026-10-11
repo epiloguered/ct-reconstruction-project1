@@ -1,0 +1,35 @@
+bm3d==4.0.3
+bm4d==4.2.5
+contourpy @ file:///C:/miniconda3/conda-bld/contourpy_1763643940930/work
+cycler @ file:///C:/Users/task_176606795187315/croot/cycler_1766068055927/work
+filelock==3.32.3
+fonttools @ file:///C:/Users/task_178107562729618/croot/fonttools_1781075767150/work
+fsspec==2026.7.0
+ImageIO @ file:///C:/Users/task_D-QgjBt7S5GD__0/croot/imageio_1785928413486/work
+Jinja2==3.1.6
+kiwisolver @ file:///C:/Users/task_JtA0DXUcSAS2q_0/croot/kiwisolver_1786023437059/work
+lazy-loader @ file:///C:/Users/task_177375487874279/croot/lazy_loader_1773754993115/work
+MarkupSafe==3.0.3
+matplotlib==3.11.2
+mkl-service==2.7.2
+mkl_fft @ file:///C:/Users/task_178939303679681/croot/mkl_fft_1789393125498/work
+mkl_random @ file:///C:/Users/task_178236951273675/croot/mkl_random_1782369661170/work
+mpmath==1.3.0
+networkx @ file:///C:/miniconda3/conda-bld/networkx_1765378660274/work
+numpy @ file:///C:/Users/task_178034591057081/croot/numpy_and_numpy_base_1780346079163/work/dist/numpy-2.4.6-cp311-cp311-win_amd64.whl#sha256=9501c2a46e9ccccb98ecbd21aa6a17a625993614e227c6e4cca63c4166c16876
+packaging==26.3
+pillow @ file:///C:/b/abs_68t826txdy/croot/pillow_1744613085333/work
+pyparsing @ file:///C:/Users/task_178652797432203/croot/pyparsing_1786528207561/work
+PyQt6==6.11.0
+PyQt6_sip @ file:///C:/Users/task_177582773197733/croot/pyqt-split_1775828393957/work/pyqt_sip
+python-dateutil @ file:///C:/b/abs_3au_koqnbs/croot/python-dateutil_1716495777160/work
+PyWavelets==1.9.0
+scikit-image @ file:///C:/Users/task_ZighTUHFRYikX_0/croot/scikit-image_1782887960430/work
+scipy @ file:///C:/Users/task_177627760864069/croot/scipy_1776277716744/work/dist/scipy-1.17.1-cp311-cp311-win_amd64.whl#sha256=1f66ce922ca8c2ce42275b9e9f2edaee63373304c9e7a123c79294e2d50ff230
+sip @ file:///C:/Users/task_177080715348974/croot/sip_1770807597751/work
+six @ file:///C:/b/abs_149wuyuo1o/croot/six_1744271521515/work
+sympy==1.14.0
+tifffile @ file:///C:/Users/task_177304299696469/croot/tifffile_1773043096702/work
+torch==2.14.0+cu130
+tornado @ file:///C:/Users/task_178853289102659/croot/tornado_1788533525717/work
+typing_extensions==4.16.0

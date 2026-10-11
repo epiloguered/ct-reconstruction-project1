@@ -1,0 +1,19 @@
+{
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\.conda\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "PyWavelets": "1.9.0",
+    "bm3d": "4.0.3",
+    "bm4d": "4.2.5",
+    "matplotlib": "3.11.2",
+    "scikit-image": "0.26.0"
+  },
+  "pywt_module_version": "1.8.0",
+  "bm3d_profiles": {
+    "grid": "BM3DProfileLC, all stages, 4 threads",
+    "supplement": "BM3DProfile, all stages, 4 threads"
+  }
+}

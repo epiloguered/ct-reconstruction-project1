@@ -1,0 +1,225 @@
+{
+  "status": "passed_structural_and_visual_review",
+  "checks": 57,
+  "tables": 14,
+  "references": 16,
+  "figures": 3,
+  "native_math_equations": 7,
+  "pages": [
+    {
+      "page": 1,
+      "characters": 2090,
+      "first_lines": [
+        "1 ",
+        "CT 图像重建与稀疏角度优化实验报告  ",
+        "课程 最优化理论与算法    实验 Project 1 "
+      ]
+    },
+    {
+      "page": 2,
+      "characters": 938,
+      "first_lines": [
+        "2 ",
+        "摘要 ",
+        "本实验研究带噪声线性投影模型下的 CT 图像重建。使用课程给定的 SheppLogan64 与 XCAT128 数据，"
+      ]
+    },
+    {
+      "page": 3,
+      "characters": 891,
+      "first_lines": [
+        "3 ",
+        "二 基础重建与正则化方法 ",
+        "2.1 最小二乘与 LSQR "
+      ]
+    },
+    {
+      "page": 4,
+      "characters": 1026,
+      "first_lines": [
+        "4 ",
+        "三 少角度扩展方法 ",
+        "3.1 稀疏角度采样 "
+      ]
+    },
+    {
+      "page": 5,
+      "characters": 685,
+      "first_lines": [
+        "5 ",
+        "四 评价指标与实验协议 ",
+        "4.1 指标选择 "
+      ]
+    },
+    {
+      "page": 6,
+      "characters": 1103,
+      "first_lines": [
+        "6 ",
+        "五 无正则化基线结果 ",
+        "表 4 原 90 角无正则化基线结果 "
+      ]
+    },
+    {
+      "page": 7,
+      "characters": 1229,
+      "first_lines": [
+        "7 ",
+        "六 正则化实验结果 ",
+        "6.1 SheppLogan64 结果 "
+      ]
+    },
+    {
+      "page": 8,
+      "characters": 1245,
+      "first_lines": [
+        "8 ",
+        "6.2 XCAT128 结果 ",
+        "表 6 XCAT128 原 90 角基线与正则化结果 "
+      ]
+    },
+    {
+      "page": 9,
+      "characters": 235,
+      "first_lines": [
+        "9 ",
+        "6.3 正则化作用分析 ",
+        " "
+      ]
+    },
+    {
+      "page": 10,
+      "characters": 1303,
+      "first_lines": [
+        "10 ",
+        "七 稀疏角度传统方法结果 ",
+        "表 7 传统扩展 LS+TV 的 NRMSE "
+      ]
+    },
+    {
+      "page": 11,
+      "characters": 1351,
+      "first_lines": [
+        "11 ",
+        "八 非负 TV 小波与 PnP 重建改进 ",
+        "本节比较非负 TV 与 PnP-BM3D。非负 TV 和小波＋TV 取 12000 步终点，PnP 取 160 步终点；参数按"
+      ]
+    },
+    {
+      "page": 12,
+      "characters": 675,
+      "first_lines": [
+        "12 ",
+        "8.1 角度与质量的权衡 ",
+        " "
+      ]
+    },
+    {
+      "page": 13,
+      "characters": 668,
+      "first_lines": [
+        "13 ",
+        "8.2 高 SSIM 案例分析 ",
+        "表 11 SL64 的 30 dB 常规 BM3D 配置补测 "
+      ]
+    },
+    {
+      "page": 14,
+      "characters": 1872,
+      "first_lines": [
+        "14 ",
+        "九 各方法最佳结果主表 ",
+        "每个数据集、每种方法取已测条件中的最低 NRMSE，三指标同源，选中条件均为 30 dB。基础固定"
+      ]
+    },
+    {
+      "page": 15,
+      "characters": 909,
+      "first_lines": [
+        "15 ",
+        "十 讨论与结论 ",
+        "10.1 基础实验 "
+      ]
+    },
+    {
+      "page": 16,
+      "characters": 1441,
+      "first_lines": [
+        "16 ",
+        "附录 其他扩展结果 ",
+        "A.1 DIP 与 DIP 加 TV "
+      ]
+    },
+    {
+      "page": 17,
+      "characters": 3554,
+      "first_lines": [
+        "17 ",
+        "参考文献 ",
+        "[1] Christopher C. Paige; Michael A. Saunders. LSQR: An Algorithm for Sparse Linear Equations and Sparse Least Squares. "
+      ]
+    }
+  ],
+  "page_images": [
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0001-01.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0001-02.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0001-03.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0001-04.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0001-05.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0001-06.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0002-07.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0002-08.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0002-09.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0002-10.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0002-11.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0002-12.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0003-13.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0003-14.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0003-15.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0003-16.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0003-17.png",
+    "C:\\Users\\wsh\\Desktop\\Study\\最优化理论与算法\\Porject1_Assignment_2026\\outputs\\report_build\\render\\revised0003-18.png"
+  ],
+  "renderer": "Native Microsoft Word COM ExportAsFixedFormat; bundled Poppler rasterization",
+  "renderer_fallback": "Packaged render_docx.py attempted; LibreOffice missing on Windows. See renderer_initial.log.",
+  "visual_review": {
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "result": "All 17 final PNGs opened and inspected; first-page TOC page numbers match; 40-row main table fits on page 14; no clipping or overflow.",
+    "record": "outputs/report_build/final_review.md"
+  },
+  "fonts": [
+    "/BCDEEE+SimSun",
+    "/TimesNewRomanPS-BoldMT",
+    "/TimesNewRomanPSMT"
+  ],
+  "deliverables": [
+    {
+      "path": "report\\CT图像重建与稀疏角度优化实验报告修订版.docx",
+      "bytes": 652597,
+      "sha256": "3256f685b5a998f9895eeec4a63a52f80587a882d88a7939de872aef3136a880"
+    },
+    {
+      "path": "report\\CT图像重建与稀疏角度优化实验报告修订版.md",
+      "bytes": 30981,
+      "sha256": "be1713a8d5953bc4b115682b374bd2074b5f55ee3435c948b170f8f72a502cfd"
+    }
+  ]
+}

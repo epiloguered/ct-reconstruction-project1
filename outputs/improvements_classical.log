@@ -1,0 +1,17 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[classical] SheppLogan64_90angles_20db_TV_control NRMSE=0.20627 refined=0.20562
+[classical] SheppLogan64_90angles_30db_TV_control NRMSE=0.07108 refined=0.06831
+[classical] SheppLogan64_30angles_20db_TV_control NRMSE=0.31845 refined=0.31808
+[classical] SheppLogan64_30angles_20db_TV_nonnegative NRMSE=0.28382 refined=0.28165
+[classical] SheppLogan64_30angles_20db_TGV_nonnegative NRMSE=0.28381 refined=0.28167
+[classical] SheppLogan64_30angles_30db_TV_control NRMSE=0.16005 refined=0.14093
+[classical] SheppLogan64_30angles_30db_TV_nonnegative NRMSE=0.12518 refined=0.11778
+[classical] SheppLogan64_30angles_30db_TGV_nonnegative NRMSE=0.12518 refined=0.11778
+[classical] SheppLogan64_15angles_20db_TV_control NRMSE=0.44637 refined=0.44441
+[classical] SheppLogan64_15angles_20db_TV_nonnegative NRMSE=0.39094 refined=0.39041
+[classical] SheppLogan64_15angles_20db_TGV_nonnegative NRMSE=0.39091 refined=0.39040
+[classical] SheppLogan64_15angles_30db_TV_control NRMSE=0.33553 refined=0.33188
+[classical] SheppLogan64_15angles_30db_TV_nonnegative NRMSE=0.25414 refined=0.23628
+[classical] SheppLogan64_15angles_30db_TGV_nonnegative NRMSE=0.25366 refined=0.23539
+[cache] XCAT128: shape=(16290, 16384), nnz=1876968
+[classical] XCAT128_90angles_20db_TV_control NRMSE=0.17619 refined=0.17619

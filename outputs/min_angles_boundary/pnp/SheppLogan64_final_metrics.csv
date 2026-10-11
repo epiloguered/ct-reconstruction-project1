@@ -1,0 +1,4 @@
+﻿dataset,angle_count,snr_label_db,method,p,ratio,array,nrmse,psnr_db,ssim,relative_residual,total_iterations
+SheppLogan64,7,30,pnp,0.003,0.08,outputs\min_angles_boundary\pnp\SheppLogan64_7angles_30db_refined.npy,0.3293920944471463,21.77017714644969,0.7747895236740339,0.01920112797665591,160
+SheppLogan64,8,30,pnp,0.003,0.08,outputs\min_angles_boundary\pnp\SheppLogan64_8angles_30db_refined.npy,0.31133710001552845,22.259823064263493,0.7921416947336153,0.019404153929238496,160
+SheppLogan64,9,30,pnp,0.003,0.08,outputs\min_angles_boundary\pnp\SheppLogan64_9angles_30db_refined.npy,0.2290340389984529,24.92643994239614,0.8522439141176776,0.0208247430559603,160

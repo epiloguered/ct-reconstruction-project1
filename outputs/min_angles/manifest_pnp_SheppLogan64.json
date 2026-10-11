@@ -1,0 +1,90 @@
+{
+  "phase": "pnp",
+  "datasets": [
+    "SheppLogan64"
+  ],
+  "angles": [
+    30,
+    15,
+    10,
+    6,
+    3
+  ],
+  "snrs": [
+    20,
+    30
+  ],
+  "tv_grid": [
+    1e-05,
+    3e-05,
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "wave_ratios": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "wave_tv_multipliers": [
+    0.3,
+    1.0,
+    3.0
+  ],
+  "pnp_rhos": [
+    0.003,
+    0.03,
+    0.3
+  ],
+  "pnp_sigmas": [
+    0.01,
+    0.03,
+    0.08
+  ],
+  "grid_steps": 6000,
+  "refine_steps": 6000,
+  "pnp_grid_steps": 40,
+  "pnp_refine_steps": 120,
+  "selection": "oracle minimum GT NRMSE at grid endpoint; continue selected state without reselection",
+  "pnp_profile": "BM3DProfileLC, 4 threads, all stages; nonnegative output",
+  "wavelet": "orthogonal db2, periodization, level3; approximation not penalized",
+  "source_hashes": {
+    "run_min_angles.py": "7c777ea544485d82f6a740dee283afb6f814c8260983a8038bac790353818db7",
+    "run_baselines.py": "cfb8c91132f61a6d1d1e4b875acffa3616e5c14e963466dde28efa672adacb0c",
+    "run_regularization.py": "6983bb2294ba5fe1c318aed9c5b99c7214d40230787ad813fd76c9e706889ec5",
+    "run_sparse_views.py": "f948a5d3b9a3eeb38c756240195c1695f6cfe616671e70e198ebc3dfddf49efa",
+    "run_sparse_improvements.py": "555e450d1ea50bde32f303f51999858ac35450af8743b7a8deb572f967b1bbee"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "PyWavelets": "1.9.0",
+    "bm3d": "4.0.3",
+    "bm4d": "4.2.5"
+  },
+  "inputs": {
+    "Data\\SheppLogan64\\A.csv": {
+      "size": 74225046,
+      "mtime_ns": 1790578818022915700
+    },
+    "Data\\SheppLogan64\\gt.csv": {
+      "size": 17304,
+      "mtime_ns": 1790578818053916300,
+      "sha256": "1283491ae674b609aa8d504ffca7f59a6d6d9055acaaa593fa3e3aca0955ca4e"
+    },
+    "Data\\SheppLogan64\\b_hat_20db.csv": {
+      "size": 151620,
+      "mtime_ns": 1790578818038916200,
+      "sha256": "ba8cd7f4d85fffb38e872faba35ae9360ce72898dc1c64e04d51bd2cb18a015f"
+    },
+    "Data\\SheppLogan64\\b_hat_30db.csv": {
+      "size": 153091,
+      "mtime_ns": 1790578818049918000,
+      "sha256": "d5be4fd5fe3e652a62a8c0935217f71957eb76ee61d5fcf9bd89192fe09ac476"
+    }
+  }
+}

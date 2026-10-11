@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "assertions": 3783,
+  "sparse_arrays": 704,
+  "baseline_arrays": 8,
+  "input_sha256": {
+    "Data\\SheppLogan64\\b_hat_20db.csv": "ba8cd7f4d85fffb38e872faba35ae9360ce72898dc1c64e04d51bd2cb18a015f",
+    "Data\\SheppLogan64\\gt.csv": "1283491ae674b609aa8d504ffca7f59a6d6d9055acaaa593fa3e3aca0955ca4e",
+    "Data\\SheppLogan64\\b_hat_30db.csv": "d5be4fd5fe3e652a62a8c0935217f71957eb76ee61d5fcf9bd89192fe09ac476",
+    "Data\\XCAT128\\b_hat_20db.csv": "6ecca1fde94fa49e82376e6aaaacb15115ccc17c56b886d97da580412745af13",
+    "Data\\XCAT128\\gt.csv": "8316c32ec194306c7a197b68de8b549ed487412a5b012325009c9fee790228ba",
+    "Data\\XCAT128\\b_hat_30db.csv": "58b2bcaa6016b4a57166f45971f84987d6d633693fc74b48313b60be68c989d9"
+  },
+  "thresholds": [
+    {
+      "reference": {
+        "dataset": "SheppLogan64",
+        "snr": 20,
+        "angle_count": 90,
+        "method": "LS_TV",
+        "array": "outputs\\regularized\\SheppLogan64\\reconstructions\\SheppLogan64_20db_LS_TV.npy",
+        "iterations": 600,
+        "endpoint": "fixed",
+        "nrmse": 0.20559390194971028,
+        "psnr_db": 25.864235999426093,
+        "ssim": 0.7077349642214961,
+        "relative_residual": 0.08368728559282695
+      },
+      "least_tested_match": null
+    },
+    {
+      "reference": {
+        "dataset": "SheppLogan64",
+        "snr": 20,
+        "angle_count": 90,
+        "method": "ART_TV",
+        "array": "outputs\\regularized\\SheppLogan64\\reconstructions\\SheppLogan64_20db_ART_TV.npy",
+        "iterations": 5,
+        "endpoint": "fixed",
+        "nrmse": 0.2411269707928817,
+        "psnr_db": 24.47952477517102,
+        "ssim": 0.7122815561818031,
+        "relative_residual": 0.11915362478102656
+      },
+      "least_tested_match": {
+        "dataset": "SheppLogan64",
+        "snr": 20,
+        "angle_count": 30,
+        "method": "pnp",
+        "endpoint": "refined",
+        "array": "outputs\\min_angles\\pnp\\SheppLogan64_30angles_20db_refined.npy",
+        "iterations": 160,
+        "nrmse": 0.22440632375223213,
+        "psnr_db": 25.103738757709003,
+        "ssim": 0.8769950475498193,
+        "relative_residual": 0.09244619871951339
+      }
+    },
+    {
+      "reference": {
+        "dataset": "SheppLogan64",
+        "snr": 30,
+        "angle_count": 90,
+        "method": "LS_TV",
+        "array": "outputs\\regularized\\SheppLogan64\\reconstructions\\SheppLogan64_30db_LS_TV.npy",
+        "iterations": 600,
+        "endpoint": "fixed",
+        "nrmse": 0.06879742949854972,
+        "psnr_db": 35.37299634355178,
+        "ssim": 0.9338830893685208,
+        "relative_residual": 0.026885793000171288
+      },
+      "least_tested_match": null
+    },
+    {
+      "reference": {
+        "dataset": "SheppLogan64",
+        "snr": 30,
+        "angle_count": 90,
+        "method": "ART_TV",
+        "array": "outputs\\regularized\\SheppLogan64\\reconstructions\\SheppLogan64_30db_ART_TV.npy",
+        "iterations": 5,
+        "endpoint": "fixed",
+        "nrmse": 0.09428076152278156,
+        "psnr_db": 32.63597894568235,
+        "ssim": 0.9087506943499662,
+        "relative_residual": 0.04023314978945561
+      },
+      "least_tested_match": {
+        "dataset": "SheppLogan64",
+        "snr": 30,
+        "angle_count": 30,
+        "method": "pnp",
+        "endpoint": "grid",
+        "array": "outputs\\min_angles\\pnp\\candidates\\SheppLogan64_30angles_30db_04.npy",
+        "iterations": 40,
+        "nrmse": 0.08339944126233431,
+        "psnr_db": 33.70117775900644,
+        "ssim": 0.9601233924228078,
+        "relative_residual": 0.028892247308714123
+      }
+    },
+    {
+      "reference": {
+        "dataset": "XCAT128",
+        "snr": 20,
+        "angle_count": 90,
+        "method": "LS_TV",
+        "array": "outputs\\regularized\\XCAT128\\reconstructions\\XCAT128_20db_LS_TV.npy",
+        "iterations": 600,
+        "endpoint": "fixed",
+        "nrmse": 0.17649925518734302,
+        "psnr_db": 25.342955769065746,
+        "ssim": 0.823095063532849,
+        "relative_residual": 0.09965960628232003
+      },
+      "least_tested_match": null
+    },
+    {
+      "reference": {
+        "dataset": "XCAT128",
+        "snr": 20,
+        "angle_count": 90,
+        "method": "ART_TV",
+        "array": "outputs\\regularized\\XCAT128\\reconstructions\\XCAT128_20db_ART_TV.npy",
+        "iterations": 5,
+        "endpoint": "fixed",
+        "nrmse": 0.2651551534414032,
+        "psnr_db": 21.807811863920875,
+        "ssim": 0.39302760118653424,
+        "relative_residual": 0.1379817226388912
+      },
+      "least_tested_match": {
+        "dataset": "XCAT128",
+        "snr": 20,
+        "angle_count": 10,
+        "method": "pnp",
+        "endpoint": "grid",
+        "array": "outputs\\min_angles\\pnp\\candidates\\XCAT128_10angles_20db_08.npy",
+        "iterations": 40,
+        "nrmse": 0.24401051551234013,
+        "psnr_db": 22.529642460911198,
+        "ssim": 0.8125629201929618,
+        "relative_residual": 0.09788339207004458
+      }
+    },
+    {
+      "reference": {
+        "dataset": "XCAT128",
+        "snr": 30,
+        "angle_count": 90,
+        "method": "LS_TV",
+        "array": "outputs\\regularized\\XCAT128\\reconstructions\\XCAT128_30db_LS_TV.npy",
+        "iterations": 600,
+        "endpoint": "fixed",
+        "nrmse": 0.10661681504542292,
+        "psnr_db": 29.721299215014064,
+        "ssim": 0.8237384908720601,
+        "relative_residual": 0.027875002855928224
+      },
+      "least_tested_match": null
+    },
+    {
+      "reference": {
+        "dataset": "XCAT128",
+        "snr": 30,
+        "angle_count": 90,
+        "method": "ART_TV",
+        "array": "outputs\\regularized\\XCAT128\\reconstructions\\XCAT128_30db_ART_TV.npy",
+        "iterations": 5,
+        "endpoint": "fixed",
+        "nrmse": 0.13554422995383056,
+        "psnr_db": 27.636192617391732,
+        "ssim": 0.6595836983947073,
+        "relative_residual": 0.04945464203161702
+      },
+      "least_tested_match": null
+    }
+  ],
+  "limitation": "Saved-array verification, not new optimization or a single-factor controlled trial. Original baseline has no historical input hash manifest."
+}

@@ -1,0 +1,28 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+C:\Users\wsh\Desktop\Study\���Ż��������㷨\Porject1_Assignment_2026\run_dip_extension.py:44: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\SparseCsrTensorImpl.cpp:51.)
+  return torch.sparse_csr_tensor(
+[heldout] SheppLogan64_30angles_20db_seed0 step=500 NRMSE=0.32140 fixed=0.40055
+[heldout] SheppLogan64_30angles_20db_seed1 step=850 NRMSE=0.32477 fixed=0.32961
+[heldout] SheppLogan64_30angles_20db_seed2 step=600 NRMSE=0.31534 fixed=0.32846
+[heldout] SheppLogan64_30angles_30db_seed0 step=1700 NRMSE=0.12178 fixed=0.12169
+[heldout] SheppLogan64_30angles_30db_seed1 step=1750 NRMSE=0.12511 fixed=0.29385
+[heldout] SheppLogan64_30angles_30db_seed2 step=1750 NRMSE=0.12405 fixed=0.30608
+[heldout] SheppLogan64_15angles_20db_seed0 step=400 NRMSE=0.42853 fixed=0.45048
+[heldout] SheppLogan64_15angles_20db_seed1 step=200 NRMSE=0.43977 fixed=0.45139
+[heldout] SheppLogan64_15angles_20db_seed2 step=350 NRMSE=0.42567 fixed=0.45039
+[heldout] SheppLogan64_15angles_30db_seed0 step=1900 NRMSE=0.28051 fixed=0.28344
+[heldout] SheppLogan64_15angles_30db_seed1 step=1100 NRMSE=0.26893 fixed=0.27767
+[heldout] SheppLogan64_15angles_30db_seed2 step=1700 NRMSE=0.28480 fixed=0.33158
+[cache] XCAT128: shape=(16290, 16384), nnz=1876968
+[heldout] XCAT128_30angles_20db_seed0 step=1450 NRMSE=0.21523 fixed=0.22002
+[heldout] XCAT128_30angles_20db_seed1 step=900 NRMSE=0.21298 fixed=0.21850
+[heldout] XCAT128_30angles_20db_seed2 step=850 NRMSE=0.21125 fixed=0.21909
+[heldout] XCAT128_30angles_30db_seed0 step=2000 NRMSE=0.16458 fixed=0.16458
+[heldout] XCAT128_30angles_30db_seed1 step=2000 NRMSE=0.16804 fixed=0.16804
+[heldout] XCAT128_30angles_30db_seed2 step=1750 NRMSE=0.16831 fixed=0.16644
+[heldout] XCAT128_15angles_20db_seed0 step=1650 NRMSE=0.28116 fixed=0.28680
+[heldout] XCAT128_15angles_20db_seed1 step=900 NRMSE=0.26916 fixed=0.35357
+[heldout] XCAT128_15angles_20db_seed2 step=850 NRMSE=0.26885 fixed=0.27509
+[heldout] XCAT128_15angles_30db_seed0 step=1850 NRMSE=0.22366 fixed=0.22305
+[heldout] XCAT128_15angles_30db_seed1 step=1950 NRMSE=0.22279 fixed=0.22229
+[heldout] XCAT128_15angles_30db_seed2 step=2000 NRMSE=0.22107 fixed=0.22107

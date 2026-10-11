@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checked_assertions": 3236,
+  "unique_arrays_recomputed": 472,
+  "classical_selected": 28,
+  "classical_candidates": 396,
+  "neural_fits": 24,
+  "neural_endpoints": 48,
+  "errors": [],
+  "model_restorations": [
+    {
+      "dataset": "SheppLogan64",
+      "relative_error": 0.0
+    },
+    {
+      "dataset": "XCAT128",
+      "relative_error": 0.0
+    }
+  ]
+}

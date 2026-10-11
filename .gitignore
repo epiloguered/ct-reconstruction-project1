@@ -10,3 +10,9 @@ outputs/extension/dip_initial_unstable/
 outputs/release_check/
 outputs/github_release/
 outputs/rerun/
+outputs/improvements/classical/
+~$*
+outputs/report_build/render/
+# 旧报告留在本地；正式入口统一使用修订版。
+report/CT图像重建与稀疏角度优化实验报告.docx
+report/CT图像重建与稀疏角度优化实验报告.md

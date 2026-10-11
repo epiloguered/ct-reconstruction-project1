@@ -1,0 +1,4 @@
+--index-url https://pypi.org/simple
+PyWavelets==1.9.0
+bm3d==4.0.3
+bm4d==4.2.5

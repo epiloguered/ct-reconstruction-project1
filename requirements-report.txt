@@ -1,0 +1,5 @@
+# 报告构建工具；科学图像仍使用项目Conda环境中的matplotlib。
+python-docx>=1.1,<2
+lxml>=5,<7
+pypdf>=5,<7
+pdf2image>=1.17,<2

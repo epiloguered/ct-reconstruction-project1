@@ -1,0 +1,34 @@
+test_pnp_identity_denoiser_matches_data (test_min_angles.MinimumAngleTests.test_pnp_identity_denoiser_matches_data) ... ok
+test_real_bm3d_finite_nonnegative (test_min_angles.MinimumAngleTests.test_real_bm3d_finite_nonnegative) ... ok
+test_wavelet_detail_constant_zero (test_min_angles.MinimumAngleTests.test_wavelet_detail_constant_zero) ... ok
+test_wavelet_nonnegative_identity_constant (test_min_angles.MinimumAngleTests.test_wavelet_nonnegative_identity_constant) ... ok
+test_wavelet_orthogonal_adjoint (test_min_angles.MinimumAngleTests.test_wavelet_orthogonal_adjoint) ... ok
+test_gradient_adjoint (test_sparse_improvements.ImprovementTests.test_gradient_adjoint) ... ok
+test_heldout_complete_disjoint_blocks (test_sparse_improvements.ImprovementTests.test_heldout_complete_disjoint_blocks) ... ok
+test_nonnegative_constant_identity (test_sparse_improvements.ImprovementTests.test_nonnegative_constant_identity) ... ok
+test_symmetric_gradient_adjoint (test_sparse_improvements.ImprovementTests.test_symmetric_gradient_adjoint) ... ok
+test_unconstrained_constant_identity (test_sparse_improvements.ImprovementTests.test_unconstrained_constant_identity) ... ok
+test_column_major_projection_and_adjoint (test_dip_extension.DIPContracts.test_column_major_projection_and_adjoint) ... C:\Users\wsh\Desktop\Study\最优化理论与算法\Porject1_Assignment_2026\outputs\release_check\update_20261011_125921\run_dip_extension.py:44: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\SparseCsrTensorImpl.cpp:51.)
+  return torch.sparse_csr_tensor(
+ok
+test_cuda_projection_gradient (test_dip_extension.DIPContracts.test_cuda_projection_gradient) ... ok
+test_paired_initialization_and_observation_scale (test_dip_extension.DIPContracts.test_paired_initialization_and_observation_scale) ... ok
+test_tv_constant_has_finite_zero_gradient (test_dip_extension.DIPContracts.test_tv_constant_has_finite_zero_gradient) ... ok
+test_column_major_truth_roundtrip (test_sparse_views.AngleSelectionTests.test_column_major_truth_roundtrip) ... ok
+test_complete_uniform_angle_blocks_and_observation_alignment (test_sparse_views.AngleSelectionTests.test_complete_uniform_angle_blocks_and_observation_alignment) ... ok
+test_full_view_is_identical_and_invalid_inputs_rejected (test_sparse_views.AngleSelectionTests.test_full_view_is_identical_and_invalid_inputs_rejected) ... ok
+test_all_saved_selected_metrics_and_oracle_choices (test_sparse_views.SavedExperimentTests.test_all_saved_selected_metrics_and_oracle_choices) ... [distributed] SheppLogan64: shape=(8190, 4096), nnz=469640
+[distributed] XCAT128: shape=(16290, 16384), nnz=1876968
+ok
+test_art_recovers_nonnegative_identity_and_skips_zero_row (test_baselines.BaselineTests.test_art_recovers_nonnegative_identity_and_skips_zero_row) ... ok
+test_published_checkout_loads_npz_without_original_csv (test_baselines.BaselineTests.test_published_checkout_loads_npz_without_original_csv) ... [distributed] SheppLogan64: shape=(3, 4096), nnz=2
+ok
+test_sparse_csv_keeps_zero_rows_and_values (test_baselines.BaselineTests.test_sparse_csv_keeps_zero_rows_and_values) ... ok
+test_art_l2_shrink_and_zero_row (test_regularization.RegularizationTests.test_art_l2_shrink_and_zero_row) ... ok
+test_l1_fista_matches_identity_soft_threshold (test_regularization.RegularizationTests.test_l1_fista_matches_identity_soft_threshold) ... ok
+test_tv_prox_preserves_constant_image (test_regularization.RegularizationTests.test_tv_prox_preserves_constant_image) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 4.350s
+
+OK

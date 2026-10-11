@@ -1,0 +1,4 @@
+[cache] SheppLogan64: shape=(8190, 4096), nnz=469640
+[boundary np] 9 angles grid=0.20626 final=0.20858
+[boundary np] 8 angles grid=0.29807 final=0.25596
+[boundary np] 7 angles grid=0.28766 final=0.27043
